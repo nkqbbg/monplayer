@@ -2,7 +2,7 @@
     "id": "hoadao",
     "url": "https://tt.8share.pro/buncha",
     "name": "Hoa Đào TV",
-    "color": "#1cb57a",
+    "color": "#e86281",
     "image": {
         "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg"
     },
@@ -22,10 +22,11 @@
             "id": "live",
             "name": "🔴 Live",
             "display": "horizontal",
-            "grid_number": 1,
+            "grid_number": 2,
+            "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-b50aceeec658",
+                    "id": "ch-3099fa7f3de5",
                     "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
                     "labels": [
                         {
@@ -47,19 +48,19 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-f83447adb1aa",
+                            "id": "src-19be0e4ccfcd",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-27ba85b5a631",
+                                    "id": "ct-93dee6967fdb",
                                     "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
                                     "streams": [
                                         {
-                                            "id": "st-177ac5f74a69",
+                                            "id": "st-7cad096e9c91",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-afb9a348cec5",
+                                                    "id": "lnk-bb7faa8c57c9",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -84,66 +85,7 @@
                     ]
                 },
                 {
-                    "id": "ch-290a09cec6ff",
-                    "name": "manchester-united-vs-crystal-palace-2398560",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "Live Stream",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-084acc8fbcf0",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-6cce290e2bd5",
-                                    "name": "manchester-united-vs-crystal-palace-2398560",
-                                    "streams": [
-                                        {
-                                            "id": "st-1b6f4b4b4b45",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-e8c0fffe3f76",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/buncha/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/manchester-united-vs-crystal-palace-2398560"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-03234b2365cf",
+                    "id": "ch-4f097802ed40",
                     "name": "arsenal-vs-chelsea-2398804",
                     "labels": [
                         {
@@ -165,23 +107,23 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-fa5aa439f589",
+                            "id": "src-749079fb5554",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-225c5fc20b38",
+                                    "id": "ct-eb24be2b38c9",
                                     "name": "arsenal-vs-chelsea-2398804",
                                     "streams": [
                                         {
-                                            "id": "st-6341b267f2d7",
+                                            "id": "st-5e78058bae5d",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ee4b561b0ad4",
+                                                    "id": "lnk-8747fc206889",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/buncha/playlist.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-20/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -202,7 +144,66 @@
                     ]
                 },
                 {
-                    "id": "ch-1d736995f6e8",
+                    "id": "ch-54c514a7d0b8",
+                    "name": "arsenal-chelsea-2400404",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "Live Stream",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-57ebb54392e9",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-4c72311b8a24",
+                                    "name": "arsenal-chelsea-2400404",
+                                    "streams": [
+                                        {
+                                            "id": "st-c977c4efa354",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3158ba1c83ce",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-29/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/arsenal-chelsea-2400404"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1b5b509553d1",
                     "name": "arsenal-fan-chelsea-2400406",
                     "labels": [
                         {
@@ -224,23 +225,23 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-eb0da054182e",
+                            "id": "src-1f74581dce97",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-ac361048a7b0",
+                                    "id": "ct-92759ba0a004",
                                     "name": "arsenal-fan-chelsea-2400406",
                                     "streams": [
                                         {
-                                            "id": "st-e3ea51b4abfd",
+                                            "id": "st-c8088665862c",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4b0ac58862df",
+                                                    "id": "lnk-36fa62b10194",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_key/playlist.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-30/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
