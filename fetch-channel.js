@@ -214,7 +214,7 @@ async function main() {
                 "image": {
                     "url": item.backUrl,
                     "height": 480,
-                    "width": 610,
+                    "width": 620,
                     "display": "cover",
                     "shape": "square"
                 },
