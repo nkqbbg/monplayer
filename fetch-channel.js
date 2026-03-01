@@ -41,37 +41,78 @@ async function scrapeSoccer() {
 
         const matches = [];
 
+        const card = $('.card-match').first();   // lấy card đầu tiên
+        const style = card.find('.card-bg-blur').attr('style');
+
+        let backgroundUrl = null;
+
+        if (style) {
+        const match = style.match(/url\((.*?)\)/);
+        if (match && match[1]) {
+            backgroundUrl = match[1];
+
+            if (backgroundUrl.startsWith('/')) {
+            backgroundUrl = `https://hoadaotv.org${backgroundUrl}`;
+            }
+        }
+        }
+
+
         for (const el of $('.cm-wrap').toArray()) {
-        const card = $(el);
+            const card = $(el);
 
-        const home = card.find('.team-home .name-short').text().trim();
-        const away = card.find('.team-away .name-short').text().trim();
+            const home = card.find('.team-home .name-short').text().trim();
+            const away = card.find('.team-away .name-short').text().trim();
 
-        const [time, date] = card
-            .find('.time span')
-            .map((i, el) => $(el).text().trim())
-            .get();
+            const [time, date] = card.find('.time span')
+                .map((i, el) => $(el).text().trim())
+                .get();
 
-        const matchPath = card.find('.match-link-overlay').attr('href');
+            const league = card.find('.league').text().trim();
+            const status = card.find('.text-timeinplay').text().trim();
 
-        if (!matchPath) continue;
+            const leagueIcon = card.find('.corner img').attr('src');
+            const homeIcon = card.find('.team-home .base-icon img').attr('src');
+            const awayIcon = card.find('.team-away .base-icon img').attr('src');
 
-        const matchLink = matchPath.startsWith('http')
-            ? matchPath
-            : `https://hoadaotv.org${matchPath}`;
+            const matchPath = card.find('.match-link-overlay').attr('href');
+            if (!matchPath) continue;
 
-        console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
+            const matchLink = matchPath.startsWith('http')
+                ? matchPath
+                : `https://hoadaotv.org${matchPath}`;
 
-        const streamLinks = await scrapelink(matchLink);
+            console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
 
-        matches.push({
-            home,
-            away,
-            time,
-            date,
-            link: matchLink,
-            streams: streamLinks || []
-        });
+            // ⭐ STREAM LINK Ở ĐÂY
+            const streamLinks = await scrapelink(matchLink);
+
+            matches.push({
+                league,
+                time,
+                date,
+                status,
+                link: matchLink,
+                streams: streamLinks || [],
+                backUrl: backgroundUrl,
+
+                teams: {
+                home: {
+                    name: home,
+                    icon: homeIcon
+                },
+                away: {
+                    name: away,
+                    icon: awayIcon
+                }
+                },
+
+                icons: {
+                league: leagueIcon
+                    ? `https://hoadaotv.org${leagueIcon}`
+                    : null
+                }
+            });
         }
 
         console.log(matches);
@@ -150,14 +191,26 @@ async function main() {
                     },
                     {
                         "position": "center",
-                        "text": item.time,
+                        "text": `${item.home} vs ${item.away}`,
+                        "color": "#2196F3",
+                        "text_color": "#FFFFFF"
+                    },
+                    {
+                        "position": "bottom-left",
+                        "text": `${item.time} | ${item.date}`,
                         "color": "#4CAF50",
+                        "text_color": "#FFFFFF"
+                    },
+                    {
+                        "position": "bottom-right",
+                        "text": item.league || "",
+                        "color": "#FF9800",
                         "text_color": "#FFFFFF"
                     }
                 ],
                 "description": item.time,
-                "image": templateData.groups[0]?.channels[0]?.image || {
-                    "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                "image": {
+                    "url": item.backUrl,
                     "height": 460,
                     "width": 600,
                     "display": "cover",
