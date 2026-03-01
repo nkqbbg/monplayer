@@ -194,7 +194,7 @@ async function main() {
                         "text": `${item.teams.home.name} - ${item.teams.away.name}`,
                         "color": "#2196F3",
                         "text_color": "#FFFFFF",
-                        "font_size": 22,
+                        "font_size": 28,
                         "font_weight": "bold"
                     },
                     {
@@ -213,8 +213,8 @@ async function main() {
                 "description": item.time,
                 "image": {
                     "url": item.backUrl,
-                    "height": 460,
-                    "width": 600,
+                    "height": 480,
+                    "width": 610,
                     "display": "cover",
                     "shape": "square"
                 },
