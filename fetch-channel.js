@@ -190,19 +190,30 @@ async function main() {
                         "text_color": "#FFFFFF"
                     },
                     {
-                        "position": "center",
-                        "text": `<img src="${item.teams.home.icon}" height="20"> ${item.teams.home.name} vs <img src="${item.teams.away.icon}" height="20"> ${item.teams.away.name}`,
-                        "color": "#2196F3",
-                        "text_color": "#FFFFFF"
+                        "type": "row",
+                        "justify": "center",
+                        "items": [
+                          {
+                            "text": item.teams.home.name,
+                            "icon": item.teams.home.icon
+                          },
+                          {
+                            "text": "vs"
+                          },
+                          {
+                            "text": item.teams.away.name,
+                            "icon": item.teams.away.icon
+                          }
+                        ]
                     },
                     {
-                        "position": "bottom-left",
+                        "position": "top-right",
                         "text": `${item.time} | ${item.date}`,
                         "color": "#4CAF50",
                         "text_color": "#FFFFFF"
                     },
                     {
-                        "position": "top-right",
+                        "position": "bottom-right",
                         "text": item.league || "",
                         "color": "#FF9800",
                         "text_color": "#FFFFFF"

@@ -27,7 +27,7 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-459cccd5ea67",
+                    "id": "ch-93ed9eca5fdd",
                     "labels": [
                         {
                             "position": "top-left",
@@ -36,19 +36,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/42b8a7886e54d35cf818dd6c497a8b2f/image/small?v=1768601124\" height=\"20\"> Arsenal vs <img src=\"https://img.rapid-api.icu/football/team/3608721168c00e7d2709faae8b4150df/image/small?v=1768601124\" height=\"20\"> Chelsea",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Arsenal",
+                                    "icon": "https://img.rapid-api.icu/football/team/42b8a7886e54d35cf818dd6c497a8b2f/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Chelsea",
+                                    "icon": "https://img.rapid-api.icu/football/team/3608721168c00e7d2709faae8b4150df/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "23:30 | 01/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "English Premier League",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -66,18 +77,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-ac4a11ab441d",
+                            "id": "src-4eb38c5a1f53",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-5e22c1206ed7",
+                                    "id": "ct-9f0e2b842870",
                                     "streams": [
                                         {
-                                            "id": "st-007c828edddd",
+                                            "id": "st-8d548dc9b54c",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8246a7d08830",
+                                                    "id": "lnk-827261257074",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -102,7 +113,7 @@
                     ]
                 },
                 {
-                    "id": "ch-1cc806c33cdc",
+                    "id": "ch-110c87c1da8c",
                     "labels": [
                         {
                             "position": "top-left",
@@ -111,169 +122,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://static.flashscore.com/res/image/data/pfchdCg5-vcNAdtF9.png\" height=\"20\"> FAN Arsenal vs <img src=\"https://static.flashscore.com/res/image/data/GMmvDEdM-IROrZEJb.png\" height=\"20\"> Chelsea",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-left",
-                            "text": "23:30 | 01/03",
-                            "color": "#4CAF50",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Torino",
+                                    "icon": "https://img.rapid-api.icu/football/team/fffd8f76ea5126aa8515a4ddf29e3447/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Lazio",
+                                    "icon": "https://img.rapid-api.icu/football/team/034e790ea96a556fe3b89568347a5c2d/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
                             "position": "top-right",
-                            "text": "Off Fan Arsenal",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "23:30",
-                    "image": {
-                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 460,
-                        "width": 600,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-90dfeb9e3cc2",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-0f2657fc5d41",
-                                    "streams": [
-                                        {
-                                            "id": "st-1fef62874337",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-710a81b8cb32",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-29/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/arsenal-chelsea-2400404"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-660298715732",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "center",
-                            "text": "<img src=\"https://static.flashscore.com/res/image/data/pfchdCg5-vcNAdtF9.png\" height=\"20\"> Arsenal vs <img src=\"https://static.flashscore.com/res/image/data/GMmvDEdM-IROrZEJb.png\" height=\"20\"> FAN Chelsea",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-left",
-                            "text": "23:30 | 01/03",
-                            "color": "#4CAF50",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "top-right",
-                            "text": "Off Fan Chelsea",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "23:30",
-                    "image": {
-                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 460,
-                        "width": 600,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-6eb7990b868a",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-f83bdaa7e6b0",
-                                    "streams": [
-                                        {
-                                            "id": "st-e01528258874",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-cbf1240ae9e5",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-30/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/arsenal-fan-chelsea-2400406"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-bdfba0faf91a",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/fffd8f76ea5126aa8515a4ddf29e3447/image/small?v=1768601124\" height=\"20\"> Torino vs <img src=\"https://img.rapid-api.icu/football/team/034e790ea96a556fe3b89568347a5c2d/image/small?v=1768601124\" height=\"20\"> Lazio",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-left",
                             "text": "00:00 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Italian Serie A",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -291,18 +163,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-e757bb2e457a",
+                            "id": "src-b808f00bd2c4",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-f5d01ebf550f",
+                                    "id": "ct-3ef037d2c953",
                                     "streams": [
                                         {
-                                            "id": "st-2a03ee1bc01f",
+                                            "id": "st-4f6acf5222fd",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0986f8ca7720",
+                                                    "id": "lnk-a898aac37722",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -327,7 +199,7 @@
                     ]
                 },
                 {
-                    "id": "ch-2957a7706642",
+                    "id": "ch-ead711b93955",
                     "labels": [
                         {
                             "position": "top-left",
@@ -336,19 +208,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/8cea83e71494928de3ba9b45ffc3f97e/image/small?v=1768601124\" height=\"20\"> Real Betis vs <img src=\"https://img.rapid-api.icu/football/team/a009e15fa68885f5bbef6867272fb17f/image/small?v=1768601124\" height=\"20\"> Sevilla FC",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Real Betis",
+                                    "icon": "https://img.rapid-api.icu/football/team/8cea83e71494928de3ba9b45ffc3f97e/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Sevilla FC",
+                                    "icon": "https://img.rapid-api.icu/football/team/a009e15fa68885f5bbef6867272fb17f/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "00:30 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Spanish La Liga",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -366,18 +249,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-d00b4cf844ac",
+                            "id": "src-e59198b10ac7",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-6cf3ebc7be1f",
+                                    "id": "ct-575578f59ebe",
                                     "streams": [
                                         {
-                                            "id": "st-f8ef1804dd62",
+                                            "id": "st-575ae8c33323",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-9177bddabfd6",
+                                                    "id": "lnk-9dd3c7136aca",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -401,7 +284,7 @@
                     ]
                 },
                 {
-                    "id": "ch-de65b53dc434",
+                    "id": "ch-d0d5e413138b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -410,19 +293,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/45de99d8eedecac58ee6ea005e11ab0c/image/small?v=1768601124\" height=\"20\"> AS Roma vs <img src=\"https://img.rapid-api.icu/football/team/e920c56ae5ec3de93095b288a7cf2f21/image/small?v=1768601124\" height=\"20\"> Juventus",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "AS Roma",
+                                    "icon": "https://img.rapid-api.icu/football/team/45de99d8eedecac58ee6ea005e11ab0c/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Juventus",
+                                    "icon": "https://img.rapid-api.icu/football/team/e920c56ae5ec3de93095b288a7cf2f21/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "02:45 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Italian Serie A",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -440,18 +334,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-0d7738748dcc",
+                            "id": "src-e2206807530c",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-1c1b3f8e3665",
+                                    "id": "ct-7492ab109216",
                                     "streams": [
                                         {
-                                            "id": "st-a0ce54f6541a",
+                                            "id": "st-18b8f6bd2649",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-5e07bd998f52",
+                                                    "id": "lnk-77993252f0a3",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -475,7 +369,7 @@
                     ]
                 },
                 {
-                    "id": "ch-323d58d1e011",
+                    "id": "ch-9e5b98882ffd",
                     "labels": [
                         {
                             "position": "top-left",
@@ -484,19 +378,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/a527f35826813a2dbe58570a90cdf218/image/small?v=1768601124\" height=\"20\"> Marseille vs <img src=\"https://img.rapid-api.icu/football/team/682bf012599cc69b90c541559f6e60ed/image/small?v=1768601124\" height=\"20\"> Lyon",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Marseille",
+                                    "icon": "https://img.rapid-api.icu/football/team/a527f35826813a2dbe58570a90cdf218/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Lyon",
+                                    "icon": "https://img.rapid-api.icu/football/team/682bf012599cc69b90c541559f6e60ed/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "02:45 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "French Ligue 1",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -514,18 +419,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-b1b2309111d0",
+                            "id": "src-9bd3a4bdde21",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-b7918778c679",
+                                    "id": "ct-c65209f5138a",
                                     "streams": [
                                         {
-                                            "id": "st-cc4e45bd4d62",
+                                            "id": "st-17323cb8d8d6",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-f59b07aacb87",
+                                                    "id": "lnk-4e4f283ebd17",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -549,7 +454,7 @@
                     ]
                 },
                 {
-                    "id": "ch-6ed54ad2da78",
+                    "id": "ch-e419e34ef0f7",
                     "labels": [
                         {
                             "position": "top-left",
@@ -558,19 +463,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/f4c0bc2d425973294f92e1b46a6fdd4d/image/small?v=1768601124\" height=\"20\"> Orlando City vs <img src=\"https://img.rapid-api.icu/football/team/c02e9bcd73ba4bb045977867abf5e4ab/image/small?v=1768601124\" height=\"20\"> Inter Miami CF",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Orlando City",
+                                    "icon": "https://img.rapid-api.icu/football/team/f4c0bc2d425973294f92e1b46a6fdd4d/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Inter Miami CF",
+                                    "icon": "https://img.rapid-api.icu/football/team/c02e9bcd73ba4bb045977867abf5e4ab/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "07:00 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "United States Major League Soccer",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -588,18 +504,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-d90ab3700202",
+                            "id": "src-0d52e2df3641",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-7272bbb3888c",
+                                    "id": "ct-c1610e896cca",
                                     "streams": [
                                         {
-                                            "id": "st-e99385d809d7",
+                                            "id": "st-4d9a53a53e13",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-05e4d7a9c6a2",
+                                                    "id": "lnk-def53ba46c03",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -623,7 +539,7 @@
                     ]
                 },
                 {
-                    "id": "ch-6b2e6ba009e1",
+                    "id": "ch-8b0bccf56edc",
                     "labels": [
                         {
                             "position": "top-left",
@@ -632,19 +548,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/25c697eefddd230651e9502912458072/image/small?v=1768601124\" height=\"20\"> Daejeon Citizen vs <img src=\"https://img.rapid-api.icu/football/team/7dcc98a805f95fb8ad561ce28590c761/image/small?v=1768601124\" height=\"20\"> FC Anyang",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Daejeon Citizen",
+                                    "icon": "https://img.rapid-api.icu/football/team/25c697eefddd230651e9502912458072/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "FC Anyang",
+                                    "icon": "https://img.rapid-api.icu/football/team/7dcc98a805f95fb8ad561ce28590c761/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "12:00 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Korean K League 1",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -662,18 +589,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-5ffaf23cd6d6",
+                            "id": "src-99d3aa2e3200",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-4ead5d4a7165",
+                                    "id": "ct-23419814bf13",
                                     "streams": [
                                         {
-                                            "id": "st-55214bef0f1d",
+                                            "id": "st-aa6533bb9c10",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e3580a189769",
+                                                    "id": "lnk-ca308a62f2e1",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -697,7 +624,7 @@
                     ]
                 },
                 {
-                    "id": "ch-a02989e6361d",
+                    "id": "ch-7795246547c4",
                     "labels": [
                         {
                             "position": "top-left",
@@ -706,19 +633,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png\" height=\"20\"> Việt Nam Nữ vs <img src=\"https://static.flashscore.com/res/image/data/WvrcHkXg-QBz8eAFI.png\" height=\"20\"> Indonesia Nữ",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Việt Nam Nữ",
+                                    "icon": "https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Indonesia Nữ",
+                                    "icon": "https://static.flashscore.com/res/image/data/WvrcHkXg-QBz8eAFI.png"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "15:00 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Vô Địch Nữ FUSAL ĐNA",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -736,18 +674,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-20d37070bfd1",
+                            "id": "src-57b7bd2af726",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-4b98f8e7d8cb",
+                                    "id": "ct-a4e182dc18de",
                                     "streams": [
                                         {
-                                            "id": "st-6a0621ec5c5e",
+                                            "id": "st-1fee3963b218",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a0d773b8156d",
+                                                    "id": "lnk-58de875573a2",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -771,7 +709,7 @@
                     ]
                 },
                 {
-                    "id": "ch-5f2a020656fd",
+                    "id": "ch-7e2874efe680",
                     "labels": [
                         {
                             "position": "top-left",
@@ -780,19 +718,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/5a4ba875fb179efe94d21e6c4f0b68ad/image/small?v=1768601124\" height=\"20\"> SC Poltava vs <img src=\"https://img.rapid-api.icu/football/team/e352e7e52f914f92d3452d8077d7afd9/image/small?v=1768601124\" height=\"20\"> Kudrivka",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "SC Poltava",
+                                    "icon": "https://img.rapid-api.icu/football/team/5a4ba875fb179efe94d21e6c4f0b68ad/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Kudrivka",
+                                    "icon": "https://img.rapid-api.icu/football/team/e352e7e52f914f92d3452d8077d7afd9/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "18:00 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Ukrainian Premier League",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -810,18 +759,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-644732949ad2",
+                            "id": "src-b598595701c2",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-99afce2147ca",
+                                    "id": "ct-56da794f1edf",
                                     "streams": [
                                         {
-                                            "id": "st-5580c9e4da0f",
+                                            "id": "st-7f1d0a308261",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8e6a480d3b25",
+                                                    "id": "lnk-c232c0c4f08e",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -845,7 +794,7 @@
                     ]
                 },
                 {
-                    "id": "ch-f9571a85400a",
+                    "id": "ch-60d23d13491f",
                     "labels": [
                         {
                             "position": "top-left",
@@ -854,19 +803,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png\" height=\"20\"> Thái Lan Nữ vs <img src=\"https://static.flashscore.com/res/image/data/Ygu7zgHG-YNb3oHYR.png\" height=\"20\"> Úc Nữ",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Thái Lan Nữ",
+                                    "icon": "https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Úc Nữ",
+                                    "icon": "https://static.flashscore.com/res/image/data/Ygu7zgHG-YNb3oHYR.png"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "18:30 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Vô Địch Nữ FUSAL ĐNA",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -884,18 +844,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-4caa40d77d92",
+                            "id": "src-9a39bc593b81",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-4037ca953ef0",
+                                    "id": "ct-13fc4faf5129",
                                     "streams": [
                                         {
-                                            "id": "st-37d1b3e20b4f",
+                                            "id": "st-44f687e20183",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-d11cd863624e",
+                                                    "id": "lnk-e4a0c9f5be78",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -919,7 +879,7 @@
                     ]
                 },
                 {
-                    "id": "ch-80555ed2079d",
+                    "id": "ch-9320c4ddfe9b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -928,19 +888,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124\" height=\"20\"> Rodina Moscow vs <img src=\"https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124\" height=\"20\"> Shinnik Yaroslavl",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Rodina Moscow",
+                                    "icon": "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Shinnik Yaroslavl",
+                                    "icon": "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "23:30 | 02/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Russian First LeagueLeague",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -958,18 +929,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-a9d258407937",
+                            "id": "src-a6e6849ec701",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-53b1481fe0a4",
+                                    "id": "ct-3dbb606429a1",
                                     "streams": [
                                         {
-                                            "id": "st-6928bd65c15e",
+                                            "id": "st-837a45debf12",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-912fa4b8d58a",
+                                                    "id": "lnk-4249237ed1fe",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -993,7 +964,7 @@
                     ]
                 },
                 {
-                    "id": "ch-b2221638a858",
+                    "id": "ch-598a2684d95b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1002,19 +973,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/adfc3610e9d94c45c8cae0cd2c7d6e2b/image/small?v=1768601124\" height=\"20\"> Pisa vs <img src=\"https://img.rapid-api.icu/football/team/4bd880d3beb68a5e39c5f9648aeb59dd/image/small?v=1768601124\" height=\"20\"> Bologna",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Pisa",
+                                    "icon": "https://img.rapid-api.icu/football/team/adfc3610e9d94c45c8cae0cd2c7d6e2b/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Bologna",
+                                    "icon": "https://img.rapid-api.icu/football/team/4bd880d3beb68a5e39c5f9648aeb59dd/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "00:30 | 03/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Italian Serie A",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -1032,18 +1014,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-3b4a3dd9c31b",
+                            "id": "src-178195dacbc4",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-67dcfafc2867",
+                                    "id": "ct-e427b3e1503b",
                                     "streams": [
                                         {
-                                            "id": "st-0441bdbc8aac",
+                                            "id": "st-ed8c17c05c77",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4d9960f1b2c9",
+                                                    "id": "lnk-1de5ca2cfb83",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1067,7 +1049,7 @@
                     ]
                 },
                 {
-                    "id": "ch-0d5303d6bc1a",
+                    "id": "ch-dc3cc0939fd0",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1076,19 +1058,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/c26824a53e791f4fcafc7b5405a9a458/image/small?v=1768601124\" height=\"20\"> Udinese vs <img src=\"https://img.rapid-api.icu/football/team/fe835ae83ef47dad92b3a40f5579510b/image/small?v=1768601124\" height=\"20\"> Fiorentina",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Udinese",
+                                    "icon": "https://img.rapid-api.icu/football/team/c26824a53e791f4fcafc7b5405a9a458/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Fiorentina",
+                                    "icon": "https://img.rapid-api.icu/football/team/fe835ae83ef47dad92b3a40f5579510b/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "02:45 | 03/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Italian Serie A",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -1106,18 +1099,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-87099aa883dc",
+                            "id": "src-5d8384f0a733",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-a7ea89b346a9",
+                                    "id": "ct-7295bb2cea51",
                                     "streams": [
                                         {
-                                            "id": "st-70a96476b430",
+                                            "id": "st-2e50de9ec1a3",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-9ddc5af8a092",
+                                                    "id": "lnk-aa9d89760f86",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1141,7 +1134,7 @@
                     ]
                 },
                 {
-                    "id": "ch-e6c1f9f5aec4",
+                    "id": "ch-8548a9d817e3",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1150,19 +1143,30 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "center",
-                            "text": "<img src=\"https://img.rapid-api.icu/football/team/946ca6ff50107aa2aa51fc0ddbb7fe6d/image/small?v=1768601124\" height=\"20\"> Real Madrid vs <img src=\"https://img.rapid-api.icu/football/team/d7682ca79050d2d8bc90139131b0a600/image/small?v=1768601124\" height=\"20\"> Getafe",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF"
+                            "type": "row",
+                            "justify": "center",
+                            "items": [
+                                {
+                                    "text": "Real Madrid",
+                                    "icon": "https://img.rapid-api.icu/football/team/946ca6ff50107aa2aa51fc0ddbb7fe6d/image/small?v=1768601124"
+                                },
+                                {
+                                    "text": "vs"
+                                },
+                                {
+                                    "text": "Getafe",
+                                    "icon": "https://img.rapid-api.icu/football/team/d7682ca79050d2d8bc90139131b0a600/image/small?v=1768601124"
+                                }
+                            ]
                         },
                         {
-                            "position": "bottom-left",
+                            "position": "top-right",
                             "text": "03:00 | 03/03",
                             "color": "#4CAF50",
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "position": "top-right",
+                            "position": "bottom-right",
                             "text": "Spanish La Liga",
                             "color": "#FF9800",
                             "text_color": "#FFFFFF"
@@ -1180,18 +1184,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-50b829dfc83e",
+                            "id": "src-81d112a8bc3e",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-4d48f515f69b",
+                                    "id": "ct-897d93ce84a8",
                                     "streams": [
                                         {
-                                            "id": "st-42788144856e",
+                                            "id": "st-5ec586e18924",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ead1c5fcd3e6",
+                                                    "id": "lnk-643941a612c8",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
