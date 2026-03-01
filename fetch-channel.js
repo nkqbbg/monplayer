@@ -243,6 +243,50 @@ async function main() {
                                                     { "key": "Referer", "value": item.link },
                                                     { "key": "User-Agent", "value": "Mozilla/5.0" }
                                                 ]
+                                            },
+                                            {
+                                                "id": generateId('lnk'),
+                                                "name": "SD",
+                                                "type": "hls",
+                                                "default": true,
+                                                "url": item.streams.sd,
+                                                "request_headers": [
+                                                    { "key": "Referer", "value": item.link },
+                                                    { "key": "User-Agent", "value": "Mozilla/5.0" }
+                                                ]
+                                            },
+                                            {
+                                                "id": generateId('lnk'),
+                                                "name": "FullHD",
+                                                "type": "hls",
+                                                "default": true,
+                                                "url": item.streams.fullhd,
+                                                "request_headers": [
+                                                    { "key": "Referer", "value": item.link },
+                                                    { "key": "User-Agent", "value": "Mozilla/5.0" }
+                                                ]
+                                            },
+                                            {
+                                                "id": generateId('lnk'),
+                                                "name": "fl",
+                                                "type": "hls",
+                                                "default": true,
+                                                "url": item.streams.fl,
+                                                "request_headers": [
+                                                    { "key": "Referer", "value": item.link },
+                                                    { "key": "User-Agent", "value": "Mozilla/5.0" }
+                                                ]
+                                            },
+                                            {
+                                                "id": generateId('lnk'),
+                                                "name": "flv2",
+                                                "type": "hls",
+                                                "default": true,
+                                                "url": item.streams.flv2,
+                                                "request_headers": [
+                                                    { "key": "Referer", "value": item.link },
+                                                    { "key": "User-Agent", "value": "Mozilla/5.0" }
+                                                ]
                                             }
                                         ]
                                     }

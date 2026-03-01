@@ -27,7 +27,7 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-df3b8b0d5eef",
+                    "id": "ch-664cb8d0cf70",
                     "labels": [
                         {
                             "position": "top-left",
@@ -68,22 +68,89 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-f7f3d60fd238",
+                            "id": "src-d38eb0cc3776",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-8385e084a7fd",
+                                    "id": "ct-2a9de0609cf3",
                                     "streams": [
                                         {
-                                            "id": "st-1bcc89eb6fb7",
+                                            "id": "st-b8e525beed44",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-760b34f14ff7",
+                                                    "id": "lnk-a650b9057e35",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
                                                     "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/torino-vs-lazio-2398816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-4e3c7ddbf81d",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/torino-vs-lazio-2398816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-19f6dcf4a262",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/torino-vs-lazio-2398816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-06b1019cc65c",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/torino-vs-lazio-2398816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-e1d795bbf103",
+                                                    "name": "flv2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -104,7 +171,7 @@
                     ]
                 },
                 {
-                    "id": "ch-ec4c82a73905",
+                    "id": "ch-0f0c9f4504ca",
                     "labels": [
                         {
                             "position": "top-left",
@@ -145,19 +212,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-38053a9ab772",
+                            "id": "src-370f5e7ac254",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-350507c29832",
+                                    "id": "ct-1f509d0d385f",
                                     "streams": [
                                         {
-                                            "id": "st-6295d4279efb",
+                                            "id": "st-6f40055ab009",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-3b8aa8cedf3d",
+                                                    "id": "lnk-5b0f62416286",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-betis-vs-sevilla-fc-2398840"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2f718e2eb45d",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-betis-vs-sevilla-fc-2398840"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-56d7d097e69e",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-betis-vs-sevilla-fc-2398840"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0fba3a7ed16e",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-betis-vs-sevilla-fc-2398840"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-bdc67548cd19",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -180,7 +311,7 @@
                     ]
                 },
                 {
-                    "id": "ch-188a671266a1",
+                    "id": "ch-59100ef013f1",
                     "labels": [
                         {
                             "position": "top-left",
@@ -221,19 +352,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-077ed0da173b",
+                            "id": "src-040481279372",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-95bdc5eb3fa9",
+                                    "id": "ct-3cb7677b28f1",
                                     "streams": [
                                         {
-                                            "id": "st-d05c30f67491",
+                                            "id": "st-417d319faf73",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-836246713ff3",
+                                                    "id": "lnk-3e5562f3c3c1",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-bd8cb7951ea8",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5062008cec37",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8b7241395d52",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6e84122a2c48",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -256,7 +451,7 @@
                     ]
                 },
                 {
-                    "id": "ch-179681ec3474",
+                    "id": "ch-071fc04c0836",
                     "labels": [
                         {
                             "position": "top-left",
@@ -297,19 +492,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-01728f3fe584",
+                            "id": "src-ec1e13fae8fc",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-3a0a7ec0e781",
+                                    "id": "ct-7d571db59acf",
                                     "streams": [
                                         {
-                                            "id": "st-75842a9e0777",
+                                            "id": "st-d1656f5e0e9d",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-cc8be500e847",
+                                                    "id": "lnk-5c5d46339dc8",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a7069176a6aa",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-51860e2356c0",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b12312b9a8b5",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-90a67747de21",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -332,7 +591,7 @@
                     ]
                 },
                 {
-                    "id": "ch-10a008f666b1",
+                    "id": "ch-422b97053b18",
                     "labels": [
                         {
                             "position": "top-left",
@@ -373,19 +632,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-4f5a0e8dc6cd",
+                            "id": "src-b0784c2924ef",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-b05bdc222bb9",
+                                    "id": "ct-8e9e92206271",
                                     "streams": [
                                         {
-                                            "id": "st-7cd7bf89bffe",
+                                            "id": "st-95d558fe05cb",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-6e9af034775e",
+                                                    "id": "lnk-5ecebb586f97",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d682d796c97a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-afabfb5291be",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-182819097b1d",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-582d71012387",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -408,7 +731,7 @@
                     ]
                 },
                 {
-                    "id": "ch-cf5741169ecf",
+                    "id": "ch-754618e6172c",
                     "labels": [
                         {
                             "position": "top-left",
@@ -449,19 +772,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-1939754e5a36",
+                            "id": "src-f41980949eea",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-048276340123",
+                                    "id": "ct-394b8af0e9d3",
                                     "streams": [
                                         {
-                                            "id": "st-4b527e295473",
+                                            "id": "st-8afaf1ea9c22",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-29beb7e05870",
+                                                    "id": "lnk-e23822b01f3c",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/daejeon-citizen-vs-fc-anyang-2398984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0ab81bcc887c",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/daejeon-citizen-vs-fc-anyang-2398984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-61964b181db9",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/daejeon-citizen-vs-fc-anyang-2398984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2d91d67f5ccc",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/daejeon-citizen-vs-fc-anyang-2398984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-da15a93d3bb6",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -484,7 +871,7 @@
                     ]
                 },
                 {
-                    "id": "ch-3b10f8c62d35",
+                    "id": "ch-526cc2c3ebdd",
                     "labels": [
                         {
                             "position": "top-left",
@@ -525,19 +912,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-1fdf74406e03",
+                            "id": "src-c84b3377ea57",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-6db3c2d7ac8c",
+                                    "id": "ct-221c9e6a197c",
                                     "streams": [
                                         {
-                                            "id": "st-7a9c14d8e814",
+                                            "id": "st-9f63db52e39c",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a85d38dc73dc",
+                                                    "id": "lnk-cf744066bf84",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-99e7f6afe406",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-67eb2cbdc5e9",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0d95472c39fc",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b822d98335fa",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -560,7 +1011,7 @@
                     ]
                 },
                 {
-                    "id": "ch-bfc7b51eed1e",
+                    "id": "ch-8193ee19b82a",
                     "labels": [
                         {
                             "position": "top-left",
@@ -601,19 +1052,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-f033d6b037af",
+                            "id": "src-da9af9ea8557",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-bb426c134520",
+                                    "id": "ct-347659a6dd00",
                                     "streams": [
                                         {
-                                            "id": "st-cecf4a609e99",
+                                            "id": "st-4fcf5b24c18f",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-374c8473e391",
+                                                    "id": "lnk-e0135009ffd7",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ad09ff23b97e",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-901f66daa85d",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1f5605aabf83",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-57c62a535ee8",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -636,7 +1151,7 @@
                     ]
                 },
                 {
-                    "id": "ch-08b0ade8e000",
+                    "id": "ch-d40f7305182a",
                     "labels": [
                         {
                             "position": "top-left",
@@ -677,19 +1192,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-4eaba2aa95f1",
+                            "id": "src-c1e7a7056db0",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-38b36b4f7c54",
+                                    "id": "ct-4a6d83523da6",
                                     "streams": [
                                         {
-                                            "id": "st-095a4c204263",
+                                            "id": "st-704c0a752af5",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-90942a710132",
+                                                    "id": "lnk-8e117aa57701",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-10bf3eb1446f",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-382b6bac1a7c",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ecf0d2b4ba6e",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6b7e6a3516a4",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -712,7 +1291,7 @@
                     ]
                 },
                 {
-                    "id": "ch-f9ee887c7b9a",
+                    "id": "ch-45afe72fc920",
                     "labels": [
                         {
                             "position": "top-left",
@@ -753,19 +1332,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-2d5653cf2f21",
+                            "id": "src-e50873f2a131",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-790ce9e3dabe",
+                                    "id": "ct-3945ada09875",
                                     "streams": [
                                         {
-                                            "id": "st-548f6f745ce8",
+                                            "id": "st-f09a1dd8cd56",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-aae6c6c8bc54",
+                                                    "id": "lnk-129a64c714b6",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-41c72ec8c0ae",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-26c116205a0c",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0dbe49fa97c1",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0a067a6fd837",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -788,7 +1431,7 @@
                     ]
                 },
                 {
-                    "id": "ch-3ca91528699b",
+                    "id": "ch-9144aaab5ec2",
                     "labels": [
                         {
                             "position": "top-left",
@@ -829,19 +1472,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-efbf9770091c",
+                            "id": "src-3772e0cb74b4",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-1fb38fbe73b4",
+                                    "id": "ct-d76fe7174e4a",
                                     "streams": [
                                         {
-                                            "id": "st-33b78b7037c8",
+                                            "id": "st-23704d91d794",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0ea45f3f55df",
+                                                    "id": "lnk-04a01eefc02f",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3ba9ca2af48c",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d6f7f7cc5ab0",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d6f0c823f946",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f9e4aed46e23",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -864,7 +1571,7 @@
                     ]
                 },
                 {
-                    "id": "ch-14f8e8e7cbae",
+                    "id": "ch-e8bbf804a441",
                     "labels": [
                         {
                             "position": "top-left",
@@ -905,19 +1612,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-c02f02d32048",
+                            "id": "src-a58253c03b46",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-83392f2a7722",
+                                    "id": "ct-fb99676bda23",
                                     "streams": [
                                         {
-                                            "id": "st-70ad2255e671",
+                                            "id": "st-0a584b81af69",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-530511a59af1",
+                                                    "id": "lnk-e30813bff046",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d52a3861e722",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1216821b4b0c",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-18276429cc8a",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0222296d345a",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
@@ -940,7 +1711,7 @@
                     ]
                 },
                 {
-                    "id": "ch-af59f492610a",
+                    "id": "ch-976196a580e7",
                     "labels": [
                         {
                             "position": "top-left",
@@ -981,19 +1752,83 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-334eba59db0a",
+                            "id": "src-fbaee6b26620",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-e2b9b19e4a15",
+                                    "id": "ct-6e47a0eb7093",
                                     "streams": [
                                         {
-                                            "id": "st-822775eee6a7",
+                                            "id": "st-b2e5351f1b98",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-f2c1fd49ef98",
+                                                    "id": "lnk-b09093569ee1",
                                                     "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-12c7de061e1a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-06311c7865ea",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b5ccc6402c38",
+                                                    "name": "fl",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-13022cacf08e",
+                                                    "name": "flv2",
                                                     "type": "hls",
                                                     "default": true,
                                                     "request_headers": [
