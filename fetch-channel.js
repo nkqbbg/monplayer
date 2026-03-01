@@ -191,15 +191,11 @@ async function main() {
                     },
                     {
                         "position": "center",
-                        "type": "match",
-                        "home": {
-                          "name": item.teams.home.name,
-                          "icon": item.teams.home.icon
-                        },
-                        "away": {
-                          "name": item.teams.away.name,
-                          "icon": item.teams.away.icon
-                        }
+                        "text": `${item.teams.home.name} - ${item.teams.away.name}`,
+                        "color": "#2196F3",
+                        "text_color": "#FFFFFF",
+                        "font_size": 22,
+                        "font_weight": "bold"
                     },
                     {
                         "position": "top-right",
