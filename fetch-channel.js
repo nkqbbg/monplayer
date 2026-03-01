@@ -268,7 +268,7 @@ async function main() {
                                             },
                                             {
                                                 "id": generateId('lnk'),
-                                                "name": "fl",
+                                                "name": "FL",
                                                 "type": "hls",
                                                 "default": true,
                                                 "url": item.streams.fl,
@@ -279,7 +279,7 @@ async function main() {
                                             },
                                             {
                                                 "id": generateId('lnk'),
-                                                "name": "flv2",
+                                                "name": "FLV2",
                                                 "type": "hls",
                                                 "default": true,
                                                 "url": item.streams.flv2,
