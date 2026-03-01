@@ -97,14 +97,14 @@ async function scrapeSoccer() {
                 backUrl: backgroundUrl,
 
                 teams: {
-                home: {
-                    name: home,
-                    icon: homeIcon
-                },
-                away: {
-                    name: away,
-                    icon: awayIcon
-                }
+                    home: {
+                        name: home,
+                        icon: homeIcon
+                    },
+                    away: {
+                        name: away,
+                        icon: awayIcon
+                    }
                 },
 
                 icons: {
@@ -191,7 +191,7 @@ async function main() {
                     },
                     {
                         "position": "center",
-                        "text": `${item.home} vs ${item.away}`,
+                        "text": `${item.teams.home.name} vs ${item.teams.away.name}`,
                         "color": "#2196F3",
                         "text_color": "#FFFFFF"
                     },
@@ -202,7 +202,7 @@ async function main() {
                         "text_color": "#FFFFFF"
                     },
                     {
-                        "position": "bottom-right",
+                        "position": "top-right",
                         "text": item.league || "",
                         "color": "#FF9800",
                         "text_color": "#FFFFFF"
