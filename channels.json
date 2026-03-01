@@ -11,6 +11,7 @@
         "url": "https://tt.8share.pro/buncha"
     },
     "notice": {
+        "visible": false,
         "closeable": true,
         "icon": "https://media.hth4nh.eu.org/static/img/tele.png",
         "id": "notice",
@@ -21,26 +22,31 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "display": "horizontal",
+            "display": "vertical",
             "grid_number": 2,
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-3099fa7f3de5",
-                    "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
+                    "id": "ch-08601306f6d7",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "23:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "Live Stream",
+                    "description": "23:30",
                     "image": {
                         "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 460,
+                        "width": 600,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -48,78 +54,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-19be0e4ccfcd",
+                            "id": "src-cd0f616ea687",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-93dee6967fdb",
-                                    "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
+                                    "id": "ct-c6ccac37ef19",
                                     "streams": [
                                         {
-                                            "id": "st-7cad096e9c91",
+                                            "id": "st-c6f8e982826d",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-bb7faa8c57c9",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/havre-athletic-club-vs-paris-saint-germain-2397996"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-4f097802ed40",
-                    "name": "arsenal-vs-chelsea-2398804",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "Live Stream",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-749079fb5554",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-eb24be2b38c9",
-                                    "name": "arsenal-vs-chelsea-2398804",
-                                    "streams": [
-                                        {
-                                            "id": "st-5e78058bae5d",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-8747fc206889",
+                                                    "id": "lnk-d2d5fc66d9d0",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -144,21 +90,26 @@
                     ]
                 },
                 {
-                    "id": "ch-54c514a7d0b8",
-                    "name": "arsenal-chelsea-2400404",
+                    "id": "ch-7abdbbbf620d",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "23:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "Live Stream",
+                    "description": "23:30",
                     "image": {
                         "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 460,
+                        "width": 600,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -166,19 +117,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-57ebb54392e9",
+                            "id": "src-a6d55a09a4db",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-4c72311b8a24",
-                                    "name": "arsenal-chelsea-2400404",
+                                    "id": "ct-0c50aea4971a",
                                     "streams": [
                                         {
-                                            "id": "st-c977c4efa354",
+                                            "id": "st-e772678acd34",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-3158ba1c83ce",
+                                                    "id": "lnk-79de93030046",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -203,21 +153,26 @@
                     ]
                 },
                 {
-                    "id": "ch-1b5b509553d1",
-                    "name": "arsenal-fan-chelsea-2400406",
+                    "id": "ch-ca3948f99f38",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "23:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "Live Stream",
+                    "description": "23:30",
                     "image": {
                         "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 460,
+                        "width": 600,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -225,19 +180,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-1f74581dce97",
+                            "id": "src-30dd7c314461",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-92759ba0a004",
-                                    "name": "arsenal-fan-chelsea-2400406",
+                                    "id": "ct-75768651c851",
                                     "streams": [
                                         {
-                                            "id": "st-c8088665862c",
+                                            "id": "st-24f3295f5eae",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-36fa62b10194",
+                                                    "id": "lnk-a01e059072dc",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -246,6 +200,813 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://hoadaotv.org/arsenal-fan-chelsea-2400406"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-90a367973784",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "00:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "00:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-49bd4fa8270f",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-889758f92aaf",
+                                    "streams": [
+                                        {
+                                            "id": "st-a5cef2fde306",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-d7cb547b3085",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/torino-vs-lazio-2398816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-59ebfd3a4629",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "00:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "00:30",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-745ecf24472d",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-d87edc3e16dd",
+                                    "streams": [
+                                        {
+                                            "id": "st-b0c54bc1cced",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-6442aa1d5bbf",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-betis-vs-sevilla-fc-2398840"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-37f7d903dda2",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "02:45",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "02:45",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-b096aabf1dc6",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-e624e6dd8527",
+                                    "streams": [
+                                        {
+                                            "id": "st-717dd679eaee",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-9f9e0c6fc77b",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-13b570868b8c",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "02:45",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "02:45",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-944e16423737",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-4802f42d0a03",
+                                    "streams": [
+                                        {
+                                            "id": "st-18a09c9cb8f5",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-768ac3e4b53b",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8515a37f30da",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "07:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "07:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-d8fd3bf73d3a",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-191a996695ea",
+                                    "streams": [
+                                        {
+                                            "id": "st-6f45e43e738a",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-4ed40314c4cd",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9a873b54ae64",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "12:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "12:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-5041e55c4470",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-bd7ae5444550",
+                                    "streams": [
+                                        {
+                                            "id": "st-2589fb2c225c",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-852dd23cb6b9",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/daejeon-citizen-vs-fc-anyang-2398984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-2050d25b3f72",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "15:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "15:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-139b11826a39",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-a3536f42d36a",
+                                    "streams": [
+                                        {
+                                            "id": "st-35520bd083b0",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-885039716d8b",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1020610dad73",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "18:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "18:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-8a3f352e0078",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-85659a85b176",
+                                    "streams": [
+                                        {
+                                            "id": "st-a16dda319ecc",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-dfbdfb2abdc1",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0a44740d12a9",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "18:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "18:30",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-802c4af65755",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-a3e754a74636",
+                                    "streams": [
+                                        {
+                                            "id": "st-92099ba7f0f8",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-b86da61b7464",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ae72ff7d080e",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "23:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "23:30",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-cc269bd1925b",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-1328b30352cd",
+                                    "streams": [
+                                        {
+                                            "id": "st-3a2952eeb87a",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1897d0089bbf",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d57a1cf0b014",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "00:30",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "00:30",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-b1c49f80ad84",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-649763529684",
+                                    "streams": [
+                                        {
+                                            "id": "st-424075db8615",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-208aba2394c3",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-149f5e5acc09",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "02:45",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "02:45",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-b50131dc8e93",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-9cde3e1153c2",
+                                    "streams": [
+                                        {
+                                            "id": "st-53772f416dd9",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-b63f259ea8c7",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-c2791ba990d7",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "03:00",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "description": "03:00",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                        "height": 460,
+                        "width": 600,
+                        "display": "cover",
+                        "shape": "square"
+                    },
+                    "type": "single",
+                    "display": "text-below",
+                    "sources": [
+                        {
+                            "id": "src-35ab1b8b0e56",
+                            "name": "Server 1",
+                            "contents": [
+                                {
+                                    "id": "ct-f2a9fb769960",
+                                    "streams": [
+                                        {
+                                            "id": "st-4d0c3a6bdfb7",
+                                            "name": "Server 1",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-f0305df93d9d",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
                                                         },
                                                         {
                                                             "key": "User-Agent",

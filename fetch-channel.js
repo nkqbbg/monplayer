@@ -27,6 +27,7 @@ async function scrapeSoccer() {
 
         const html = response.data;
         const $ = cheerio.load(html);
+        // console.log($);
         const btnWatchElements = $('.btn-watch');
         console.log(`✅ Found ${btnWatchElements.length} elements with class "btn-watch":\n`);
 
@@ -38,32 +39,49 @@ async function scrapeSoccer() {
             elementLinks.unshift(testLink);
         }
 
-        const list = [];
-        // Use for...of to correctly await async calls
-        for (const link of elementLinks) {
-            if (!link || link.includes("www")) continue;
+        const matches = [];
 
-            const fullLink = link.startsWith('http') ? link : `https://hoadaotv.org${link}`;
-            const label = link.replace("/", "");
+        for (const el of $('.cm-wrap').toArray()) {
+        const card = $(el);
 
-            console.log('🔗 Processing Label: ', label);
-            const streamLinks = await scrapelink(fullLink);
+        const home = card.find('.team-home .name-short').text().trim();
+        const away = card.find('.team-away .name-short').text().trim();
 
-            if (streamLinks) {
-                console.log(`✅ Found stream links for: ${label}`);
-                console.log({streamLinks})
-                list.push({
-                    label: label,
-                    link: fullLink,
-                    streamLinks: streamLinks
-                });
-            }
+        const [time, date] = card
+            .find('.time span')
+            .map((i, el) => $(el).text().trim())
+            .get();
+
+        const matchPath = card.find('.match-link-overlay').attr('href');
+
+        if (!matchPath) continue;
+
+        const matchLink = matchPath.startsWith('http')
+            ? matchPath
+            : `https://hoadaotv.org${matchPath}`;
+
+        console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
+
+        const streamLinks = await scrapelink(matchLink);
+
+        matches.push({
+            home,
+            away,
+            time,
+            date,
+            link: matchLink,
+            streams: streamLinks || []
+        });
         }
 
-        if (list.length === 0) {
-            console.log('⚠️ No channels with stream links found.');
+        console.log(matches);
+
+        const hasStream = matches.some(m => m.streams && Object.keys(m.streams).length > 0);
+
+        if (!hasStream) {
+        console.log('⚠️ No stream links found.');
         }
-        return list;
+        return matches;
 
     } catch (error) {
         console.error('❌ Error during scraping:', error.message);
@@ -101,7 +119,7 @@ async function scrapelink(link) {
 async function main() {
     console.log('🏁 Starting Scraper...');
     const list = await scrapeSoccer();
-
+    console.log(list);
     console.log(`\n📊 Scraping finished. Total channels with streams: ${list.length}`);
 
     if (list.length === 0) {
@@ -118,6 +136,7 @@ async function main() {
         const templateData = JSON.parse(fs.readFileSync(templatePath, 'utf8'));
 
         const channels = list.map(item => {
+            // console.log({item})
             const channelId = generateId('ch');
             return {
                 "id": channelId,
@@ -128,13 +147,19 @@ async function main() {
                         "text": "● Live",
                         "color": "#FF0000",
                         "text_color": "#FFFFFF"
+                    },
+                    {
+                        "position": "center",
+                        "text": item.time,
+                        "color": "#4CAF50",
+                        "text_color": "#FFFFFF"
                     }
                 ],
-                "description": "Live Stream",
+                "description": item.time,
                 "image": templateData.groups[0]?.channels[0]?.image || {
-                    "url": "https://kaytee1012.github.io/buncha_logo.png",
-                    "height": 480,
-                    "width": 640,
+                    "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+                    "height": 460,
+                    "width": 600,
                     "display": "cover",
                     "shape": "square"
                 },
@@ -158,7 +183,7 @@ async function main() {
                                                 "name": "HD",
                                                 "type": "hls",
                                                 "default": true,
-                                                "url": item.streamLinks.hd || item.streamLinks.fullhd || item.streamLinks.sd,
+                                                "url": item.streams.hd || item.streams.fullhd || item.streams.sd,
                                                 "request_headers": [
                                                     { "key": "Referer", "value": item.link },
                                                     { "key": "User-Agent", "value": "Mozilla/5.0" }
