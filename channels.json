@@ -27,7 +27,7 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-93ed9eca5fdd",
+                    "id": "ch-7c222784af37",
                     "labels": [
                         {
                             "position": "top-left",
@@ -36,21 +36,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Arsenal",
-                                    "icon": "https://img.rapid-api.icu/football/team/42b8a7886e54d35cf818dd6c497a8b2f/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Chelsea",
-                                    "icon": "https://img.rapid-api.icu/football/team/3608721168c00e7d2709faae8b4150df/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Arsenal",
+                                "icon": "https://img.rapid-api.icu/football/team/42b8a7886e54d35cf818dd6c497a8b2f/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Chelsea",
+                                "icon": "https://img.rapid-api.icu/football/team/3608721168c00e7d2709faae8b4150df/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -77,18 +72,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-4eb38c5a1f53",
+                            "id": "src-c94ffc78bc18",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-9f0e2b842870",
+                                    "id": "ct-75adcf4e313c",
                                     "streams": [
                                         {
-                                            "id": "st-8d548dc9b54c",
+                                            "id": "st-ec7489b88ac1",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-827261257074",
+                                                    "id": "lnk-0d30b00dc5ed",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -113,7 +108,7 @@
                     ]
                 },
                 {
-                    "id": "ch-110c87c1da8c",
+                    "id": "ch-025739e58989",
                     "labels": [
                         {
                             "position": "top-left",
@@ -122,21 +117,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Torino",
-                                    "icon": "https://img.rapid-api.icu/football/team/fffd8f76ea5126aa8515a4ddf29e3447/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Lazio",
-                                    "icon": "https://img.rapid-api.icu/football/team/034e790ea96a556fe3b89568347a5c2d/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Torino",
+                                "icon": "https://img.rapid-api.icu/football/team/fffd8f76ea5126aa8515a4ddf29e3447/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Lazio",
+                                "icon": "https://img.rapid-api.icu/football/team/034e790ea96a556fe3b89568347a5c2d/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -163,18 +153,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-b808f00bd2c4",
+                            "id": "src-85978139a90c",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-3ef037d2c953",
+                                    "id": "ct-362d0a997aa9",
                                     "streams": [
                                         {
-                                            "id": "st-4f6acf5222fd",
+                                            "id": "st-cc80c24b8ffe",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a898aac37722",
+                                                    "id": "lnk-620ff46f49f9",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -199,7 +189,7 @@
                     ]
                 },
                 {
-                    "id": "ch-ead711b93955",
+                    "id": "ch-6df20d540f54",
                     "labels": [
                         {
                             "position": "top-left",
@@ -208,21 +198,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Real Betis",
-                                    "icon": "https://img.rapid-api.icu/football/team/8cea83e71494928de3ba9b45ffc3f97e/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Sevilla FC",
-                                    "icon": "https://img.rapid-api.icu/football/team/a009e15fa68885f5bbef6867272fb17f/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Real Betis",
+                                "icon": "https://img.rapid-api.icu/football/team/8cea83e71494928de3ba9b45ffc3f97e/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Sevilla FC",
+                                "icon": "https://img.rapid-api.icu/football/team/a009e15fa68885f5bbef6867272fb17f/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -249,18 +234,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-e59198b10ac7",
+                            "id": "src-0007bbfb495d",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-575578f59ebe",
+                                    "id": "ct-53be0e36da90",
                                     "streams": [
                                         {
-                                            "id": "st-575ae8c33323",
+                                            "id": "st-ea9db56723f4",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-9dd3c7136aca",
+                                                    "id": "lnk-d01a3d506178",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -284,7 +269,7 @@
                     ]
                 },
                 {
-                    "id": "ch-d0d5e413138b",
+                    "id": "ch-81da2d6bfc2a",
                     "labels": [
                         {
                             "position": "top-left",
@@ -293,21 +278,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "AS Roma",
-                                    "icon": "https://img.rapid-api.icu/football/team/45de99d8eedecac58ee6ea005e11ab0c/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Juventus",
-                                    "icon": "https://img.rapid-api.icu/football/team/e920c56ae5ec3de93095b288a7cf2f21/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "AS Roma",
+                                "icon": "https://img.rapid-api.icu/football/team/45de99d8eedecac58ee6ea005e11ab0c/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Juventus",
+                                "icon": "https://img.rapid-api.icu/football/team/e920c56ae5ec3de93095b288a7cf2f21/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -334,18 +314,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-e2206807530c",
+                            "id": "src-9ea9586e2071",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-7492ab109216",
+                                    "id": "ct-cf50d80d7e9c",
                                     "streams": [
                                         {
-                                            "id": "st-18b8f6bd2649",
+                                            "id": "st-ba1c860f07ce",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-77993252f0a3",
+                                                    "id": "lnk-30787dbe2c11",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -369,7 +349,7 @@
                     ]
                 },
                 {
-                    "id": "ch-9e5b98882ffd",
+                    "id": "ch-1bf59dac40da",
                     "labels": [
                         {
                             "position": "top-left",
@@ -378,21 +358,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Marseille",
-                                    "icon": "https://img.rapid-api.icu/football/team/a527f35826813a2dbe58570a90cdf218/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Lyon",
-                                    "icon": "https://img.rapid-api.icu/football/team/682bf012599cc69b90c541559f6e60ed/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Marseille",
+                                "icon": "https://img.rapid-api.icu/football/team/a527f35826813a2dbe58570a90cdf218/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Lyon",
+                                "icon": "https://img.rapid-api.icu/football/team/682bf012599cc69b90c541559f6e60ed/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -419,18 +394,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-9bd3a4bdde21",
+                            "id": "src-92489eeb9aac",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-c65209f5138a",
+                                    "id": "ct-07679be05c1a",
                                     "streams": [
                                         {
-                                            "id": "st-17323cb8d8d6",
+                                            "id": "st-eaf4a3f3442c",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4e4f283ebd17",
+                                                    "id": "lnk-a77f7b4527a6",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -454,7 +429,7 @@
                     ]
                 },
                 {
-                    "id": "ch-e419e34ef0f7",
+                    "id": "ch-9db1665138df",
                     "labels": [
                         {
                             "position": "top-left",
@@ -463,21 +438,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Orlando City",
-                                    "icon": "https://img.rapid-api.icu/football/team/f4c0bc2d425973294f92e1b46a6fdd4d/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Inter Miami CF",
-                                    "icon": "https://img.rapid-api.icu/football/team/c02e9bcd73ba4bb045977867abf5e4ab/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Orlando City",
+                                "icon": "https://img.rapid-api.icu/football/team/f4c0bc2d425973294f92e1b46a6fdd4d/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Inter Miami CF",
+                                "icon": "https://img.rapid-api.icu/football/team/c02e9bcd73ba4bb045977867abf5e4ab/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -504,18 +474,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-0d52e2df3641",
+                            "id": "src-73fb73b03dc3",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-c1610e896cca",
+                                    "id": "ct-20297cb6f937",
                                     "streams": [
                                         {
-                                            "id": "st-4d9a53a53e13",
+                                            "id": "st-e64996013ad6",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-def53ba46c03",
+                                                    "id": "lnk-d797a119e71d",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -539,7 +509,7 @@
                     ]
                 },
                 {
-                    "id": "ch-8b0bccf56edc",
+                    "id": "ch-a962ba8c996d",
                     "labels": [
                         {
                             "position": "top-left",
@@ -548,21 +518,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Daejeon Citizen",
-                                    "icon": "https://img.rapid-api.icu/football/team/25c697eefddd230651e9502912458072/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "FC Anyang",
-                                    "icon": "https://img.rapid-api.icu/football/team/7dcc98a805f95fb8ad561ce28590c761/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Daejeon Citizen",
+                                "icon": "https://img.rapid-api.icu/football/team/25c697eefddd230651e9502912458072/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "FC Anyang",
+                                "icon": "https://img.rapid-api.icu/football/team/7dcc98a805f95fb8ad561ce28590c761/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -589,18 +554,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-99d3aa2e3200",
+                            "id": "src-12dcb95da2a0",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-23419814bf13",
+                                    "id": "ct-ce48b2b8a7d1",
                                     "streams": [
                                         {
-                                            "id": "st-aa6533bb9c10",
+                                            "id": "st-84495638eea4",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ca308a62f2e1",
+                                                    "id": "lnk-4ddd8f025a74",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -624,7 +589,7 @@
                     ]
                 },
                 {
-                    "id": "ch-7795246547c4",
+                    "id": "ch-00bc981cbc4b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -633,21 +598,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Việt Nam Nữ",
-                                    "icon": "https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Indonesia Nữ",
-                                    "icon": "https://static.flashscore.com/res/image/data/WvrcHkXg-QBz8eAFI.png"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Việt Nam Nữ",
+                                "icon": "https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png"
+                            },
+                            "away": {
+                                "name": "Indonesia Nữ",
+                                "icon": "https://static.flashscore.com/res/image/data/WvrcHkXg-QBz8eAFI.png"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -674,18 +634,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-57b7bd2af726",
+                            "id": "src-9c0cd863b4c2",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-a4e182dc18de",
+                                    "id": "ct-cafd66436171",
                                     "streams": [
                                         {
-                                            "id": "st-1fee3963b218",
+                                            "id": "st-8fa7cacb0443",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-58de875573a2",
+                                                    "id": "lnk-309027dffec4",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -709,7 +669,7 @@
                     ]
                 },
                 {
-                    "id": "ch-7e2874efe680",
+                    "id": "ch-ef1507c5bc0b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -718,21 +678,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "SC Poltava",
-                                    "icon": "https://img.rapid-api.icu/football/team/5a4ba875fb179efe94d21e6c4f0b68ad/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Kudrivka",
-                                    "icon": "https://img.rapid-api.icu/football/team/e352e7e52f914f92d3452d8077d7afd9/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "SC Poltava",
+                                "icon": "https://img.rapid-api.icu/football/team/5a4ba875fb179efe94d21e6c4f0b68ad/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Kudrivka",
+                                "icon": "https://img.rapid-api.icu/football/team/e352e7e52f914f92d3452d8077d7afd9/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -759,18 +714,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-b598595701c2",
+                            "id": "src-78f3bccc71ff",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-56da794f1edf",
+                                    "id": "ct-afbc6cc3d1b5",
                                     "streams": [
                                         {
-                                            "id": "st-7f1d0a308261",
+                                            "id": "st-d5d3e31cf2d4",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c232c0c4f08e",
+                                                    "id": "lnk-3d711e69282e",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -794,7 +749,7 @@
                     ]
                 },
                 {
-                    "id": "ch-60d23d13491f",
+                    "id": "ch-666bc2305ae3",
                     "labels": [
                         {
                             "position": "top-left",
@@ -803,21 +758,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Thái Lan Nữ",
-                                    "icon": "https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Úc Nữ",
-                                    "icon": "https://static.flashscore.com/res/image/data/Ygu7zgHG-YNb3oHYR.png"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Thái Lan Nữ",
+                                "icon": "https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png"
+                            },
+                            "away": {
+                                "name": "Úc Nữ",
+                                "icon": "https://static.flashscore.com/res/image/data/Ygu7zgHG-YNb3oHYR.png"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -844,18 +794,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-9a39bc593b81",
+                            "id": "src-b06c61fa289e",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-13fc4faf5129",
+                                    "id": "ct-67090c7e032d",
                                     "streams": [
                                         {
-                                            "id": "st-44f687e20183",
+                                            "id": "st-6743604db2e2",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e4a0c9f5be78",
+                                                    "id": "lnk-8dffc15e9513",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -879,7 +829,7 @@
                     ]
                 },
                 {
-                    "id": "ch-9320c4ddfe9b",
+                    "id": "ch-6819482c1d07",
                     "labels": [
                         {
                             "position": "top-left",
@@ -888,21 +838,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Rodina Moscow",
-                                    "icon": "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Shinnik Yaroslavl",
-                                    "icon": "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Rodina Moscow",
+                                "icon": "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Shinnik Yaroslavl",
+                                "icon": "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -929,18 +874,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-a6e6849ec701",
+                            "id": "src-6b4666a6320c",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-3dbb606429a1",
+                                    "id": "ct-85e1f6c0c233",
                                     "streams": [
                                         {
-                                            "id": "st-837a45debf12",
+                                            "id": "st-e7d9544fe302",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4249237ed1fe",
+                                                    "id": "lnk-a07b15941a3a",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -964,7 +909,7 @@
                     ]
                 },
                 {
-                    "id": "ch-598a2684d95b",
+                    "id": "ch-ad152279cb7e",
                     "labels": [
                         {
                             "position": "top-left",
@@ -973,21 +918,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Pisa",
-                                    "icon": "https://img.rapid-api.icu/football/team/adfc3610e9d94c45c8cae0cd2c7d6e2b/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Bologna",
-                                    "icon": "https://img.rapid-api.icu/football/team/4bd880d3beb68a5e39c5f9648aeb59dd/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Pisa",
+                                "icon": "https://img.rapid-api.icu/football/team/adfc3610e9d94c45c8cae0cd2c7d6e2b/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Bologna",
+                                "icon": "https://img.rapid-api.icu/football/team/4bd880d3beb68a5e39c5f9648aeb59dd/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -1014,18 +954,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-178195dacbc4",
+                            "id": "src-863da4473459",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-e427b3e1503b",
+                                    "id": "ct-7778cd2ed3e5",
                                     "streams": [
                                         {
-                                            "id": "st-ed8c17c05c77",
+                                            "id": "st-f38ab7f869da",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-1de5ca2cfb83",
+                                                    "id": "lnk-4bf0ad15b493",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1049,7 +989,7 @@
                     ]
                 },
                 {
-                    "id": "ch-dc3cc0939fd0",
+                    "id": "ch-92b117ba04a3",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1058,21 +998,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Udinese",
-                                    "icon": "https://img.rapid-api.icu/football/team/c26824a53e791f4fcafc7b5405a9a458/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Fiorentina",
-                                    "icon": "https://img.rapid-api.icu/football/team/fe835ae83ef47dad92b3a40f5579510b/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Udinese",
+                                "icon": "https://img.rapid-api.icu/football/team/c26824a53e791f4fcafc7b5405a9a458/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Fiorentina",
+                                "icon": "https://img.rapid-api.icu/football/team/fe835ae83ef47dad92b3a40f5579510b/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -1099,18 +1034,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-5d8384f0a733",
+                            "id": "src-0ecf4f1dfac0",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-7295bb2cea51",
+                                    "id": "ct-5df309be8160",
                                     "streams": [
                                         {
-                                            "id": "st-2e50de9ec1a3",
+                                            "id": "st-5a8e9e2b8d1d",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-aa9d89760f86",
+                                                    "id": "lnk-0cd8b894c0a8",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1134,7 +1069,7 @@
                     ]
                 },
                 {
-                    "id": "ch-8548a9d817e3",
+                    "id": "ch-2b73e13238b5",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1143,21 +1078,16 @@
                             "text_color": "#FFFFFF"
                         },
                         {
-                            "type": "row",
-                            "justify": "center",
-                            "items": [
-                                {
-                                    "text": "Real Madrid",
-                                    "icon": "https://img.rapid-api.icu/football/team/946ca6ff50107aa2aa51fc0ddbb7fe6d/image/small?v=1768601124"
-                                },
-                                {
-                                    "text": "vs"
-                                },
-                                {
-                                    "text": "Getafe",
-                                    "icon": "https://img.rapid-api.icu/football/team/d7682ca79050d2d8bc90139131b0a600/image/small?v=1768601124"
-                                }
-                            ]
+                            "position": "center",
+                            "type": "match",
+                            "home": {
+                                "name": "Real Madrid",
+                                "icon": "https://img.rapid-api.icu/football/team/946ca6ff50107aa2aa51fc0ddbb7fe6d/image/small?v=1768601124"
+                            },
+                            "away": {
+                                "name": "Getafe",
+                                "icon": "https://img.rapid-api.icu/football/team/d7682ca79050d2d8bc90139131b0a600/image/small?v=1768601124"
+                            }
                         },
                         {
                             "position": "top-right",
@@ -1184,18 +1114,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-81d112a8bc3e",
+                            "id": "src-253dfebaa8e8",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-897d93ce84a8",
+                                    "id": "ct-d19c79833cfc",
                                     "streams": [
                                         {
-                                            "id": "st-5ec586e18924",
+                                            "id": "st-1be597c41d2f",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-643941a612c8",
+                                                    "id": "lnk-661b83ecfe9d",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,

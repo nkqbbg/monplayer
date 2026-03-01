@@ -190,21 +190,16 @@ async function main() {
                         "text_color": "#FFFFFF"
                     },
                     {
-                        "type": "row",
-                        "justify": "center",
-                        "items": [
-                          {
-                            "text": item.teams.home.name,
-                            "icon": item.teams.home.icon
-                          },
-                          {
-                            "text": "vs"
-                          },
-                          {
-                            "text": item.teams.away.name,
-                            "icon": item.teams.away.icon
-                          }
-                        ]
+                        "position": "center",
+                        "type": "match",
+                        "home": {
+                          "name": item.teams.home.name,
+                          "icon": item.teams.home.icon
+                        },
+                        "away": {
+                          "name": item.teams.away.name,
+                          "icon": item.teams.away.icon
+                        }
                     },
                     {
                         "position": "top-right",
