@@ -51,6 +51,7 @@ async function scrapeSoccer() {
 
             if (streamLinks) {
                 console.log(`✅ Found stream links for: ${label}`);
+                console.log({streamLinks})
                 list.push({
                     label: label,
                     link: fullLink,
