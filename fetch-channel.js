@@ -72,9 +72,9 @@ async function scrapeSoccer() {
             const status = card.find('.text-timeinplay').text().trim();
 
             const leagueIcon = card.find('.corner img').attr('src');
-            const homeIcon = card.find('.team-home .base-icon img').attr('src');
+            const homeIcon =
+            card.find('.team-home .base-icon img').attr('data-src');
             const awayIcon = card.find('.team-away .base-icon img').attr('src');
-
             const matchPath = card.find('.match-link-overlay').attr('href');
             if (!matchPath) continue;
 
@@ -108,14 +108,14 @@ async function scrapeSoccer() {
                 },
 
                 icons: {
-                league: leagueIcon
-                    ? `https://hoadaotv.org${leagueIcon}`
-                    : null
+                    league: leagueIcon
+                        ? `https://hoadaotv.org${leagueIcon}`
+                        : null
                 }
             });
         }
 
-        console.log(matches);
+        // console.log(matches);
 
         const hasStream = matches.some(m => m.streams && Object.keys(m.streams).length > 0);
 
@@ -160,7 +160,7 @@ async function scrapelink(link) {
 async function main() {
     console.log('🏁 Starting Scraper...');
     const list = await scrapeSoccer();
-    console.log(list);
+    // console.log(list);
     console.log(`\n📊 Scraping finished. Total channels with streams: ${list.length}`);
 
     if (list.length === 0) {
@@ -191,7 +191,7 @@ async function main() {
                     },
                     {
                         "position": "center",
-                        "text": `${item.teams.home.name} vs ${item.teams.away.name}`,
+                        "text": `<img src="${item.teams.home.icon}" height="20"> ${item.teams.home.name} vs <img src="${item.teams.away.icon}" height="20"> ${item.teams.away.name}`,
                         "color": "#2196F3",
                         "text_color": "#FFFFFF"
                     },
