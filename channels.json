@@ -2,18 +2,15 @@
     "id": "hoadao",
     "url": "https://tt.8share.pro/buncha",
     "name": "Hoa Đào TV",
-    "color": "#e86281",
-    "grid_number": 3,
+    "color": "#1cb57a",
     "image": {
-        "type": "cover",
-        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg"
+        "url": "https://github.com/nkqbbg/20251_CNWeb_User_Management/blob/main/hoadaologo.jpg"
     },
     "description": "Hoa Đào TV - Trang web phát sóng bóng đá trực tuyến miễn phí hàng đầu tại Việt Nam, mang đến trải nghiệm chất lượng cao với bình luận tiếng Việt sống động.",
     "share": {
         "url": "https://tt.8share.pro/buncha"
     },
     "notice": {
-        "visible": false,
         "closeable": true,
         "icon": "https://media.hth4nh.eu.org/static/img/tele.png",
         "id": "notice",
@@ -24,12 +21,11 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "display": "vertical",
-            "grid_number": 2,
-            "enable_detail": true,
+            "display": "horizontal",
+            "grid_number": 1,
             "channels": [
                 {
-                    "id": "ch-e14295f1077c",
+                    "id": "ch-22fcb67b9b3c",
                     "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
                     "labels": [
                         {
@@ -41,30 +37,29 @@
                     ],
                     "description": "Live Stream",
                     "image": {
-                        "padding": 1,
-                        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
+                        "url": "https://github.com/nkqbbg/20251_CNWeb_User_Management/blob/main/hoadaologo.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
                         "shape": "square"
                     },
                     "type": "single",
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-df5baae88ae9",
+                            "id": "src-ef148a565613",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-d6425ebf23c9",
+                                    "id": "ct-29fe9e6f8c02",
                                     "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
                                     "streams": [
                                         {
-                                            "id": "st-5abe3b6310fe",
+                                            "id": "st-4c1632ab11dd",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-06be4571d537",
+                                                    "id": "lnk-10662b52ea8b",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
