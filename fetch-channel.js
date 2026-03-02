@@ -219,8 +219,8 @@ async function main() {
         description: item.time,
         image: {
           url: item.backUrl,
-          height: 300,
-          width: 500,
+          height: 480,
+          width: 640,
           display: "cover",
           shape: "square",
         },
