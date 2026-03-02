@@ -195,26 +195,6 @@ async function main() {
             color: "#FF0000",
             text_color: "#FFFFFF",
           },
-          {
-            position: "center",
-            text: `${item.teams.home.name} - ${item.teams.away.name}`,
-            color: "#2196F3",
-            text_color: "#FFFFFF",
-            font_size: 28,
-            font_weight: "bold",
-          },
-          {
-            position: "top-right",
-            text: `${item.time} | ${item.date}`,
-            color: "#4CAF50",
-            text_color: "#FFFFFF",
-          },
-          {
-            position: "bottom-right",
-            text: item.league || "",
-            color: "#FF9800",
-            text_color: "#FFFFFF",
-          },
         ],
         description: item.time,
         image: {
@@ -225,7 +205,15 @@ async function main() {
           shape: "square",
         },
         type: "single",
-        display: "text-below",
+        display: "thumbnail-only",
+        enable_detail: false,
+        org_metadata: {
+          league: item.league || "",
+          team_a: item.teams.home.name || "",
+          team_b: item.teams.away.name || "",
+          logo_a: item.teams.home.icon || null,
+          logo_b: item.teams.away.icon || null,
+        },
         sources: [
           {
             id: generateId("src"),
