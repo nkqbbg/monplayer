@@ -27,439 +27,7 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-a1c26ebf4a9e",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "center",
-                            "text": "AS Roma - Juventus",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF",
-                            "font_size": 28,
-                            "font_weight": "bold"
-                        },
-                        {
-                            "position": "top-right",
-                            "text": "02:45 | 02/03",
-                            "color": "#4CAF50",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-right",
-                            "text": "Italian Serie A",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "02:45",
-                    "image": {
-                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-d8834f6be105",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-d6021cabcfbf",
-                                    "streams": [
-                                        {
-                                            "id": "st-537ec9176a16",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-55e75c09f916",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-367b95353348",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_keysd/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-2cbbb69e1d81",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-29/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-099cf67e5521",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-12ab4c59c9da",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_key.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/as-roma-vs-juventus-2398885"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-375a93f7a33f",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "center",
-                            "text": "Marseille - Lyon",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF",
-                            "font_size": 28,
-                            "font_weight": "bold"
-                        },
-                        {
-                            "position": "top-right",
-                            "text": "02:45 | 02/03",
-                            "color": "#4CAF50",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-right",
-                            "text": "French Ligue 1",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "02:45",
-                    "image": {
-                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-914bd2a5b02b",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-48fca963260d",
-                                    "streams": [
-                                        {
-                                            "id": "st-49579f70a153",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-d8fca78cf30b",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/meobeo_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-971cc56c601b",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/meobeo_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-ede82c8a7351",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-23/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-e765f6fa1976",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-c11a8c2450ab",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/meobeo_key.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/marseille-vs-lyon-2398886"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-7a1e2c2b5d89",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "center",
-                            "text": "Orlando City - Inter Miami CF",
-                            "color": "#2196F3",
-                            "text_color": "#FFFFFF",
-                            "font_size": 28,
-                            "font_weight": "bold"
-                        },
-                        {
-                            "position": "top-right",
-                            "text": "07:00 | 02/03",
-                            "color": "#4CAF50",
-                            "text_color": "#FFFFFF"
-                        },
-                        {
-                            "position": "bottom-right",
-                            "text": "United States Major League Soccer",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF"
-                        }
-                    ],
-                    "description": "07:00",
-                    "image": {
-                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
-                        "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "text-below",
-                    "sources": [
-                        {
-                            "id": "src-86171025b07b",
-                            "name": "Server 1",
-                            "contents": [
-                                {
-                                    "id": "ct-36bdb87173eb",
-                                    "streams": [
-                                        {
-                                            "id": "st-814962a7d27e",
-                                            "name": "Server 1",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-de3273760e9f",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-679482b4b960",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-76ebdc1a390d",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-2fce419c1667",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-da3fefce0c8a",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/gaonep_key.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.org/orlando-city-vs-inter-miami-cf-2398969"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-4ed027adbbc1",
+                    "id": "ch-ca2b8b2cb5ce",
                     "labels": [
                         {
                             "position": "top-left",
@@ -491,8 +59,8 @@
                     "description": "12:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -500,18 +68,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-16efe3f699c0",
+                            "id": "src-3c1d355d6702",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-a0575a4369ad",
+                                    "id": "ct-4bf306d799ef",
                                     "streams": [
                                         {
-                                            "id": "st-11af2d9ad296",
+                                            "id": "st-9fd89a5cabc0",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-1c8bcf5e092c",
+                                                    "id": "lnk-5085be87e7b2",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -527,7 +95,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4a22878f1525",
+                                                    "id": "lnk-bee4a865f47b",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -543,7 +111,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b983d6754fa2",
+                                                    "id": "lnk-8fc8e55d0e30",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -559,7 +127,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-58df3d226d2f",
+                                                    "id": "lnk-fb08810b7ed7",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -575,7 +143,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5f0acd670801",
+                                                    "id": "lnk-c0635d687c73",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -599,7 +167,7 @@
                     ]
                 },
                 {
-                    "id": "ch-a72442cb29e9",
+                    "id": "ch-1571a5b801ac",
                     "labels": [
                         {
                             "position": "top-left",
@@ -631,8 +199,8 @@
                     "description": "15:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -640,18 +208,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-d78838c81b30",
+                            "id": "src-21a2632f33ba",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-2a66286ad836",
+                                    "id": "ct-a1fdaaa36cb3",
                                     "streams": [
                                         {
-                                            "id": "st-d70a734bbfea",
+                                            "id": "st-306602996ce1",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-caaef45b6f0e",
+                                                    "id": "lnk-261d890b5884",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -667,7 +235,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7f723fcf3798",
+                                                    "id": "lnk-72960019b4e5",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -683,7 +251,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a3f5f7f4be96",
+                                                    "id": "lnk-8e5a6d879276",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -699,7 +267,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-47d27b0c7ddd",
+                                                    "id": "lnk-41c8d18efca4",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -715,7 +283,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8977bc65c608",
+                                                    "id": "lnk-08b7d3d4a058",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -739,7 +307,7 @@
                     ]
                 },
                 {
-                    "id": "ch-83cce11e9c75",
+                    "id": "ch-9fb38560923b",
                     "labels": [
                         {
                             "position": "top-left",
@@ -771,8 +339,8 @@
                     "description": "18:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -780,18 +348,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-05c95a3ad4f1",
+                            "id": "src-3d8625e80463",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-c9521bd1c2d9",
+                                    "id": "ct-8025fed1ba74",
                                     "streams": [
                                         {
-                                            "id": "st-bd428b9f9ffa",
+                                            "id": "st-207527d05194",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-308751e8f3ad",
+                                                    "id": "lnk-c088e2d6cbea",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -807,7 +375,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-201ec2b8fcac",
+                                                    "id": "lnk-01700b83ac86",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -823,7 +391,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0bfb7a397752",
+                                                    "id": "lnk-6e659209c8c3",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -839,7 +407,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-579213b3b79f",
+                                                    "id": "lnk-4fe155b003a4",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -855,7 +423,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-83c5c88c82a4",
+                                                    "id": "lnk-64d35e2feaf1",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -879,7 +447,7 @@
                     ]
                 },
                 {
-                    "id": "ch-210f14875835",
+                    "id": "ch-4bff826be244",
                     "labels": [
                         {
                             "position": "top-left",
@@ -911,8 +479,8 @@
                     "description": "18:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -920,18 +488,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-f2ac0e8a1a42",
+                            "id": "src-cd7bf5b4ff15",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-9b8357bcdb67",
+                                    "id": "ct-610766b91aed",
                                     "streams": [
                                         {
-                                            "id": "st-96c11aaf3d3c",
+                                            "id": "st-499ee8a02cc0",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c6270680b7e4",
+                                                    "id": "lnk-3edc2e5ac1e7",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -947,7 +515,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-170a7b002cd0",
+                                                    "id": "lnk-0fce8b6f3c20",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -963,7 +531,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-35b7474d5b95",
+                                                    "id": "lnk-bda98f0dab13",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -979,7 +547,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-887351e757f1",
+                                                    "id": "lnk-a11467efe575",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -995,7 +563,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3f2a85448cca",
+                                                    "id": "lnk-f16f6cd858bb",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1019,7 +587,7 @@
                     ]
                 },
                 {
-                    "id": "ch-d3f5cee77c89",
+                    "id": "ch-cd92f000bcb0",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1051,8 +619,8 @@
                     "description": "23:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -1060,18 +628,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-a32b5f4ddc11",
+                            "id": "src-41b650055f61",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-579023452c61",
+                                    "id": "ct-cf47821cbb4a",
                                     "streams": [
                                         {
-                                            "id": "st-5fd37fa76994",
+                                            "id": "st-1c9b37eb2999",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-d469322caab7",
+                                                    "id": "lnk-3ef1553cc33b",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1087,7 +655,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8c8ffd32a6c0",
+                                                    "id": "lnk-7a4c8be1c476",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1103,7 +671,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-1f02fdf17221",
+                                                    "id": "lnk-fe9e98c0ef34",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1119,7 +687,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-214cfb54ceac",
+                                                    "id": "lnk-e58845ed44ac",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1135,7 +703,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6ab8c9d63e40",
+                                                    "id": "lnk-bc36c66b377c",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1159,7 +727,7 @@
                     ]
                 },
                 {
-                    "id": "ch-390af794657a",
+                    "id": "ch-c41efff94a1c",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1191,8 +759,8 @@
                     "description": "00:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -1200,18 +768,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-f5d3010efeb9",
+                            "id": "src-710857d9b42c",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-6fb784dab6e7",
+                                    "id": "ct-b6df4ccaa17c",
                                     "streams": [
                                         {
-                                            "id": "st-1a70681828b1",
+                                            "id": "st-17365a757b03",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4c57a5864d78",
+                                                    "id": "lnk-f5acc8dfb234",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1227,7 +795,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-702d9175473c",
+                                                    "id": "lnk-500ca0accd4b",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1243,7 +811,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7fecda15de16",
+                                                    "id": "lnk-56080751d72e",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1259,7 +827,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6782d1a0e5e8",
+                                                    "id": "lnk-44bfa6c2e098",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1275,7 +843,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2281c200b2a3",
+                                                    "id": "lnk-b47c42d86fca",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1299,7 +867,7 @@
                     ]
                 },
                 {
-                    "id": "ch-bb2589dc5e69",
+                    "id": "ch-74e2124f09e5",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1331,8 +899,8 @@
                     "description": "02:45",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -1340,18 +908,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-02c664d21e95",
+                            "id": "src-d0a7e9e5735c",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-cef5ef2ee2a7",
+                                    "id": "ct-61ff47ce2717",
                                     "streams": [
                                         {
-                                            "id": "st-a186f3e7d8d7",
+                                            "id": "st-c2a51aad35d2",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-dca26d28bc48",
+                                                    "id": "lnk-fe849825f55f",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1367,7 +935,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6d4dcc4a8ca3",
+                                                    "id": "lnk-6ce7f80edd61",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1383,7 +951,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-98754338aecd",
+                                                    "id": "lnk-73607f5cdf23",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1399,7 +967,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d7fca197ac27",
+                                                    "id": "lnk-b1eb83fc89d5",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1415,7 +983,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-26bf773c8b3c",
+                                                    "id": "lnk-a4d32bd45de7",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1439,7 +1007,7 @@
                     ]
                 },
                 {
-                    "id": "ch-6ccfa9d7c8c3",
+                    "id": "ch-d8bcce00a7da",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1471,8 +1039,8 @@
                     "description": "03:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
+                        "height": 300,
+                        "width": 500,
                         "display": "cover",
                         "shape": "square"
                     },
@@ -1480,18 +1048,18 @@
                     "display": "text-below",
                     "sources": [
                         {
-                            "id": "src-af37bbe2563c",
+                            "id": "src-647cd05d00be",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-195016cda900",
+                                    "id": "ct-e3d5d18f15fb",
                                     "streams": [
                                         {
-                                            "id": "st-d20fd380f9ae",
+                                            "id": "st-f470a4923a28",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e16aa93057b2",
+                                                    "id": "lnk-4307babcef09",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1507,7 +1075,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-de078c07169a",
+                                                    "id": "lnk-3b9d37653a2d",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1523,7 +1091,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-97a8ce646e12",
+                                                    "id": "lnk-970db0156cc3",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1539,7 +1107,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b833f446f6ac",
+                                                    "id": "lnk-f0f8c17dae48",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1555,7 +1123,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bab0fbb21320",
+                                                    "id": "lnk-e5c19b60feed",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
