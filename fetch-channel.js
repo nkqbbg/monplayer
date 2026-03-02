@@ -230,7 +230,8 @@ async function main() {
           },
         ],
         image: {
-          url: item.backUrl,
+          //   url: item.backUrl,
+          url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match.png",
           height: 480,
           width: 640,
           display: "cover",
@@ -251,6 +252,8 @@ async function main() {
                     name: "Main Stream",
                     stream_links: [
                       {
+                        linkTeama: item.teams.home.icon,
+                        linkTeamb: item.teams.away.icon,
                         id: generateId("lnk"),
                         name: "HD",
                         type: "hls",
