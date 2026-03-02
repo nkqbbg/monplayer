@@ -182,8 +182,12 @@ async function main() {
 
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
     const statusConfig = {
-      "Đang Diễn Ra": {
-        text: "● Live",
+      "Hiệp 1": {
+        text: "● Hiệp 1",
+        color: "#FF0000",
+      },
+      "Hiệp 2": {
+        text: "● Hiệp 2",
         color: "#FF0000",
       },
       "Chưa Bắt Đầu": {
