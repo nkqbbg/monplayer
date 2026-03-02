@@ -188,8 +188,6 @@ async function main() {
       return {
         id: channelId,
         name: item.label,
-        type: "single",
-        display: "text-below",
         labels: [
           {
             position: "top-left",
@@ -220,11 +218,13 @@ async function main() {
         ],
         image: {
           url: item.backUrl,
-          height: 900,
-          width: 1600,
-          display: "contain",
-          padding: 1,
+          height: 480,
+          width: 640,
+          display: "cover",
+          shape: "square",
         },
+        type: "single",
+        display: "overlay",
         sources: [
           {
             id: generateId("src"),

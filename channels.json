@@ -29,9 +29,7 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-b0c28def5f23",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-bb685abcac4a",
                     "labels": [
                         {
                             "position": "top-left",
@@ -62,25 +60,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-4d92553a06a1",
+                            "id": "src-cad549961824",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-16b63d15529f",
+                                    "id": "ct-aa71245307dd",
                                     "streams": [
                                         {
-                                            "id": "st-4785f42d2f64",
+                                            "id": "st-77d5657c0346",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-cf0243e6e645",
+                                                    "id": "lnk-d2cd9b839269",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -96,7 +96,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-dd90ab3f5029",
+                                                    "id": "lnk-c7ad0c2c0d27",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -112,7 +112,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e62a5d6831f7",
+                                                    "id": "lnk-9c3635c65e04",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -128,7 +128,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-462741c1f280",
+                                                    "id": "lnk-b472e722a1d3",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -144,7 +144,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-91e20834ad3d",
+                                                    "id": "lnk-a10458fd8999",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -168,9 +168,7 @@
                     ]
                 },
                 {
-                    "id": "ch-0e55b575afbc",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-ec3b96521b38",
                     "labels": [
                         {
                             "position": "top-left",
@@ -201,25 +199,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-f648876ee5e7",
+                            "id": "src-b7201043e0fe",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-80140c944c51",
+                                    "id": "ct-5fc6f3d9c96f",
                                     "streams": [
                                         {
-                                            "id": "st-1e30236b9b2c",
+                                            "id": "st-c5e9fb4f6d97",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-367a92446405",
+                                                    "id": "lnk-979e1fb2f7de",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -235,7 +235,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-14dfac5972d9",
+                                                    "id": "lnk-c9a79b88a5da",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -251,7 +251,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5e39a9902079",
+                                                    "id": "lnk-ea8e9af96c0f",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -267,7 +267,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6b9043a173dc",
+                                                    "id": "lnk-5c98c6553a5e",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -283,7 +283,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5f146b601a97",
+                                                    "id": "lnk-bb44330e4325",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -307,9 +307,7 @@
                     ]
                 },
                 {
-                    "id": "ch-1c78451ee1c6",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-68bd978144d2",
                     "labels": [
                         {
                             "position": "top-left",
@@ -340,25 +338,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-d657f66d2ed9",
+                            "id": "src-08f3a6573088",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-2060e4c3f877",
+                                    "id": "ct-3b30f96bb8d7",
                                     "streams": [
                                         {
-                                            "id": "st-9cbfd6756046",
+                                            "id": "st-dc8e9cffe727",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-97cfe1e37c52",
+                                                    "id": "lnk-12f0c085e3ef",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -374,7 +374,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-1cda3d00d60d",
+                                                    "id": "lnk-eb9ce859a2c3",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -390,7 +390,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-caffae51c3b0",
+                                                    "id": "lnk-d2582be7c019",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -406,7 +406,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ccf7f5bbc198",
+                                                    "id": "lnk-c4dd98dc828f",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -422,7 +422,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e7611d498859",
+                                                    "id": "lnk-10957b7d4c56",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -446,9 +446,7 @@
                     ]
                 },
                 {
-                    "id": "ch-2e1dbebaabab",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-d5c3842c4db5",
                     "labels": [
                         {
                             "position": "top-left",
@@ -479,25 +477,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-6519649be52a",
+                            "id": "src-24287b7145a9",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-8774c1dee89a",
+                                    "id": "ct-d7813ee6793e",
                                     "streams": [
                                         {
-                                            "id": "st-a6489a42e8fd",
+                                            "id": "st-408575c24fad",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c2a519834088",
+                                                    "id": "lnk-6bbb3673db2c",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -513,7 +513,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a9f0aa464993",
+                                                    "id": "lnk-2a825536fd25",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -529,7 +529,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f2ee92a30b11",
+                                                    "id": "lnk-e12f708be713",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -545,7 +545,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-664a5388d747",
+                                                    "id": "lnk-58de0906bcb7",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -561,7 +561,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-df800eae2e1f",
+                                                    "id": "lnk-54c58d00ff27",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -585,9 +585,7 @@
                     ]
                 },
                 {
-                    "id": "ch-bea9d5bd54e8",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-53036b60907d",
                     "labels": [
                         {
                             "position": "top-left",
@@ -618,25 +616,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-877c9004ecfd",
+                            "id": "src-66f65ba355c0",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-0aeee82e4c61",
+                                    "id": "ct-c52cac89383c",
                                     "streams": [
                                         {
-                                            "id": "st-1ee4986dddb4",
+                                            "id": "st-821777fd09dc",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-932f54fa55fc",
+                                                    "id": "lnk-a8c9b2e8f9bd",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -652,7 +652,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-03d062a15c73",
+                                                    "id": "lnk-63549f739345",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -668,7 +668,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6c2badae63d7",
+                                                    "id": "lnk-4a09db8e7498",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -684,7 +684,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3a7b76e15a72",
+                                                    "id": "lnk-41695fddc272",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -700,7 +700,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-42e60afc2428",
+                                                    "id": "lnk-78ea14719f0c",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -724,9 +724,7 @@
                     ]
                 },
                 {
-                    "id": "ch-4c93fc9610c8",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-19e6db4ddbf7",
                     "labels": [
                         {
                             "position": "top-left",
@@ -757,25 +755,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-ece89dea0575",
+                            "id": "src-b2e25657a96b",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-25a8e204449c",
+                                    "id": "ct-eab4ef25485a",
                                     "streams": [
                                         {
-                                            "id": "st-106d9c3d6305",
+                                            "id": "st-d3c9e4842101",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8edc23a49ef5",
+                                                    "id": "lnk-78163d37bf20",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -791,7 +791,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-28bce0fa3f5b",
+                                                    "id": "lnk-dd4ce3a2c1c4",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -807,7 +807,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-9210022f44ff",
+                                                    "id": "lnk-0e18ea63e9f6",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -823,7 +823,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-084a0ca48984",
+                                                    "id": "lnk-07252b7ce954",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -839,7 +839,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-49c902bda662",
+                                                    "id": "lnk-91c47c7ce1f3",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -863,9 +863,7 @@
                     ]
                 },
                 {
-                    "id": "ch-cf45a377b0b4",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-2cd1149cfb11",
                     "labels": [
                         {
                             "position": "top-left",
@@ -896,25 +894,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a1d6abcf0e2d",
+                            "id": "src-980673e42f4e",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-2455cba14fa3",
+                                    "id": "ct-1ba3bd75a297",
                                     "streams": [
                                         {
-                                            "id": "st-201cf572a888",
+                                            "id": "st-fe95f56ae994",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-004b31f931cf",
+                                                    "id": "lnk-85095748a792",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -930,7 +930,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-83824024bc68",
+                                                    "id": "lnk-1b15947dd0f2",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -946,7 +946,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-aef1582081b6",
+                                                    "id": "lnk-c6bfe2aba772",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -962,7 +962,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6ab97ac4cb34",
+                                                    "id": "lnk-89a93e4125c7",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -978,7 +978,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-65d718d370b5",
+                                                    "id": "lnk-917c51cb171d",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1002,9 +1002,7 @@
                     ]
                 },
                 {
-                    "id": "ch-44058e340e1e",
-                    "type": "single",
-                    "display": "text-below",
+                    "id": "ch-fe30aa11228c",
                     "labels": [
                         {
                             "position": "top-left",
@@ -1035,25 +1033,27 @@
                     ],
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 900,
-                        "width": 1600,
-                        "display": "contain",
-                        "padding": 1
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover",
+                        "shape": "square"
                     },
+                    "type": "single",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-165272c3c98d",
+                            "id": "src-49fe93bc6216",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-fecb4210747b",
+                                    "id": "ct-d6b17ed0552b",
                                     "streams": [
                                         {
-                                            "id": "st-1392f92e36d7",
+                                            "id": "st-ebc298d737ca",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-b9677dca773f",
+                                                    "id": "lnk-ee23e841d0a9",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1069,7 +1069,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-1d6b2c653afb",
+                                                    "id": "lnk-a37e714319bd",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1085,7 +1085,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-126eb4eb2592",
+                                                    "id": "lnk-bb2198acc8f7",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1101,7 +1101,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-814f00cf066c",
+                                                    "id": "lnk-35395b48dee0",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1117,7 +1117,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-175e5a989231",
+                                                    "id": "lnk-d69fb699cd3e",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
