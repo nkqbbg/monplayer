@@ -235,7 +235,7 @@ async function main() {
         ],
         image: {
           //   url: item.backUrl,
-          url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match.png",
+          url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
           height: 480,
           width: 640,
           display: "cover",
