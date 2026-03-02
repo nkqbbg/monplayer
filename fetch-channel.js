@@ -28,6 +28,7 @@ async function scrapeSoccer() {
 
     const html = response.data;
     const $ = cheerio.load(html);
+    // console.log($);
     const btnWatchElements = $(".btn-watch");
     console.log(
       `✅ Found ${btnWatchElements.length} elements with class "btn-watch":\n`,
@@ -43,33 +44,89 @@ async function scrapeSoccer() {
       elementLinks.unshift(testLink);
     }
 
-    const list = [];
-    // Use for...of to correctly await async calls
-    for (const link of elementLinks) {
-      if (!link || link.includes("www")) continue;
+    const matches = [];
 
-      const fullLink = link.startsWith("http")
-        ? link
-        : `https://hoadaotv.org${link}`;
-      const label = link.replace("/", "");
+    const card = $(".card-match").first(); // lấy card đầu tiên
+    const style = card.find(".card-bg-blur").attr("style");
 
-      console.log("🔗 Processing Label: ", label);
-      const streamLinks = await scrapelink(fullLink);
+    let backgroundUrl = null;
 
-      if (streamLinks) {
-        console.log(`✅ Found stream links for: ${label}`);
-        list.push({
-          label: label,
-          link: fullLink,
-          streamLinks: streamLinks,
-        });
+    if (style) {
+      const match = style.match(/url\((.*?)\)/);
+      if (match && match[1]) {
+        backgroundUrl = match[1];
+
+        if (backgroundUrl.startsWith("/")) {
+          backgroundUrl = `https://hoadaotv.org${backgroundUrl}`;
+        }
       }
     }
 
-    if (list.length === 0) {
-      console.log("⚠️ No channels with stream links found.");
+    for (const el of $(".cm-wrap").toArray()) {
+      const card = $(el);
+
+      const home = card.find(".team-home .name-short").text().trim();
+      const away = card.find(".team-away .name-short").text().trim();
+
+      const [time, date] = card
+        .find(".time span")
+        .map((i, el) => $(el).text().trim())
+        .get();
+
+      const league = card.find(".league").text().trim();
+      const status = card.find(".text-timeinplay").text().trim();
+
+      const leagueIcon = card.find(".corner img").attr("src");
+      const homeIcon = card.find(".team-home .base-icon img").attr("data-src");
+      const awayIcon = card.find(".team-away .base-icon img").attr("src");
+      const matchPath = card.find(".match-link-overlay").attr("href");
+      if (!matchPath) continue;
+
+      const matchLink = matchPath.startsWith("http")
+        ? matchPath
+        : `https://hoadaotv.org${matchPath}`;
+
+      console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
+
+      // ⭐ STREAM LINK Ở ĐÂY
+      const streamLinks = await scrapelink(matchLink);
+
+      matches.push({
+        league,
+        time,
+        date,
+        status,
+        link: matchLink,
+        streams: streamLinks || [],
+        backUrl: backgroundUrl,
+
+        teams: {
+          home: {
+            name: home,
+            icon: homeIcon,
+          },
+          away: {
+            name: away,
+            icon: awayIcon,
+          },
+        },
+
+        icons: {
+          league: leagueIcon ? `https://hoadaotv.org${leagueIcon}` : null,
+        },
+      });
     }
-    return list;
+
+    // console.log(matches);
+
+    const hasStream = matches.some(
+      (m) => m.streams && Object.keys(m.streams).length > 0,
+    );
+
+    if (!hasStream) {
+      console.log("⚠️ No stream links found.");
+    }
+    return matches;
   } catch (error) {
     console.error("❌ Error during scraping:", error.message);
     return [];
@@ -107,7 +164,7 @@ async function scrapelink(link) {
 async function main() {
   console.log("🏁 Starting Scraper...");
   const list = await scrapeSoccer();
-
+  // console.log(list);
   console.log(
     `\n📊 Scraping finished. Total channels with streams: ${list.length}`,
   );
@@ -126,6 +183,7 @@ async function main() {
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
 
     const channels = list.map((item) => {
+      // console.log({item})
       const channelId = generateId("ch");
       return {
         id: channelId,
@@ -137,21 +195,39 @@ async function main() {
             color: "#FF0000",
             text_color: "#FFFFFF",
           },
+          {
+            position: "center",
+            text: `${item.teams.home.name} - ${item.teams.away.name}`,
+            color: "#2196F3",
+            text_color: "#FFFFFF",
+            font_size: 28,
+            font_weight: "bold",
+          },
+          {
+            position: "top-right",
+            text: `${item.time} | ${item.date}`,
+            color: "#4CAF50",
+            text_color: "#FFFFFF",
+          },
+          {
+            position: "bottom-right",
+            text: item.league || "",
+            color: "#FF9800",
+            text_color: "#FFFFFF",
+          },
         ],
-        description: "Live Stream",
-        image: templateData.groups[0]?.channels[0]?.image || {
-          url: "https://kaytee1012.github.io/buncha_logo.png",
+        image: {
+          url: item.backUrl,
           height: 480,
           width: 640,
           display: "cover",
-          shape: "square",
         },
         type: "single",
-        display: "text-below",
+        display: "overlay",
         sources: [
           {
             id: generateId("src"),
-            name: "Server 1",
+            name: `${item.teams.home.name} - ${item.teams.away.name}`,
             contents: [
               {
                 id: generateId("ct"),
@@ -159,7 +235,7 @@ async function main() {
                 streams: [
                   {
                     id: generateId("st"),
-                    name: "Server 1",
+                    name: "Server",
                     stream_links: [
                       {
                         id: generateId("lnk"),
@@ -167,9 +243,53 @@ async function main() {
                         type: "hls",
                         default: true,
                         url:
-                          item.streamLinks.hd ||
-                          item.streamLinks.fullhd ||
-                          item.streamLinks.sd,
+                          item.streams.hd ||
+                          item.streams.fullhd ||
+                          item.streams.sd,
+                        request_headers: [
+                          { key: "Referer", value: item.link },
+                          { key: "User-Agent", value: "Mozilla/5.0" },
+                        ],
+                      },
+                      {
+                        id: generateId("lnk"),
+                        name: "SD",
+                        type: "hls",
+                        default: true,
+                        url: item.streams.sd,
+                        request_headers: [
+                          { key: "Referer", value: item.link },
+                          { key: "User-Agent", value: "Mozilla/5.0" },
+                        ],
+                      },
+                      {
+                        id: generateId("lnk"),
+                        name: "FullHD",
+                        type: "hls",
+                        default: true,
+                        url: item.streams.fullhd,
+                        request_headers: [
+                          { key: "Referer", value: item.link },
+                          { key: "User-Agent", value: "Mozilla/5.0" },
+                        ],
+                      },
+                      {
+                        id: generateId("lnk"),
+                        name: "FL",
+                        type: "hls",
+                        default: true,
+                        url: item.streams.fl,
+                        request_headers: [
+                          { key: "Referer", value: item.link },
+                          { key: "User-Agent", value: "Mozilla/5.0" },
+                        ],
+                      },
+                      {
+                        id: generateId("lnk"),
+                        name: "FLV2",
+                        type: "hls",
+                        default: true,
+                        url: item.streams.flv2,
                         request_headers: [
                           { key: "Referer", value: item.link },
                           { key: "User-Agent", value: "Mozilla/5.0" },

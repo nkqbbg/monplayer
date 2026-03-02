@@ -2,15 +2,18 @@
     "id": "hoadao",
     "url": "https://tt.8share.pro/buncha",
     "name": "Hoa Đào TV",
-    "color": "#1cb57a",
+    "color": "#e86281",
+    "grid_number": 3,
     "image": {
-        "url": "https://github.com/nkqbbg/20251_CNWeb_User_Management/blob/main/hoadaologo.jpg"
+        "type": "cover",
+        "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg"
     },
     "description": "Hoa Đào TV - Trang web phát sóng bóng đá trực tuyến miễn phí hàng đầu tại Việt Nam, mang đến trải nghiệm chất lượng cao với bình luận tiếng Việt sống động.",
     "share": {
         "url": "https://tt.8share.pro/buncha"
     },
     "notice": {
+        "visible": false,
         "closeable": true,
         "icon": "https://media.hth4nh.eu.org/static/img/tele.png",
         "id": "notice",
@@ -21,53 +24,965 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "display": "horizontal",
-            "grid_number": 1,
+            "display": "vertical",
+            "grid_number": 2,
+            "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-22fcb67b9b3c",
-                    "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
+                    "id": "ch-7eb5965fac2b",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Việt Nam Nữ - Indonesia Nữ",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "15:00 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Vô Địch Nữ FUSAL ĐNA",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "Live Stream",
                     "image": {
-                        "url": "https://github.com/nkqbbg/20251_CNWeb_User_Management/blob/main/hoadaologo.jpg",
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
                         "height": 480,
                         "width": 640,
-                        "display": "cover",
-                        "shape": "square"
+                        "display": "cover"
                     },
                     "type": "single",
-                    "display": "text-below",
+                    "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-ef148a565613",
-                            "name": "Server 1",
+                            "id": "src-5ff3773b1306",
+                            "name": "Việt Nam Nữ - Indonesia Nữ",
                             "contents": [
                                 {
-                                    "id": "ct-29fe9e6f8c02",
-                                    "name": "havre-athletic-club-vs-paris-saint-germain-2397996",
+                                    "id": "ct-9d0a4977217d",
                                     "streams": [
                                         {
-                                            "id": "st-4c1632ab11dd",
-                                            "name": "Server 1",
+                                            "id": "st-a7fe0392ae97",
+                                            "name": "Server",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-10662b52ea8b",
+                                                    "id": "lnk-15c75cb96884",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_key/playlist.m3u8",
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_key/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.org/havre-athletic-club-vs-paris-saint-germain-2397996"
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a317e4567049",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_keysd/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9edb35bd880e",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-29/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f50ad73c0c24",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-91c7a320d0e8",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/phao_key.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/vit-nam-n-indonesia-n-2400553"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4b4693378d11",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "SC Poltava - Kudrivka",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "18:00 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Ukrainian Premier League",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-b3283aef516f",
+                            "name": "SC Poltava - Kudrivka",
+                            "contents": [
+                                {
+                                    "id": "ct-32252dd4803a",
+                                    "streams": [
+                                        {
+                                            "id": "st-fcf54e4e9c29",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-b9d7b462d10d",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-13cd5673fd6a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2ef2cfd3dfc2",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-618800a489d2",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-bbef8c36ff9e",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/sc-poltava-vs-kudrivka-2398995"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-dee64aafcdf4",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Thái Lan Nữ - Úc Nữ",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "18:30 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Vô Địch Nữ FUSAL ĐNA",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-dd417442ca63",
+                            "name": "Thái Lan Nữ - Úc Nữ",
+                            "contents": [
+                                {
+                                    "id": "ct-fdbab6d0e793",
+                                    "streams": [
+                                        {
+                                            "id": "st-b8669abe3523",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-eacc50f127b5",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a7fd1ffc00d8",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0fd806214076",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ee14339eda25",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-48f8accfa242",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/thi-lan-n-c-n-2400554"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-2e9720e973d2",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Rodina Moscow - Shinnik Yaroslavl",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "23:30 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Russian First LeagueLeague",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-66be142a10eb",
+                            "name": "Rodina Moscow - Shinnik Yaroslavl",
+                            "contents": [
+                                {
+                                    "id": "ct-b680de1d34d0",
+                                    "streams": [
+                                        {
+                                            "id": "st-0f995d53e85b",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-0c3204b91475",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-7d8cfa008fa3",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3f485c6e2a0d",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b525b689e32a",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8a5fc9267747",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/rodina-moscow-vs-shinnik-yaroslavl-2399021"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f737538b822d",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Pisa - Bologna",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "00:30 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Italian Serie A",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-211ef9b4295a",
+                            "name": "Pisa - Bologna",
+                            "contents": [
+                                {
+                                    "id": "ct-31c716e58073",
+                                    "streams": [
+                                        {
+                                            "id": "st-9a142c3420e2",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-51568213315d",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1d58e528c5f6",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5c1475549649",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-83a746c5036e",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f019a6c2607e",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/pisa-vs-bologna-2399029"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-585bc65e20bd",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Udinese - Fiorentina",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "02:45 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Italian Serie A",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-13464324ba61",
+                            "name": "Udinese - Fiorentina",
+                            "contents": [
+                                {
+                                    "id": "ct-b979ef939b25",
+                                    "streams": [
+                                        {
+                                            "id": "st-af60cd484e55",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-2695a1d6e56d",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1ccd8ead4975",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-91e5eaa72f0f",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-df34451fa941",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6f5ef843f734",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/udinese-vs-fiorentina-2399059"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d7128acb6c4f",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Real Madrid - Getafe",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "03:00 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Spanish La Liga",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-b8e015117056",
+                            "name": "Real Madrid - Getafe",
+                            "contents": [
+                                {
+                                    "id": "ct-640e7e04f888",
+                                    "streams": [
+                                        {
+                                            "id": "st-94d4dced5e2f",
+                                            "name": "Server",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1c6e60e6122d",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-37c021cd8ef9",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-de8247fce335",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d5212b35b230",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ff98651fbeb9",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
                                                         },
                                                         {
                                                             "key": "User-Agent",
