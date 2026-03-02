@@ -23,18 +23,19 @@
     "groups": [
         {
             "id": "live",
-            "name": "🔴 Live",
+            "name": "⚽ Bóng đá",
             "display": "vertical",
             "grid_number": 2,
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-7eb5965fac2b",
+                    "id": "ch-54678565392b",
+                    "name": "Việt Nam Nữ vs Indonesia Nữ",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -68,18 +69,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-5ff3773b1306",
+                            "id": "src-251a016e9535",
                             "name": "Việt Nam Nữ - Indonesia Nữ",
                             "contents": [
                                 {
-                                    "id": "ct-9d0a4977217d",
+                                    "id": "ct-a3f6536d403d",
                                     "streams": [
                                         {
-                                            "id": "st-a7fe0392ae97",
-                                            "name": "Server",
+                                            "id": "st-28d28513ec7d",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-15c75cb96884",
+                                                    "id": "lnk-95481b3c3c6c",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -96,7 +97,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a317e4567049",
+                                                    "id": "lnk-d3568fbffc0d",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -113,7 +114,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-9edb35bd880e",
+                                                    "id": "lnk-932f67adb6eb",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -130,7 +131,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f50ad73c0c24",
+                                                    "id": "lnk-8797eb0c3373",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -146,7 +147,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-91c7a320d0e8",
+                                                    "id": "lnk-d3255e7a1439",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -171,12 +172,13 @@
                     ]
                 },
                 {
-                    "id": "ch-4b4693378d11",
+                    "id": "ch-87fb6258acb5",
+                    "name": "SC Poltava vs Kudrivka",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -210,21 +212,22 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b3283aef516f",
+                            "id": "src-7fe95579689c",
                             "name": "SC Poltava - Kudrivka",
                             "contents": [
                                 {
-                                    "id": "ct-32252dd4803a",
+                                    "id": "ct-87dcfb930d39",
                                     "streams": [
                                         {
-                                            "id": "st-fcf54e4e9c29",
-                                            "name": "Server",
+                                            "id": "st-bb09440a22d7",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-b9d7b462d10d",
+                                                    "id": "lnk-6004dab15244",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_key/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -237,10 +240,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-13cd5673fd6a",
+                                                    "id": "lnk-bb2c65eff2e9",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_keysd/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -253,10 +257,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2ef2cfd3dfc2",
+                                                    "id": "lnk-00f942090e02",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-30/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -269,7 +274,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-618800a489d2",
+                                                    "id": "lnk-01b9e9f64507",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -285,10 +290,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bbef8c36ff9e",
+                                                    "id": "lnk-5af89dec8a9e",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
+                                                    "url": "https://live10.watchsoccerlivenews.net/live/chimnho_key.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -309,12 +315,13 @@
                     ]
                 },
                 {
-                    "id": "ch-dee64aafcdf4",
+                    "id": "ch-5e6502ba3c7c",
+                    "name": "Thái Lan Nữ vs Úc Nữ",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -348,18 +355,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-dd417442ca63",
+                            "id": "src-2e6853494085",
                             "name": "Thái Lan Nữ - Úc Nữ",
                             "contents": [
                                 {
-                                    "id": "ct-fdbab6d0e793",
+                                    "id": "ct-eab700c2b3b9",
                                     "streams": [
                                         {
-                                            "id": "st-b8669abe3523",
-                                            "name": "Server",
+                                            "id": "st-fa6ad471bc0f",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-eacc50f127b5",
+                                                    "id": "lnk-2e55cd245579",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -375,7 +382,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a7fd1ffc00d8",
+                                                    "id": "lnk-0ead0c3157ae",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -391,7 +398,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0fd806214076",
+                                                    "id": "lnk-07bc8187c1ea",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -407,7 +414,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ee14339eda25",
+                                                    "id": "lnk-02ff2707f5f8",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -423,7 +430,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-48f8accfa242",
+                                                    "id": "lnk-bc59553e9f9a",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -447,12 +454,13 @@
                     ]
                 },
                 {
-                    "id": "ch-2e9720e973d2",
+                    "id": "ch-5b10b00d3b37",
+                    "name": "Rodina Moscow vs Shinnik Yaroslavl",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -486,18 +494,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-66be142a10eb",
+                            "id": "src-206b8caeb896",
                             "name": "Rodina Moscow - Shinnik Yaroslavl",
                             "contents": [
                                 {
-                                    "id": "ct-b680de1d34d0",
+                                    "id": "ct-f5b4d6e953dd",
                                     "streams": [
                                         {
-                                            "id": "st-0f995d53e85b",
-                                            "name": "Server",
+                                            "id": "st-80cdd253ccd8",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0c3204b91475",
+                                                    "id": "lnk-5ebf75db4c7d",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -513,7 +521,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7d8cfa008fa3",
+                                                    "id": "lnk-671005d3b863",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -529,7 +537,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3f485c6e2a0d",
+                                                    "id": "lnk-348fe19bf05d",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -545,7 +553,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b525b689e32a",
+                                                    "id": "lnk-c46f8f09b687",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -561,7 +569,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8a5fc9267747",
+                                                    "id": "lnk-513d2d89bbc5",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -585,12 +593,13 @@
                     ]
                 },
                 {
-                    "id": "ch-f737538b822d",
+                    "id": "ch-f6f1a7fc1813",
+                    "name": "Pisa vs Bologna",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -624,18 +633,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-211ef9b4295a",
+                            "id": "src-c9e648b47a21",
                             "name": "Pisa - Bologna",
                             "contents": [
                                 {
-                                    "id": "ct-31c716e58073",
+                                    "id": "ct-1f1ee5b985e6",
                                     "streams": [
                                         {
-                                            "id": "st-9a142c3420e2",
-                                            "name": "Server",
+                                            "id": "st-976b84ede3d5",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-51568213315d",
+                                                    "id": "lnk-6c0b39bd2043",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -651,7 +660,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-1d58e528c5f6",
+                                                    "id": "lnk-6762891f3bb0",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -667,7 +676,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5c1475549649",
+                                                    "id": "lnk-173f8850fd35",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -683,7 +692,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-83a746c5036e",
+                                                    "id": "lnk-680ca7cefa0c",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -699,7 +708,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f019a6c2607e",
+                                                    "id": "lnk-027f29b4542b",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -723,12 +732,13 @@
                     ]
                 },
                 {
-                    "id": "ch-585bc65e20bd",
+                    "id": "ch-0f143e62cce7",
+                    "name": "Udinese vs Fiorentina",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -762,18 +772,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-13464324ba61",
+                            "id": "src-e4cc122aff21",
                             "name": "Udinese - Fiorentina",
                             "contents": [
                                 {
-                                    "id": "ct-b979ef939b25",
+                                    "id": "ct-ec7109586eb8",
                                     "streams": [
                                         {
-                                            "id": "st-af60cd484e55",
-                                            "name": "Server",
+                                            "id": "st-dc1b74b1377b",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-2695a1d6e56d",
+                                                    "id": "lnk-9b2ddfcc5024",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -789,7 +799,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-1ccd8ead4975",
+                                                    "id": "lnk-bac4b1047208",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -805,7 +815,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-91e5eaa72f0f",
+                                                    "id": "lnk-eb6aecc002e1",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -821,7 +831,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-df34451fa941",
+                                                    "id": "lnk-5f478fa4019b",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -837,7 +847,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6f5ef843f734",
+                                                    "id": "lnk-5275dcc5b663",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -861,12 +871,13 @@
                     ]
                 },
                 {
-                    "id": "ch-d7128acb6c4f",
+                    "id": "ch-097c6ad3dfc9",
+                    "name": "Real Madrid vs Getafe",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
                             "text_color": "#FFFFFF"
                         },
                         {
@@ -900,18 +911,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b8e015117056",
+                            "id": "src-65ef56e1e600",
                             "name": "Real Madrid - Getafe",
                             "contents": [
                                 {
-                                    "id": "ct-640e7e04f888",
+                                    "id": "ct-ca6469b7f5b9",
                                     "streams": [
                                         {
-                                            "id": "st-94d4dced5e2f",
-                                            "name": "Server",
+                                            "id": "st-cfeebda2b223",
+                                            "name": "Main Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-1c6e60e6122d",
+                                                    "id": "lnk-8469242feb62",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -927,7 +938,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-37c021cd8ef9",
+                                                    "id": "lnk-a271891c6d68",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -943,7 +954,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-de8247fce335",
+                                                    "id": "lnk-23d83e246091",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -959,7 +970,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d5212b35b230",
+                                                    "id": "lnk-1c6a66bac4cf",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -975,7 +986,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ff98651fbeb9",
+                                                    "id": "lnk-6226e5937b2a",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -983,6 +994,979 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://hoadaotv.org/real-madrid-vs-getafe-2399064"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9fdad2e872d2",
+                    "name": "Melbourne City vs Buriram United",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Melbourne City - Buriram United",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "14:45 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "AFC Champions League Elite",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-a74d9854e9b9",
+                            "name": "Melbourne City - Buriram United",
+                            "contents": [
+                                {
+                                    "id": "ct-eb9e6cf84f52",
+                                    "streams": [
+                                        {
+                                            "id": "st-b7d44890a034",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-9af6d45e8d73",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/melbourne-city-vs-buriram-united-2399096"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-97b272a7140a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/melbourne-city-vs-buriram-united-2399096"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f97cb5c50bf1",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/melbourne-city-vs-buriram-united-2399096"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b2ef5d5fdec4",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/melbourne-city-vs-buriram-united-2399096"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b9ad57d332df",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/melbourne-city-vs-buriram-united-2399096"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-db895192dc88",
+                    "name": "Gangwon Football Club vs Machida Zelvia",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Gangwon Football Club - Machida Zelvia",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "17:00 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "AFC Champions League Elite",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-b60a94fcf8b1",
+                            "name": "Gangwon Football Club - Machida Zelvia",
+                            "contents": [
+                                {
+                                    "id": "ct-a03dc3f56169",
+                                    "streams": [
+                                        {
+                                            "id": "st-548b257854db",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-5668fdb91806",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/gangwon-football-club-vs-machida-zelvia-2399098"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-503eae23e6b9",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/gangwon-football-club-vs-machida-zelvia-2399098"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-46e9c0d0e5f0",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/gangwon-football-club-vs-machida-zelvia-2399098"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8c8eb60b2e6a",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/gangwon-football-club-vs-machida-zelvia-2399098"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5d0a9b782a55",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/gangwon-football-club-vs-machida-zelvia-2399098"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3d8a3157cd20",
+                    "name": "Istanbulspor vs Boluspor",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Istanbulspor - Boluspor",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "19:30 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Turkish Cup",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-f5d360ae7b2e",
+                            "name": "Istanbulspor - Boluspor",
+                            "contents": [
+                                {
+                                    "id": "ct-e5b3a8e22552",
+                                    "streams": [
+                                        {
+                                            "id": "st-823ad2afd134",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-96e20c5cd674",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/istanbulspor-vs-boluspor-2399113"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-40938fda5cff",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/istanbulspor-vs-boluspor-2399113"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6dda4d7f54da",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/istanbulspor-vs-boluspor-2399113"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-edff802bd4ec",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/istanbulspor-vs-boluspor-2399113"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a27a3a5ebfa1",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/istanbulspor-vs-boluspor-2399113"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ce38f6a22fde",
+                    "name": "Madura United vs Malut United",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Madura United - Malut United",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "20:30 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Indonesian Liga 1",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-f12a88ecbe77",
+                            "name": "Madura United - Malut United",
+                            "contents": [
+                                {
+                                    "id": "ct-c2d1a832c963",
+                                    "streams": [
+                                        {
+                                            "id": "st-59665c26c187",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-de73b83ecb26",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/madura-united-vs-malut-united-2399132"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ce8e65816674",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/madura-united-vs-malut-united-2399132"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ccc7288c6884",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/madura-united-vs-malut-united-2399132"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-475b7183946d",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/madura-united-vs-malut-united-2399132"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b7835fada308",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/madura-united-vs-malut-united-2399132"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-06887799d949",
+                    "name": "Slovakia Women vs Latvia Women",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Slovakia Women - Latvia Women",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "22:00 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "FIFA Women's World Cup qualification(UEFA)",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-63e0e1688818",
+                            "name": "Slovakia Women - Latvia Women",
+                            "contents": [
+                                {
+                                    "id": "ct-3a90c5d206e1",
+                                    "streams": [
+                                        {
+                                            "id": "st-9f0f81f31803",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-24c8b6935eda",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/slovakia-women-vs-latvia-women-2399147"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5821b13e4c8a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/slovakia-women-vs-latvia-women-2399147"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-dd4a5d6b1c0e",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/slovakia-women-vs-latvia-women-2399147"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-673dbf3d9918",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/slovakia-women-vs-latvia-women-2399147"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-42353ba4f107",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/slovakia-women-vs-latvia-women-2399147"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-21ca4fdd9104",
+                    "name": "Everton vs Burnley",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Everton - Burnley",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "02:30 | 04/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "English Premier League",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-ca4bbd309324",
+                            "name": "Everton - Burnley",
+                            "contents": [
+                                {
+                                    "id": "ct-1211504ca311",
+                                    "streams": [
+                                        {
+                                            "id": "st-87471c8f7e81",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-e0f70d96bf8a",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/everton-vs-burnley-2399226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-33094cf49c5a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/everton-vs-burnley-2399226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-122ad93005c2",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/everton-vs-burnley-2399226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d6b3252ec46e",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/everton-vs-burnley-2399226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-95f6df867b59",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/everton-vs-burnley-2399226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-c109be117088",
+                    "name": "Bournemouth AFC vs Brentford",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "⏳Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Bournemouth AFC - Brentford",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "02:30 | 04/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "English Premier League",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
+                        }
+                    ],
+                    "image": {
+                        "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-9af728e1a87b",
+                            "name": "Bournemouth AFC - Brentford",
+                            "contents": [
+                                {
+                                    "id": "ct-d08071da72ff",
+                                    "streams": [
+                                        {
+                                            "id": "st-95849fd6d1f6",
+                                            "name": "Main Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-74942b4ecc77",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/bournemouth-afc-vs-brentford-2399228"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-c227700474f8",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/bournemouth-afc-vs-brentford-2399228"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0b1035fefdd1",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/bournemouth-afc-vs-brentford-2399228"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-99fa936f24e0",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/bournemouth-afc-vs-brentford-2399228"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-4cf8403d2003",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.org/bournemouth-afc-vs-brentford-2399228"
                                                         },
                                                         {
                                                             "key": "User-Agent",

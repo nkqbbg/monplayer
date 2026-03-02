@@ -23,7 +23,7 @@
   "groups": [
     {
       "id": "live",
-      "name": "🔴 Live",
+      "name": "⚽ Bóng đá",
       "display": "vertical",
       "grid_number": 2,
       "enable_detail": true,
@@ -48,9 +48,73 @@
           "image": {
             "padding": 1,
             "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-            "height": 900,
-            "width": 1600,
-            "display": "contain",
+            "height": 480,
+            "width": 640,
+            "display": "cover",
+            "shape": "square"
+          },
+          "type": "single",
+          "display": "text-below",
+          "sources": [
+            {
+              "id": "src-b13f159df5",
+              "name": "Bún chả TV",
+              "contents": [
+                {
+                  "id": "ct-b13f159df5",
+                  "name": "Xem trực tiếp Wu Yize vs Barry Hawkins 00:00 ngày 01/03 BetVictor Welsh Open 2026",
+                  "streams": [
+                    {
+                      "id": "st-b13f159df5",
+                      "name": "KayTee",
+                      "stream_links": [
+                        {
+                          "id": "lnk-5551ff2f61",
+                          "name": "Link 1",
+                          "type": "hls",
+                          "default": true,
+                          "url": "https://cdn-hls.taoxanh.biz/live/69a2f347326d5_42120/index.m3u8?expire=1772891591&sign=30e0f40cbf2328136922ad7ee16ac735",
+                          "request_headers": [
+                            {
+                              "key": "Referer",
+                              "value": "https://bunchatv.net/truc-tiep/wu-yize-vs-barry-hawkins-0000-01-03-2026/601283361"
+                            },
+                            {
+                              "key": "User-Agent",
+                              "value": "Mozilla/5.0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kaytee-60a4737ae89a",
+          "labels": [
+            {
+              "position": "top-left",
+              "text": "● Live",
+              "color": "#FF0000",
+              "text_color": "#FFFFFF"
+            },
+            {
+              "position": "center",
+              "text": "00:00",
+              "color": "#4CAF50",
+              "text_color": "#FFFFFF"
+            }
+          ],
+          "image": {
+            "padding": 1,
+            "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
+            "height": 480,
+            "width": 640,
+            "display": "cover",
             "shape": "square"
           },
           "type": "single",
@@ -113,8 +177,8 @@
           "description": "02:00",
           "image": {
             "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg",
-            "height": 460,
-            "width": 600,
+            "height": 480,
+            "width": 640,
             "display": "cover",
             "shape": "square"
           },

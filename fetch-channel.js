@@ -164,7 +164,7 @@ async function scrapelink(link) {
 async function main() {
   console.log("🏁 Starting Scraper...");
   const list = await scrapeSoccer();
-  // console.log(list);
+  console.log(list);
   console.log(
     `\n📊 Scraping finished. Total channels with streams: ${list.length}`,
   );
@@ -181,18 +181,31 @@ async function main() {
     }
 
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
+    const statusConfig = {
+      "Đang Diễn Ra": {
+        text: "● Live",
+        color: "#FF0000",
+      },
+      "Chưa Bắt Đầu": {
+        text: "⏳Upcoming",
+        color: "#FF9800",
+      },
+    };
 
     const channels = list.map((item) => {
       // console.log({item})
+      const labelStatus = statusConfig[item.status] || {
+        text: "",
+        color: "#9E9E9E",
+      };
       const channelId = generateId("ch");
       return {
         id: channelId,
-        name: item.label,
+        name: `${item.teams.home.name} vs ${item.teams.away.name}`,
         labels: [
           {
             position: "top-left",
-            text: "● Live",
-            color: "#FF0000",
+            ...labelStatus,
             text_color: "#FFFFFF",
           },
           {
@@ -235,7 +248,7 @@ async function main() {
                 streams: [
                   {
                     id: generateId("st"),
-                    name: "Server",
+                    name: "Main Stream",
                     stream_links: [
                       {
                         id: generateId("lnk"),
