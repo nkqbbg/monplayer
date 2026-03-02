@@ -223,7 +223,7 @@ async function main() {
           height: 900,
           width: 1600,
           display: "contain",
-          shape: "square",
+          padding: 1,
         },
         sources: [
           {
