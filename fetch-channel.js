@@ -228,7 +228,7 @@ async function main() {
         sources: [
           {
             id: generateId("src"),
-            name: "Server 1",
+            name: `${item.teams.home.name} - ${item.teams.away.name}`,
             contents: [
               {
                 id: generateId("ct"),
@@ -236,7 +236,7 @@ async function main() {
                 streams: [
                   {
                     id: generateId("st"),
-                    name: "Server 1",
+                    name: "Server",
                     stream_links: [
                       {
                         id: generateId("lnk"),
