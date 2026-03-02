@@ -3,7 +3,9 @@
     "url": "https://tt.8share.pro/buncha",
     "name": "Hoa Đào TV",
     "color": "#e86281",
+    "grid_number": 3,
     "image": {
+        "type": "cover",
         "url": "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/7c0829f097849f9cfc54b5f6f37e2dbddda468c6/hoadaologo.jpg"
     },
     "description": "Hoa Đào TV - Trang web phát sóng bóng đá trực tuyến miễn phí hàng đầu tại Việt Nam, mang đến trải nghiệm chất lượng cao với bình luận tiếng Việt sống động.",
@@ -23,51 +25,62 @@
             "id": "live",
             "name": "🔴 Live",
             "display": "vertical",
-            "grid_number": 1,
+            "grid_number": 2,
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-d53f2b987687",
+                    "id": "ch-49dcc5bfd8c5",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Daejeon Citizen - FC Anyang",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "12:00 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Korean K League 1",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "12:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Korean K League 1",
-                        "team_a": "Daejeon Citizen",
-                        "team_b": "FC Anyang",
-                        "logo_a": "https://img.rapid-api.icu/football/team/25c697eefddd230651e9502912458072/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/7dcc98a805f95fb8ad561ce28590c761/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-0e8834375ed1",
+                            "id": "src-ed731ba568f1",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-dc5ac04b7210",
+                                    "id": "ct-036074574ce8",
                                     "streams": [
                                         {
-                                            "id": "st-ff786ec613c0",
+                                            "id": "st-d7ef86fd956e",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ed119d82168d",
+                                                    "id": "lnk-a8c0d12a82ea",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -83,7 +96,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d4f970133107",
+                                                    "id": "lnk-6fbcd0b618fb",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -99,7 +112,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b69ca4d84e61",
+                                                    "id": "lnk-6322157bf32a",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -115,7 +128,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-263611c746e1",
+                                                    "id": "lnk-729415255c0f",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -131,7 +144,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ad21a3536e42",
+                                                    "id": "lnk-667a8acdbdd6",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -155,47 +168,58 @@
                     ]
                 },
                 {
-                    "id": "ch-7037dafc1962",
+                    "id": "ch-cb4f53384298",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Việt Nam Nữ - Indonesia Nữ",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "15:00 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Vô Địch Nữ FUSAL ĐNA",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "15:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Vô Địch Nữ FUSAL ĐNA",
-                        "team_a": "Việt Nam Nữ",
-                        "team_b": "Indonesia Nữ",
-                        "logo_a": "https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png",
-                        "logo_b": "https://static.flashscore.com/res/image/data/WvrcHkXg-QBz8eAFI.png"
                     },
                     "sources": [
                         {
-                            "id": "src-3cf9ddfbea78",
+                            "id": "src-3c1bbd6b4421",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-c5b39cd13517",
+                                    "id": "ct-24a7ae1b7ab6",
                                     "streams": [
                                         {
-                                            "id": "st-85926ed086b1",
+                                            "id": "st-f9e1d2171ac1",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-1529cadef628",
+                                                    "id": "lnk-bcea7102b7aa",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -211,7 +235,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bf40e9850a93",
+                                                    "id": "lnk-5f460af226c1",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -227,7 +251,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-49a8ddba256b",
+                                                    "id": "lnk-3745e6ca5fea",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -243,7 +267,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-62b66cc42fca",
+                                                    "id": "lnk-1f0242d58577",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -259,7 +283,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d1bf4bbcfeee",
+                                                    "id": "lnk-bbd7e3162294",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -283,47 +307,58 @@
                     ]
                 },
                 {
-                    "id": "ch-702e6d4bf84c",
+                    "id": "ch-fab6f7ba8fdf",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "SC Poltava - Kudrivka",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "18:00 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Ukrainian Premier League",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "18:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Ukrainian Premier League",
-                        "team_a": "SC Poltava",
-                        "team_b": "Kudrivka",
-                        "logo_a": "https://img.rapid-api.icu/football/team/5a4ba875fb179efe94d21e6c4f0b68ad/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/e352e7e52f914f92d3452d8077d7afd9/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-ee48223087c9",
+                            "id": "src-7a7a6eeaba57",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-d79ea77676ff",
+                                    "id": "ct-b7bd2ab1c21b",
                                     "streams": [
                                         {
-                                            "id": "st-45cbb9fbdef1",
+                                            "id": "st-2d5b9b606a0c",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-667b8f5553d3",
+                                                    "id": "lnk-0e5a89d0212d",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -339,7 +374,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bf2364d7a4db",
+                                                    "id": "lnk-9517d63a1116",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -355,7 +390,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-198291fec62b",
+                                                    "id": "lnk-4402b5cf7fbe",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -371,7 +406,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ce94bed776fe",
+                                                    "id": "lnk-d7d17bba5eb4",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -387,7 +422,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0f71d8e98418",
+                                                    "id": "lnk-5727eb1c19f7",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -411,47 +446,58 @@
                     ]
                 },
                 {
-                    "id": "ch-c2ee122248b4",
+                    "id": "ch-05609a7a83e6",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Thái Lan Nữ - Úc Nữ",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "18:30 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Vô Địch Nữ FUSAL ĐNA",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "18:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Vô Địch Nữ FUSAL ĐNA",
-                        "team_a": "Thái Lan Nữ",
-                        "team_b": "Úc Nữ",
-                        "logo_a": "https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png",
-                        "logo_b": "https://static.flashscore.com/res/image/data/Ygu7zgHG-YNb3oHYR.png"
                     },
                     "sources": [
                         {
-                            "id": "src-4814b128c6fb",
+                            "id": "src-7f580efd5916",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-bd8f05189d06",
+                                    "id": "ct-8dd1c9130dce",
                                     "streams": [
                                         {
-                                            "id": "st-24b1425c0d9a",
+                                            "id": "st-6f04098e5e0e",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-5acc3380ea52",
+                                                    "id": "lnk-420b4f2f2e43",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -467,7 +513,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f0c6c7ae498d",
+                                                    "id": "lnk-2aadf4c8ed5f",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -483,7 +529,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-cb7d7ca5edb3",
+                                                    "id": "lnk-52391de6b13a",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -499,7 +545,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e054948ff213",
+                                                    "id": "lnk-a4d4b8b80e7d",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -515,7 +561,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4eb4ddf3c0a3",
+                                                    "id": "lnk-b3bd6469fec3",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -539,47 +585,58 @@
                     ]
                 },
                 {
-                    "id": "ch-e5841279ef86",
+                    "id": "ch-b7e18244335e",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Rodina Moscow - Shinnik Yaroslavl",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "23:30 | 02/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Russian First LeagueLeague",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "23:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Russian First LeagueLeague",
-                        "team_a": "Rodina Moscow",
-                        "team_b": "Shinnik Yaroslavl",
-                        "logo_a": "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-0e61b9ad9763",
+                            "id": "src-451768644466",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-085de077118e",
+                                    "id": "ct-74d007e0caae",
                                     "streams": [
                                         {
-                                            "id": "st-fe16673f0de5",
+                                            "id": "st-8ee99aa1fc66",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a847b3093a39",
+                                                    "id": "lnk-a4f2685ffaa4",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -595,7 +652,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-fae60d3f0a48",
+                                                    "id": "lnk-fb8899d1605d",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -611,7 +668,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5fa80180b0c5",
+                                                    "id": "lnk-64696d040162",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -627,7 +684,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-df31d1e8aee4",
+                                                    "id": "lnk-a8d9609bb03b",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -643,7 +700,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bff2df61c465",
+                                                    "id": "lnk-687c7d613358",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -667,47 +724,58 @@
                     ]
                 },
                 {
-                    "id": "ch-e6baa20e9b73",
+                    "id": "ch-abe91c320bd5",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Pisa - Bologna",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "00:30 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Italian Serie A",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "00:30",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Italian Serie A",
-                        "team_a": "Pisa",
-                        "team_b": "Bologna",
-                        "logo_a": "https://img.rapid-api.icu/football/team/adfc3610e9d94c45c8cae0cd2c7d6e2b/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/4bd880d3beb68a5e39c5f9648aeb59dd/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-56de9df7b2e7",
+                            "id": "src-9a7cb0963b2a",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-8c4826e95180",
+                                    "id": "ct-60b298d157df",
                                     "streams": [
                                         {
-                                            "id": "st-9059fad78dc9",
+                                            "id": "st-ecfb30cb01b5",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8a49f589f3a5",
+                                                    "id": "lnk-f8a8c460ab16",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -723,7 +791,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f22ca4d96cd4",
+                                                    "id": "lnk-3ed34c0e2faf",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -739,7 +807,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-213e6d1fb397",
+                                                    "id": "lnk-9fc6a43bbad3",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -755,7 +823,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6a2142293415",
+                                                    "id": "lnk-5e3aea1c8640",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -771,7 +839,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bae7e85f4bb4",
+                                                    "id": "lnk-46c7f96a4c42",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -795,47 +863,58 @@
                     ]
                 },
                 {
-                    "id": "ch-d4be687e8aa0",
+                    "id": "ch-2d935ba4a7f8",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Udinese - Fiorentina",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "02:45 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Italian Serie A",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "02:45",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Italian Serie A",
-                        "team_a": "Udinese",
-                        "team_b": "Fiorentina",
-                        "logo_a": "https://img.rapid-api.icu/football/team/c26824a53e791f4fcafc7b5405a9a458/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/fe835ae83ef47dad92b3a40f5579510b/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-9a39b0691ba1",
+                            "id": "src-78a7dba72d25",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-0ae564f6ffa8",
+                                    "id": "ct-e415d3cf9c94",
                                     "streams": [
                                         {
-                                            "id": "st-3f99e4d9749a",
+                                            "id": "st-5e7218f973af",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-999c2c357bcb",
+                                                    "id": "lnk-15edf1215e18",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -851,7 +930,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4f17e4f006e1",
+                                                    "id": "lnk-942b3010c914",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -867,7 +946,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-591119c75bc9",
+                                                    "id": "lnk-9667be0ad705",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -883,7 +962,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-409dbdfc7574",
+                                                    "id": "lnk-9fe204a59aae",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -899,7 +978,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b34890daaf47",
+                                                    "id": "lnk-38bcb8a7e2f2",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -923,47 +1002,58 @@
                     ]
                 },
                 {
-                    "id": "ch-48a9f5f610a6",
+                    "id": "ch-e9094a8b94c3",
+                    "type": "single",
+                    "display": "text-below",
                     "labels": [
                         {
                             "position": "top-left",
                             "text": "● Live",
                             "color": "#FF0000",
                             "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "center",
+                            "text": "Real Madrid - Getafe",
+                            "color": "#2196F3",
+                            "text_color": "#FFFFFF",
+                            "font_size": 28,
+                            "font_weight": "bold"
+                        },
+                        {
+                            "position": "top-right",
+                            "text": "03:00 | 03/03",
+                            "color": "#4CAF50",
+                            "text_color": "#FFFFFF"
+                        },
+                        {
+                            "position": "bottom-right",
+                            "text": "Spanish La Liga",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF"
                         }
                     ],
-                    "description": "03:00",
                     "image": {
                         "url": "https://hoadaotv.org/assets/image/bg/bg-soccer.jpg",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover",
+                        "height": 900,
+                        "width": 1600,
+                        "display": "contain",
                         "shape": "square"
-                    },
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "enable_detail": false,
-                    "org_metadata": {
-                        "league": "Spanish La Liga",
-                        "team_a": "Real Madrid",
-                        "team_b": "Getafe",
-                        "logo_a": "https://img.rapid-api.icu/football/team/946ca6ff50107aa2aa51fc0ddbb7fe6d/image/small?v=1768601124",
-                        "logo_b": "https://img.rapid-api.icu/football/team/d7682ca79050d2d8bc90139131b0a600/image/small?v=1768601124"
                     },
                     "sources": [
                         {
-                            "id": "src-a8ffb607fd2e",
+                            "id": "src-5ab98410e22f",
                             "name": "Server 1",
                             "contents": [
                                 {
-                                    "id": "ct-bf80a9bf094d",
+                                    "id": "ct-199cfe9afe85",
                                     "streams": [
                                         {
-                                            "id": "st-b943361b3620",
+                                            "id": "st-7bd41613c557",
                                             "name": "Server 1",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-fa32db82a186",
+                                                    "id": "lnk-321e2dfff5da",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -979,7 +1069,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c626bf0c11ae",
+                                                    "id": "lnk-f06ea88f3328",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -995,7 +1085,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-10762bc66418",
+                                                    "id": "lnk-a70a9026796f",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1011,7 +1101,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e8936b4e94da",
+                                                    "id": "lnk-5c258bc5c91c",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1027,7 +1117,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-18d040e5d1f2",
+                                                    "id": "lnk-3ea3f8dead09",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
