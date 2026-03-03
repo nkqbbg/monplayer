@@ -220,33 +220,33 @@ async function main() {
       return {
         id: channelId,
         name: `${item.teams.home.name} vs ${item.teams.away.name}`,
-        labels: [
-          {
-            position: "top-left",
-            ...labelStatus,
-            text_color: "#FFFFFF",
-          },
-          {
-            position: "center",
-            text: `${item.teams.home.name} - ${item.teams.away.name}`,
-            color: "#2196F3",
-            text_color: "#FFFFFF",
-            font_size: 28,
-            font_weight: "bold",
-          },
-          {
-            position: "top-right",
-            text: `${item.time} | ${item.date}`,
-            color: "#4CAF50",
-            text_color: "#FFFFFF",
-          },
-          {
-            position: "bottom-right",
-            text: item.league || "",
-            color: "#FF9800",
-            text_color: "#FFFFFF",
-          },
-        ],
+        // labels: [
+        //   {
+        //     position: "top-left",
+        //     ...labelStatus,
+        //     text_color: "#FFFFFF",
+        //   },
+        //   {
+        //     position: "center",
+        //     text: `${item.teams.home.name} - ${item.teams.away.name}`,
+        //     color: "#2196F3",
+        //     text_color: "#FFFFFF",
+        //     font_size: 28,
+        //     font_weight: "bold",
+        //   },
+        //   {
+        //     position: "top-right",
+        //     text: `${item.time} | ${item.date}`,
+        //     color: "#4CAF50",
+        //     text_color: "#FFFFFF",
+        //   },
+        //   {
+        //     position: "bottom-right",
+        //     text: item.league || "",
+        //     color: "#FF9800",
+        //     text_color: "#FFFFFF",
+        //   },
+        // ],
         image: {
           url: matchImageUrl,
           // url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
