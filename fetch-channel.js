@@ -1,3 +1,4 @@
+const { createMatchImage, clearFolder } = require("./logo.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
@@ -197,12 +198,25 @@ async function main() {
     };
 
     const channels = list.map((item) => {
+      const channelId = generateId("ch");
       // console.log({item})
+      clearFolder("./resource");
+      createMatchImage(
+        item.league,
+        item.teams.home.name,
+        item.teams.home.icon,
+        item.teams.away.name,
+        item.teams.away.icon,
+        item.time,
+        item.date,
+        item.status,
+        `.\\resource\\match-${channelId}.png`,
+      );
+      const matchImageUrl = `https://raw.githubusercontent.com/nkqbbg/monplayer/refs/heads/main/resource/match-${channelId}.png`;
       const labelStatus = statusConfig[item.status] || {
         text: "",
         color: "#9E9E9E",
       };
-      const channelId = generateId("ch");
       return {
         id: channelId,
         name: `${item.teams.home.name} vs ${item.teams.away.name}`,
@@ -234,8 +248,8 @@ async function main() {
           },
         ],
         image: {
-          //   url: item.backUrl,
-          url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
+          url: matchImageUrl,
+          // url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
           height: 480,
           width: 640,
           display: "cover",

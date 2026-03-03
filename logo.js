@@ -1,6 +1,20 @@
 const { createCanvas, loadImage } = require("canvas");
 const fs = require("fs");
+const path = require("path");
 
+function clearFolder(folderPath) {
+  if (!fs.existsSync(folderPath)) return;
+
+  const files = fs.readdirSync(folderPath);
+
+  for (const file of files) {
+    const filePath = path.join(folderPath, file);
+
+    if (fs.lstatSync(filePath).isFile()) {
+      fs.unlinkSync(filePath); // xóa file
+    }
+  }
+}
 async function createMatchImage(
   league,
   homeName,
@@ -15,64 +29,121 @@ async function createMatchImage(
   const width = 640;
   const height = 480;
 
+  const SCALE = 1.2; // 🔥 chỉnh size toàn bộ UI ở đây
+
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext("2d");
 
   const centerX = width / 2;
   const centerY = height / 2;
 
-  // ========= nền =========
-  const bg = await loadImage("bg-soccer.jpg");
+  // =====================================================
+  // BACKGROUND
+  // =====================================================
 
-  // vẽ background cover full canvas
+  const bg = await loadImage("bg-soccer.jpg");
   ctx.drawImage(bg, 0, 0, width, height);
 
-  // overlay xám nhẹ
-  ctx.fillStyle = "rgba(0, 0, 0, 0.70)"; // chỉnh độ tối ở đây
+  ctx.fillStyle = "rgba(0,0,0,0.65)";
   ctx.fillRect(0, 0, width, height);
 
-  // ========= HEADER =========
-  ctx.textAlign = "center";
+  const vignette = ctx.createRadialGradient(
+    centerX,
+    centerY,
+    100,
+    centerX,
+    centerY,
+    width,
+  );
+  vignette.addColorStop(0, "rgba(0,0,0,0)");
+  vignette.addColorStop(1, "rgba(0,0,0,0.6)");
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, width, height);
 
-  // status badge
-  const statusY = 60;
+  // =====================================================
+  // LAYOUT ZONES
+  // =====================================================
+
+  const headerHeight = height * 0.25;
+  const matchHeight = height * 0.5;
+  const footerHeight = height * 0.25;
+
+  const headerCenterY = headerHeight / 2;
+  const matchCenterY = headerHeight + matchHeight / 2;
+  const footerCenterY = headerHeight + matchHeight + footerHeight / 2;
+
+  ctx.textAlign = "center";
+  ctx.fillStyle = "#fff";
+
+  // =====================================================
+  // HEADER
+  // =====================================================
+
+  ctx.font = `bold ${22 * SCALE}px Arial`;
+  ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
+
+  const badgeWidth = 140 * SCALE;
+  const badgeHeight = 34 * SCALE;
+
   ctx.fillStyle = "#ff4d4f";
   ctx.beginPath();
-  ctx.roundRect(centerX - 60, statusY + 70, 120, 26, 10); // 8 = radius bo góc
+  ctx.roundRect(
+    centerX - badgeWidth / 2,
+    headerCenterY,
+    badgeWidth,
+    badgeHeight,
+    14 * SCALE,
+  );
   ctx.fill();
 
   ctx.fillStyle = "#fff";
-  ctx.font = "bold 14px Arial";
-  ctx.fillText(status, centerX, statusY + 87);
+  ctx.font = `bold ${15 * SCALE}px Arial`;
+  ctx.fillText(status, centerX, headerCenterY + 22 * SCALE);
 
-  // league
-  ctx.font = "bold 20px Arial";
-  ctx.fillText(league, centerX, statusY + 50);
-
-  // ========= MATCH BLOCK (CENTERED) =========
-
-  const logoSize = 100;
-  const gap = 60; // khoảng cách logo ↔ VS
-
-  const homeLogoX = centerX - gap - logoSize;
-  const awayLogoX = centerX + gap;
-  const logoY = centerY - 70;
+  // =====================================================
+  // LOGO
+  // =====================================================
 
   const logo1 = await loadImage(homeLogo);
   const logo2 = await loadImage(awayLogo);
 
-  ctx.drawImage(logo1, homeLogoX, logoY, logoSize, logoSize);
-  ctx.drawImage(logo2, awayLogoX, logoY, logoSize, logoSize);
+  const logoSize = 120 * SCALE;
+  const gap = 110 * SCALE;
 
-  // ========= VS =========
+  const homeLogoX = centerX - gap - logoSize;
+  const awayLogoX = centerX + gap;
+  const logoY = matchCenterY - logoSize / 2;
+
+  function drawCircleLogo(img, x, y, size) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(x + size / 2, y + size / 2, size / 2, 0, Math.PI * 2);
+    ctx.clip();
+    ctx.drawImage(img, x, y, size, size);
+    ctx.restore();
+  }
+
+  drawCircleLogo(logo1, homeLogoX, logoY, logoSize);
+  drawCircleLogo(logo2, awayLogoX, logoY, logoSize);
+
+  // =====================================================
+  // VS
+  // =====================================================
+
   ctx.fillStyle = "#fff";
-  ctx.font = "italic bold 24px Georgia";
-  ctx.fillText("VS", centerX, logoY + logoSize / 2 + 10);
+  ctx.font = `italic bold ${32 * SCALE}px Georgia`;
+  ctx.shadowColor = "rgba(255,255,255,0.7)";
+  ctx.shadowBlur = 18 * SCALE;
+  ctx.fillText("VS", centerX, matchCenterY + 12 * SCALE);
+  ctx.shadowBlur = 0;
 
-  // ========= TEAM NAME =========
-  ctx.font = "bold 18px Arial";
+  // =====================================================
+  // TEAM NAME
+  // =====================================================
 
-  const wrapText = (text, x, y, maxWidth, lineHeight) => {
+  ctx.font = `bold ${20 * SCALE}px Arial`;
+
+  function wrapText(text, x, y, maxWidth, lineHeight) {
     const words = text.split(" ");
     let line = "";
 
@@ -87,30 +158,41 @@ async function createMatchImage(
       }
     }
     ctx.fillText(line, x, y);
-  };
+  }
 
-  const nameY = logoY + logoSize + 30;
+  const nameY = logoY + logoSize + 40 * SCALE;
 
-  wrapText(homeName, homeLogoX + logoSize / 2, nameY, 140, 22);
-  wrapText(awayName, awayLogoX + logoSize / 2, nameY, 140, 22);
+  wrapText(homeName, homeLogoX + logoSize / 2, nameY, 160 * SCALE, 26 * SCALE);
+  wrapText(awayName, awayLogoX + logoSize / 2, nameY, 160 * SCALE, 26 * SCALE);
 
-  // ========= TIME =========
-  ctx.font = "bold 16px Arial";
-  ctx.fillText(`${time} | ${day}`, centerX, nameY + 60);
+  // =====================================================
+  // FOOTER TIME
+  // =====================================================
 
-  // ========= SAVE =========
+  ctx.font = `bold ${20 * SCALE}px Arial`;
+  ctx.fillText(`${time} | ${day}`, centerX, footerCenterY);
+
+  // =====================================================
+  // SAVE
+  // =====================================================
+
   const buffer = canvas.toBuffer("image/png");
   fs.writeFileSync(output, buffer);
 }
 
-createMatchImage(
-  "Vô Địch Nữ FUSAL ĐNA", // league
-  "Việt Nam Nữ Indonesia", // homeName
-  "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124", // homeLogo
-  "Indonesia Nữ Malaysia", // awayName
-  "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124", // awayLogo
-  "15:00", // time
-  "02/03", // day
-  "Chưa Bắt Đầu", // status
-  "match.png", // output
-);
+// =====================================================
+// TEST
+// =====================================================
+
+// createMatchImage(
+//   "Vô Địch Nữ FUSAL ĐNA",
+//   "Việt Nam Nữ Indonesia",
+//   "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
+//   "Indonesia Nữ Malaysia",
+//   "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
+//   "15:00",
+//   "02/03",
+//   "Chưa Bắt Đầu",
+//   ".\\resource\\match1.png",
+// );
+module.exports = { createMatchImage, clearFolder };
