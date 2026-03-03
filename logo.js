@@ -82,14 +82,14 @@ async function createMatchImage(
   ctx.font = `bold ${22 * SCALE}px Arial`;
   ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
 
-  const badgeWidth = 140 * SCALE;
-  const badgeHeight = 34 * SCALE;
+  const badgeWidth = 175 * SCALE;
+  const badgeHeight = 38 * SCALE;
 
   ctx.fillStyle = "#ff4d4f";
   ctx.beginPath();
   ctx.roundRect(
     centerX - badgeWidth / 2,
-    headerCenterY,
+    headerCenterY + 15 * SCALE,
     badgeWidth,
     badgeHeight,
     14 * SCALE,
@@ -97,8 +97,8 @@ async function createMatchImage(
   ctx.fill();
 
   ctx.fillStyle = "#fff";
-  ctx.font = `bold ${15 * SCALE}px Arial`;
-  ctx.fillText(status, centerX, headerCenterY + 22 * SCALE);
+  ctx.font = `bold ${25 * SCALE}px Arial`;
+  ctx.fillText(status, centerX, headerCenterY + 41 * SCALE);
 
   // =====================================================
   // LOGO
@@ -108,7 +108,7 @@ async function createMatchImage(
   const logo2 = await loadImage(awayLogo);
 
   const logoSize = 120 * SCALE;
-  const gap = 110 * SCALE;
+  const gap = 100 * SCALE;
 
   const homeLogoX = centerX - gap - logoSize;
   const awayLogoX = centerX + gap;
