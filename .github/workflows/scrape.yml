@@ -65,7 +65,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
+          git status --porcelain
           git add channels.json
           git commit -m "Auto-update channels list [skip ci]" || echo "No changes to commit"
+          # Rebase after commit so the working tree is clean.
+          git pull --rebase --autostash
           git push
