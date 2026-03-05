@@ -27,7 +27,7 @@ function generateId(prefix = "id") {
  * Scrapes hoadaotv.org/soccer and returns a list of stream data
  */
 async function scrapeSoccer() {
-  const domain = "https://hoadaotv.net";
+  const domain = "https://hoadaotv.org";
   const url = `${domain}/soccer`;
   console.log(`🚀 Fetching data from ${url}...`);
 
