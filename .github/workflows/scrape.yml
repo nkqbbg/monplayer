@@ -8,6 +8,10 @@ on:
   workflow_dispatch:
     # Allow manual trigger
 
+concurrency:
+  group: scrape-channels-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -17,23 +21,51 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install system dependencies (canvas)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcairo2-dev \
+            libpango1.0-dev \
+            libjpeg-dev \
+            libgif-dev \
+            librsvg2-dev
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Validate Cloudinary secrets
+        run: |
+          if [ -z "$CLOUDINARY_API_KEY" ] || [ -z "$CLOUDINARY_API_SECRET" ]; then
+            echo "Missing CLOUDINARY_API_KEY/CLOUDINARY_API_SECRET GitHub Secrets."
+            exit 1
+          fi
+        env:
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
 
       - name: Run Scraper
         run: node fetch-channel.js
+        env:
+          # Set these in your repo Settings -> Secrets and variables -> Actions
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
           git add channels.json
           git commit -m "Auto-update channels list [skip ci]" || echo "No changes to commit"
           git push

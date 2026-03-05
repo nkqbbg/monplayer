@@ -4,6 +4,17 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const { uploadImage, clearMatchesFolder } = require("./cloudinary.js");
+
+function absolutizeUrl(url, domain) {
+  if (!url) return null;
+  if (typeof url !== "string") return null;
+  if (url.startsWith("data:")) return url;
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  if (url.startsWith("//")) return `https:${url}`;
+  if (url.startsWith("/")) return `${domain}${url}`;
+  return url;
+}
 
 /**
  * Helper to generate a random ID
@@ -16,7 +27,8 @@ function generateId(prefix = "id") {
  * Scrapes hoadaotv.org/soccer and returns a list of stream data
  */
 async function scrapeSoccer() {
-  const url = "https://hoadaotv.org/soccer";
+  const domain = "https://hoadaotv.net";
+  const url = `${domain}/soccer`;
   console.log(`🚀 Fetching data from ${url}...`);
 
   try {
@@ -58,7 +70,7 @@ async function scrapeSoccer() {
         backgroundUrl = match[1];
 
         if (backgroundUrl.startsWith("/")) {
-          backgroundUrl = `https://hoadaotv.org${backgroundUrl}`;
+          backgroundUrl = `${domain}${backgroundUrl}`;
         }
       }
     }
@@ -77,15 +89,24 @@ async function scrapeSoccer() {
       const league = card.find(".league").text().trim();
       const status = card.find(".text-timeinplay").text().trim();
 
-      const leagueIcon = card.find(".corner img").attr("src");
-      const homeIcon = card.find(".team-home .base-icon img").attr("data-src");
-      const awayIcon = card.find(".team-away .base-icon img").attr("src");
+      const leagueIcon = absolutizeUrl(
+        card.find(".corner img").attr("src"),
+        domain,
+      );
+      const homeIcon = absolutizeUrl(
+        card.find(".team-home .base-icon img").attr("data-src"),
+        domain,
+      );
+      const awayIcon = absolutizeUrl(
+        card.find(".team-away .base-icon img").attr("src"),
+        domain,
+      );
       const matchPath = card.find(".match-link-overlay").attr("href");
       if (!matchPath) continue;
 
       const matchLink = matchPath.startsWith("http")
         ? matchPath
-        : `https://hoadaotv.org${matchPath}`;
+        : `${domain}${matchPath}`;
 
       console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
 
@@ -113,7 +134,7 @@ async function scrapeSoccer() {
         },
 
         icons: {
-          league: leagueIcon ? `https://hoadaotv.org${leagueIcon}` : null,
+          league: leagueIcon || null,
         },
       });
     }
@@ -165,7 +186,7 @@ async function scrapelink(link) {
 async function main() {
   console.log("🏁 Starting Scraper...");
   const list = await scrapeSoccer();
-  console.log(list);
+  // console.log(list);
   console.log(
     `\n📊 Scraping finished. Total channels with streams: ${list.length}`,
   );
@@ -197,11 +218,12 @@ async function main() {
       },
     };
 
-    const channels = list.map((item) => {
+    await clearMatchesFolder();
+
+    const channels = [];
+    for (const item of list) {
       const channelId = generateId("ch");
-      // console.log({item})
-      clearFolder("./resource");
-      createMatchImage(
+      const buffer = await createMatchImage(
         item.league,
         item.teams.home.name,
         item.teams.home.icon,
@@ -210,14 +232,16 @@ async function main() {
         item.time,
         item.date,
         item.status,
-        `.\\resource\\match-${channelId}.png`,
       );
-      const matchImageUrl = `https://raw.githubusercontent.com/nkqbbg/monplayer/refs/heads/main/resource/match-${channelId}.png`;
+
+      const url = await uploadImage(buffer, `match-${channelId}`);
+      console.log(url);
+      // const matchImageUrl = `https://raw.githubusercontent.com/nkqbbg/monplayer/refs/heads/main/resource/match-${channelId}.png`;
       const labelStatus = statusConfig[item.status] || {
         text: "",
         color: "#9E9E9E",
       };
-      return {
+      channels.push({
         id: channelId,
         name: `${item.teams.home.name} vs ${item.teams.away.name}`,
         // labels: [
@@ -248,7 +272,7 @@ async function main() {
         //   },
         // ],
         image: {
-          url: matchImageUrl,
+          url: url,
           // url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
           height: 480,
           width: 640,
@@ -336,8 +360,8 @@ async function main() {
             ],
           },
         ],
-      };
-    });
+      });
+    }
 
     // Update template
     if (!templateData.groups) templateData.groups = [{}];

@@ -1,6 +1,78 @@
 const { createCanvas, loadImage } = require("canvas");
+const axios = require("axios");
+const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
+
+async function loadImageSmart(src) {
+  if (!src) return null;
+
+  if (Buffer.isBuffer(src)) {
+    return loadImage(src);
+  }
+
+  if (typeof src !== "string") return null;
+
+  // Local file path or data URL
+  if (!/^https?:\/\//i.test(src)) {
+    try {
+      return await loadImage(src);
+    } catch {
+      return null;
+    }
+  }
+
+  let response;
+  try {
+    response = await axios.get(src, {
+      responseType: "arraybuffer",
+      timeout: 15000,
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        Accept: "image/avif,image/webp,image/*,*/*;q=0.8",
+      },
+      validateStatus: (s) => s >= 200 && s < 300,
+    });
+  } catch {
+    return null;
+  }
+
+  const contentType = String(response.headers?.["content-type"] || "")
+    .split(";")[0]
+    .trim()
+    .toLowerCase();
+  const originalBuffer = Buffer.from(response.data);
+
+  // Try the original first when it's a known-safe format.
+  if (
+    contentType === "image/png" ||
+    contentType === "image/jpeg" ||
+    contentType === "image/jpg" ||
+    contentType === "image/gif"
+  ) {
+    try {
+      return await loadImage(originalBuffer);
+    } catch {
+      // fall through to conversion
+    }
+  }
+
+  // Convert webp/avif/svg/etc -> PNG for node-canvas.
+  try {
+    const pngBuffer = await sharp(originalBuffer, { failOn: "none" })
+      .png()
+      .toBuffer();
+    return await loadImage(pngBuffer);
+  } catch {
+    // Last attempt: maybe it already was a supported type.
+    try {
+      return await loadImage(originalBuffer);
+    } catch {
+      return null;
+    }
+  }
+}
 
 function clearFolder(folderPath) {
   if (!fs.existsSync(folderPath)) return;
@@ -24,7 +96,6 @@ async function createMatchImage(
   time,
   day,
   status,
-  output,
 ) {
   const width = 640;
   const height = 480;
@@ -104,8 +175,8 @@ async function createMatchImage(
   // LOGO
   // =====================================================
 
-  const logo1 = await loadImage(homeLogo);
-  const logo2 = await loadImage(awayLogo);
+  const logo1 = await loadImageSmart(homeLogo);
+  const logo2 = await loadImageSmart(awayLogo);
 
   const logoSize = 120 * SCALE;
   const gap = 100 * SCALE;
@@ -119,7 +190,12 @@ async function createMatchImage(
     ctx.beginPath();
     ctx.arc(x + size / 2, y + size / 2, size / 2, 0, Math.PI * 2);
     ctx.clip();
-    ctx.drawImage(img, x, y, size, size);
+    if (img) {
+      ctx.drawImage(img, x, y, size, size);
+    } else {
+      ctx.fillStyle = "rgba(255,255,255,0.12)";
+      ctx.fillRect(x, y, size, size);
+    }
     ctx.restore();
   }
 
@@ -176,8 +252,7 @@ async function createMatchImage(
   // SAVE
   // =====================================================
 
-  const buffer = canvas.toBuffer("image/png");
-  fs.writeFileSync(output, buffer);
+  return canvas.toBuffer("image/png");
 }
 
 // =====================================================
