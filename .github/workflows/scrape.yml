@@ -65,9 +65,17 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          echo "Workflow commit: $(git rev-parse HEAD)"
           git status --porcelain
+
           git add channels.json
-          git commit -m "Auto-update channels list [skip ci]" || echo "No changes to commit"
-          # Rebase after commit so the working tree is clean.
-          git pull --rebase --autostash
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Auto-update channels list [skip ci]"
+
+          # Push first; only rebase if remote moved.
+          git push || (git pull --rebase --autostash && git push)
