@@ -113,7 +113,7 @@ async function scrapeSoccer() {
       // ⭐ STREAM LINK Ở ĐÂY
       const streamLinks = await scrapelink(matchLink);
       console.log(streamLinks);
-      
+
       matches.push({
         league,
         time,
@@ -226,7 +226,7 @@ async function main() {
 
       const urlImage = await uploadImage(buffer, channelId);
       uploadedIds.push(channelId);
-      console.log(urlImage);
+      // console.log(urlImage);
 
       channels.push({
         id: channelId,
@@ -291,7 +291,7 @@ async function main() {
                         name: "FL",
                         type: "hls",
                         default: true,
-                        url: item.streams.fl,
+                        url: item.streams.flv,
                         request_headers: [
                           { key: "Referer", value: item.link },
                           { key: "User-Agent", value: "Mozilla/5.0" },
