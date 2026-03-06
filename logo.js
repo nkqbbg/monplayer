@@ -142,7 +142,7 @@ async function createMatchImage(
 
   const headerCenterY = headerHeight / 2;
   const matchCenterY = headerHeight + matchHeight / 2;
-  const footerCenterY = headerHeight + matchHeight + footerHeight / 2;
+  const footerCenterY = headerHeight + matchHeight + footerHeight / 1.5;
 
   ctx.textAlign = "center";
   ctx.fillStyle = "#fff";
@@ -161,7 +161,7 @@ async function createMatchImage(
   ctx.beginPath();
   ctx.roundRect(
     centerX - badgeWidth / 2,
-    headerCenterY + 15 * SCALE,
+    headerCenterY + 35 * SCALE,
     badgeWidth,
     badgeHeight,
     14 * SCALE,
@@ -170,7 +170,7 @@ async function createMatchImage(
 
   ctx.fillStyle = "#fff";
   ctx.font = `bold ${25 * SCALE}px Arial`;
-  ctx.fillText(`${time} | ${day}`, centerX, headerCenterY + 41 * SCALE);
+  ctx.fillText(`${time} | ${day}`, centerX, headerCenterY + 62 * SCALE);
 
   // =====================================================
   // LOGO
