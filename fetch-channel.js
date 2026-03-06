@@ -247,7 +247,7 @@ async function main() {
       uploadedIds.push(chanelId1);
       // console.log(urlImage);
       const labelStatus = statusConfig[item.status] || {
-        text: "",
+        text: "Halftime",
         color: "#9E9E9E",
       };
       channels.push({
@@ -258,7 +258,7 @@ async function main() {
             position: "top-left",
             ...labelStatus,
             text_color: "#FFFFFF",
-            font_size: 12,
+            font_size: 8,
           },
         ],
         image: {
@@ -284,7 +284,7 @@ async function main() {
                     stream_links: [
                       {
                         id: generateId("lnk"),
-                        name: "NDSD",
+                        name: "Nhà đài",
                         type: "hls",
                         default: true,
                         url: item.streams.ndsd,
