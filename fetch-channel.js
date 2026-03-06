@@ -258,6 +258,7 @@ async function main() {
             position: "top-left",
             ...labelStatus,
             text_color: "#FFFFFF",
+            font_size: 12,
           },
         ],
         image: {
@@ -281,6 +282,17 @@ async function main() {
                     id: generateId("st"),
                     name: "Stream",
                     stream_links: [
+                      {
+                        id: generateId("lnk"),
+                        name: "NDSD",
+                        type: "hls",
+                        default: true,
+                        url: item.streams.ndsd,
+                        request_headers: [
+                          { key: "Referer", value: item.link },
+                          { key: "User-Agent", value: "Mozilla/5.0" },
+                        ],
+                      },
                       {
                         id: generateId("lnk"),
                         name: "HD",
