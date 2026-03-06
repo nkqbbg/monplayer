@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const { uploadImage, clearMatchesFolder } = require("./cloudinary.js");
+const { uploadImage, deleteOldImages } = require("./cloudinary.js");
 
 function absolutizeUrl(url, domain) {
   if (!url) return null;
@@ -182,7 +182,11 @@ async function scrapelink(link) {
     return null;
   }
 }
-
+function stableChannelId(matchLink) {
+  // Lấy phần cuối của URL làm ID, hoặc hash toàn bộ URL nếu muốn ngắn gọn
+  const slug = matchLink.split("/").pop();
+  return "ch-" + slug.replace(/[^a-zA-Z0-9]/g, "");
+}
 async function main() {
   console.log("🏁 Starting Scraper...");
   const list = await scrapeSoccer();
@@ -203,26 +207,11 @@ async function main() {
     }
 
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
-    const statusConfig = {
-      "Hiệp 1": {
-        text: "● Hiệp 1",
-        color: "#FF0000",
-      },
-      "Hiệp 2": {
-        text: "● Hiệp 2",
-        color: "#FF0000",
-      },
-      "Chưa Bắt Đầu": {
-        text: "⏳Upcoming",
-        color: "#FF9800",
-      },
-    };
-
-    await clearMatchesFolder();
 
     const channels = [];
+    const uploadedIds = [];
     for (const item of list) {
-      const channelId = generateId("ch");
+      const channelId = stableChannelId(item.link);
       const buffer = await createMatchImage(
         item.league,
         item.teams.home.name,
@@ -234,46 +223,16 @@ async function main() {
         item.status,
       );
 
-      const url = await uploadImage(buffer, `match-${channelId}`);
-      console.log(url);
-      // const matchImageUrl = `https://raw.githubusercontent.com/nkqbbg/monplayer/refs/heads/main/resource/match-${channelId}.png`;
-      const labelStatus = statusConfig[item.status] || {
-        text: "",
-        color: "#9E9E9E",
-      };
+      const urlImage = await uploadImage(buffer, channelId);
+      uploadedIds.push(channelId);
+      console.log(urlImage);
+
       channels.push({
         id: channelId,
         name: `${item.teams.home.name} vs ${item.teams.away.name}`,
-        // labels: [
-        //   {
-        //     position: "top-left",
-        //     ...labelStatus,
-        //     text_color: "#FFFFFF",
-        //   },
-        //   {
-        //     position: "center",
-        //     text: `${item.teams.home.name} - ${item.teams.away.name}`,
-        //     color: "#2196F3",
-        //     text_color: "#FFFFFF",
-        //     font_size: 28,
-        //     font_weight: "bold",
-        //   },
-        //   {
-        //     position: "top-right",
-        //     text: `${item.time} | ${item.date}`,
-        //     color: "#4CAF50",
-        //     text_color: "#FFFFFF",
-        //   },
-        //   {
-        //     position: "bottom-right",
-        //     text: item.league || "",
-        //     color: "#FF9800",
-        //     text_color: "#FFFFFF",
-        //   },
-        // ],
+
         image: {
-          url: url,
-          // url: "https://raw.githubusercontent.com/nkqbbg/20251_CNWeb_User_Management/refs/heads/main/match1.png",
+          url: urlImage,
           height: 480,
           width: 640,
           display: "cover",
@@ -291,19 +250,14 @@ async function main() {
                 streams: [
                   {
                     id: generateId("st"),
-                    name: "Main Stream",
+                    name: "Stream",
                     stream_links: [
                       {
-                        linkTeama: item.teams.home.icon,
-                        linkTeamb: item.teams.away.icon,
                         id: generateId("lnk"),
                         name: "HD",
                         type: "hls",
                         default: true,
-                        url:
-                          item.streams.hd ||
-                          item.streams.fullhd ||
-                          item.streams.sd,
+                        url: item.streams.hd,
                         request_headers: [
                           { key: "Referer", value: item.link },
                           { key: "User-Agent", value: "Mozilla/5.0" },
@@ -362,6 +316,7 @@ async function main() {
         ],
       });
     }
+    await deleteOldImages(uploadedIds);
 
     // Update template
     if (!templateData.groups) templateData.groups = [{}];
@@ -373,7 +328,17 @@ async function main() {
     console.log(`\n🎉 Success! File generated: ${outputPath}`);
     console.log(`📁 Captured ${channels.length} live channels.`);
   } catch (error) {
-    console.error("❌ Error generating JSON:", error.message);
+    const message =
+      error?.message ||
+      (typeof error === "string" ? error : null) ||
+      (error ? JSON.stringify(error) : "Unknown error");
+    console.error("❌ Error generating JSON:", message);
+    if (error?.stack) {
+      console.error(error.stack);
+    } else {
+      console.error(error);
+    }
+    process.exitCode = 1;
   }
 }
 

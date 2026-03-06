@@ -1,56 +1,72 @@
-// const { v2: cloudinary } = require("cloudinary");
-// require("dotenv").config();
-// async function uploadImage(path, publicId) {
-//   // Configuration
-//   cloudinary.config({
-//     cloud_name: "dxfplnfuo",
-//     api_key: process.env.CLOUDINARY_API_KEY, // Click 'View API Keys' above to copy your API key
-//     api_secret: process.env.CLOUDINARY_API_SECRET, // Click 'View API Keys' above to copy your API secret
-//   });
-
-//   // Upload an image
-//   const uploadResult = await cloudinary.uploader.upload_stream(path, {
-//     public_id: publicId,
-//   });
-
-//   console.log(uploadResult);
-
-//   // Optimize delivery by resizing and applying auto-format and auto-quality
-//   const optimizeUrl = cloudinary.url(publicId, {
-//     fetch_format: "auto",
-//     quality: "auto",
-//   });
-
-//   //   console.log(optimizeUrl);
-//   return optimizeUrl;
-
-//   //   // Transform the image: auto-crop to square aspect_ratio
-//   //   const autoCropUrl = cloudinary.url(publicId, {
-//   //     crop: "auto",
-//   //     gravity: "auto",
-//   //     width: 500,
-//   //     height: 500,
-//   //   });
-
-//   //   console.log(autoCropUrl);
-// }
-
-// module.exports = {
-//   uploadImage,
-// };
 const { v2: cloudinary } = require("cloudinary");
 const streamifier = require("streamifier");
 require("dotenv").config();
 
-// config chỉ chạy 1 lần
 cloudinary.config({
   cloud_name: "dxfplnfuo",
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// upload ảnh từ buffer
+function getCloudinaryErrorMessage(error) {
+  if (!error) return "Unknown Cloudinary error";
+  if (typeof error === "string") return error;
+  if (error instanceof Error && error.message) return error.message;
+
+  const nestedMessage =
+    error?.error?.message ||
+    error?.response?.data?.error?.message ||
+    error?.response?.data?.message;
+  if (nestedMessage) return String(nestedMessage);
+
+  try {
+    return JSON.stringify(error);
+  } catch {
+    return String(error);
+  }
+}
+
+function assertCloudinaryConfigured() {
+  if (!process.env.CLOUDINARY_API_KEY || !process.env.CLOUDINARY_API_SECRET) {
+    throw new Error(
+      "Missing CLOUDINARY_API_KEY/CLOUDINARY_API_SECRET. Set them in .env or environment variables.",
+    );
+  }
+}
+
+// Kiểm tra xem ảnh đã tồn tại chưa
+async function checkImageExists(publicId) {
+  assertCloudinaryConfigured();
+  try {
+    const result = await cloudinary.api.resource(`matches/${publicId}`);
+    return result.secure_url;
+  } catch (error) {
+    const httpCode =
+      error?.http_code ||
+      error?.error?.http_code ||
+      error?.response?.status ||
+      error?.statusCode;
+    const message = getCloudinaryErrorMessage(error);
+
+    // Cloudinary sometimes signals 404 via message instead of http_code.
+    if (httpCode === 404) return null;
+    if (typeof message === "string" && /resource not found/i.test(message)) {
+      return null;
+    }
+
+    throw new Error(message);
+  }
+}
+
+// upload ảnh từ buffer, nếu đã có thì trả về url luôn
 async function uploadImage(buffer, publicId) {
+  assertCloudinaryConfigured();
+  const cachedUrl = await checkImageExists(publicId);
+  if (cachedUrl) {
+    console.log(`Image cached: ${publicId}`);
+    return cachedUrl;
+  }
+
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
@@ -60,25 +76,61 @@ async function uploadImage(buffer, publicId) {
       },
       (error, result) => {
         if (error) {
-          console.error("Cloudinary error:", error);
-          return reject(error);
+          return reject(new Error(getCloudinaryErrorMessage(error)));
         }
-
         resolve(result.secure_url);
       },
+      console.log("Uploading image to Cloudinary..."),
     );
 
     streamifier.createReadStream(buffer).pipe(stream);
   });
 }
+async function deleteOldImages(validIds) {
+  assertCloudinaryConfigured();
+  if (!Array.isArray(validIds)) {
+    throw new Error("deleteOldImages(validIds) expects an array");
+  }
 
-// xoá toàn bộ ảnh trong folder matches
-async function clearMatchesFolder() {
-  await cloudinary.api.delete_resources_by_prefix("matches/");
-  await cloudinary.api.delete_folder("matches").catch(() => {});
+  // Lấy danh sách tất cả ảnh trong folder matches
+  let allPublicIds = [];
+  let nextCursor = undefined;
+  try {
+    do {
+      const result = await cloudinary.api.resources({
+        type: "upload",
+        prefix: "matches/",
+        max_results: 500,
+        next_cursor: nextCursor,
+      });
+
+      const resources = Array.isArray(result?.resources)
+        ? result.resources
+        : [];
+      allPublicIds.push(...resources.map((r) => r.public_id));
+      nextCursor = result?.next_cursor;
+    } while (nextCursor);
+  } catch (error) {
+    throw new Error(getCloudinaryErrorMessage(error));
+  }
+
+  const keepSet = new Set(validIds.map((id) => `matches/${id}`));
+  const toDelete = allPublicIds.filter((pid) => !keepSet.has(pid));
+  if (toDelete.length === 0) return;
+
+  // Cloudinary delete_resources supports batches; keep it small for reliability.
+  const BATCH_SIZE = 100;
+  for (let i = 0; i < toDelete.length; i += BATCH_SIZE) {
+    const batch = toDelete.slice(i, i + BATCH_SIZE);
+    try {
+      await cloudinary.api.delete_resources(batch);
+    } catch (error) {
+      throw new Error(getCloudinaryErrorMessage(error));
+    }
+  }
 }
 
 module.exports = {
   uploadImage,
-  clearMatchesFolder,
+  deleteOldImages,
 };
