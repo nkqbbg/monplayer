@@ -96,6 +96,7 @@ async function createMatchImage(
   time,
   day,
   status,
+  output,
 ) {
   const width = 640;
   const height = 480;
@@ -150,8 +151,8 @@ async function createMatchImage(
   // HEADER
   // =====================================================
 
-  ctx.font = `bold ${22 * SCALE}px Arial`;
-  ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
+  // ctx.font = `bold ${22 * SCALE}px Arial`;
+  // ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
 
   const badgeWidth = 175 * SCALE;
   const badgeHeight = 38 * SCALE;
@@ -169,7 +170,7 @@ async function createMatchImage(
 
   ctx.fillStyle = "#fff";
   ctx.font = `bold ${25 * SCALE}px Arial`;
-  ctx.fillText(status, centerX, headerCenterY + 41 * SCALE);
+  ctx.fillText(`${time} | ${day}`, centerX, headerCenterY + 41 * SCALE);
 
   // =====================================================
   // LOGO
@@ -246,12 +247,13 @@ async function createMatchImage(
   // =====================================================
 
   ctx.font = `bold ${20 * SCALE}px Arial`;
-  ctx.fillText(`${time} | ${day}`, centerX, footerCenterY);
+  ctx.fillText(league, centerX, footerCenterY);
 
   // =====================================================
   // SAVE
   // =====================================================
-
+  // const buffer = canvas.toBuffer("image/png");
+  // fs.writeFileSync(output, buffer);
   return canvas.toBuffer("image/png");
 }
 
@@ -260,6 +262,17 @@ async function createMatchImage(
 // =====================================================
 
 // createMatchImage(
+// "Vô Địch Nữ FUSAL ĐNA",
+// "Việt Nam Nữ Indonesia",
+// "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
+// "Indonesia Nữ Malaysia",
+// "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
+// "15:00",
+// "02/03",
+// "Chưa Bắt Đầu",
+//   ".\\resource\\match1.png",
+// );
+// const buffer = createMatchImage(
 //   "Vô Địch Nữ FUSAL ĐNA",
 //   "Việt Nam Nữ Indonesia",
 //   "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",

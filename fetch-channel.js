@@ -5,6 +5,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const { uploadImage, deleteOldImages } = require("./cloudinary.js");
+const { channel } = require("diagnostics_channel");
 
 function absolutizeUrl(url, domain) {
   if (!url) return null;
@@ -208,11 +209,29 @@ async function main() {
     }
 
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
-
+    const statusConfig = {
+      "Hiệp 1": {
+        text: "● Hiệp 1",
+        color: "#FF0000",
+      },
+      "Hiệp 2": {
+        text: "● Hiệp 2",
+        color: "#FF0000",
+      },
+      "Chưa Bắt Đầu": {
+        text: "⏳Upcoming",
+        color: "#FF9800",
+      },
+      "Đã Kết Thúc": {
+        text: "● Fulltime",
+        color: "#9E9E9E",
+      },
+    };
     const channels = [];
     const uploadedIds = [];
     for (const item of list) {
       const channelId = stableChannelId(item.link);
+      const chanelId1 = channelId.replace("ch-", "img-");
       const buffer = await createMatchImage(
         item.league,
         item.teams.home.name,
@@ -224,14 +243,23 @@ async function main() {
         item.status,
       );
 
-      const urlImage = await uploadImage(buffer, channelId);
-      uploadedIds.push(channelId);
+      const urlImage = await uploadImage(buffer, chanelId1);
+      uploadedIds.push(chanelId1);
       // console.log(urlImage);
-
+      const labelStatus = statusConfig[item.status] || {
+        text: "",
+        color: "#9E9E9E",
+      };
       channels.push({
         id: channelId,
         name: `${item.teams.home.name} vs ${item.teams.away.name}`,
-
+        labels: [
+          {
+            position: "top-left",
+            ...labelStatus,
+            text_color: "#FFFFFF",
+          },
+        ],
         image: {
           url: urlImage,
           height: 480,
