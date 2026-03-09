@@ -113,7 +113,7 @@ async function scrapeSoccer() {
 
       // ⭐ STREAM LINK Ở ĐÂY
       const streamLinks = await scrapelink(matchLink);
-      console.log(streamLinks);
+      // console.log(streamLinks);
 
       matches.push({
         league,
