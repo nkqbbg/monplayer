@@ -211,15 +211,15 @@ async function main() {
     const templateData = JSON.parse(fs.readFileSync(templatePath, "utf8"));
     const statusConfig = {
       "Hiệp 1": {
-        text: "● Hiệp 1",
+        text: "● Live",
         color: "#FF0000",
       },
       "Hiệp 2": {
-        text: "● Hiệp 2",
+        text: "● Live",
         color: "#FF0000",
       },
       "Chưa Bắt Đầu": {
-        text: "⏳Upcoming",
+        text: "● Upcoming",
         color: "#FF9800",
       },
       "Đã Kết Thúc": {
@@ -247,115 +247,117 @@ async function main() {
       uploadedIds.push(chanelId1);
       // console.log(urlImage);
       const labelStatus = statusConfig[item.status] || {
-        text: "Halftime",
-        color: "#9E9E9E",
+        text: " ● Live",
+        color: "#FF0000",
       };
-      channels.push({
-        id: channelId,
-        name: `${item.teams.home.name} vs ${item.teams.away.name}`,
-        labels: [
-          {
-            position: "top-left",
-            ...labelStatus,
-            text_color: "#FFFFFF",
-            font_size: 8,
+      if (!channels.some((c) => c.id === channelId)) {
+        channels.push({
+          id: channelId,
+          name: `${item.teams.home.name} vs ${item.teams.away.name}`,
+          labels: [
+            {
+              position: "top-left",
+              ...labelStatus,
+              text_color: "#FFFFFF",
+              font_size: 8,
+            },
+          ],
+          image: {
+            url: urlImage,
+            height: 480,
+            width: 640,
+            display: "cover",
           },
-        ],
-        image: {
-          url: urlImage,
-          height: 480,
-          width: 640,
-          display: "cover",
-        },
-        type: "single",
-        display: "overlay",
-        sources: [
-          {
-            id: generateId("src"),
-            name: `${item.teams.home.name} - ${item.teams.away.name}`,
-            contents: [
-              {
-                id: generateId("ct"),
-                name: item.label,
-                streams: [
-                  {
-                    id: generateId("st"),
-                    name: "Stream",
-                    stream_links: [
-                      {
-                        id: generateId("lnk"),
-                        name: "Nhà đài",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.ndsd,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                      {
-                        id: generateId("lnk"),
-                        name: "HD",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.hd,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                      {
-                        id: generateId("lnk"),
-                        name: "SD",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.sd,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                      {
-                        id: generateId("lnk"),
-                        name: "FullHD",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.fullhd,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                      {
-                        id: generateId("lnk"),
-                        name: "FL",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.flv,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                      {
-                        id: generateId("lnk"),
-                        name: "FLV2",
-                        type: "hls",
-                        default: true,
-                        url: item.streams.flv2,
-                        request_headers: [
-                          { key: "Referer", value: item.link },
-                          { key: "User-Agent", value: "Mozilla/5.0" },
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      });
+          type: "single",
+          display: "overlay",
+          sources: [
+            {
+              id: generateId("src"),
+              name: `${item.teams.home.name} - ${item.teams.away.name}`,
+              contents: [
+                {
+                  id: generateId("ct"),
+                  name: item.label,
+                  streams: [
+                    {
+                      id: generateId("st"),
+                      name: "Stream",
+                      stream_links: [
+                        {
+                          id: generateId("lnk"),
+                          name: "Nhà đài",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.ndsd,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                        {
+                          id: generateId("lnk"),
+                          name: "HD",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.hd,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                        {
+                          id: generateId("lnk"),
+                          name: "SD",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.sd,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                        {
+                          id: generateId("lnk"),
+                          name: "FullHD",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.fullhd,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                        {
+                          id: generateId("lnk"),
+                          name: "FL",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.flv,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                        {
+                          id: generateId("lnk"),
+                          name: "FLV2",
+                          type: "hls",
+                          default: true,
+                          url: item.streams.flv2,
+                          request_headers: [
+                            { key: "Referer", value: item.link },
+                            { key: "User-Agent", value: "Mozilla/5.0" },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        });
+      }
     }
     await deleteOldImages(uploadedIds);
 
