@@ -2,80 +2,70 @@ name: Update Channels JSON
 
 on:
   schedule:
-    # Run every 5 minutes
-    # - cron: "0 */1 * * *"
-    - cron: "*/40 * * * *"
+    # chạy mỗi 40 phút nhưng bắt đầu từ phút lẻ
+    - cron: "7,47 * * * *"
   workflow_dispatch:
-    # Allow manual trigger
 
 concurrency:
-  group: scrape-channels-${{ github.ref }}
+  group: scrape-channels
   cancel-in-progress: true
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     permissions:
       contents: write
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Check allowed time (VN)
+        id: timecheck
+        run: |
+          HOUR=$(TZ='Asia/Ho_Chi_Minh' date +%H)
 
-      - name: Set up Node.js
+          if [ "$HOUR" -ge 2 ] && [ "$HOUR" -lt 17 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout
+        if: steps.timecheck.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: steps.timecheck.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Install system dependencies (canvas)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            libcairo2-dev \
-            libpango1.0-dev \
-            libjpeg-dev \
-            libgif-dev \
-            librsvg2-dev
-
       - name: Install dependencies
+        if: steps.timecheck.outputs.skip != 'true'
         run: npm ci
 
-      - name: Validate Cloudinary secrets
-        run: |
-          if [ -z "$CLOUDINARY_API_KEY" ] || [ -z "$CLOUDINARY_API_SECRET" ]; then
-            echo "Missing CLOUDINARY_API_KEY/CLOUDINARY_API_SECRET GitHub Secrets."
-            exit 1
-          fi
-        env:
-          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
-          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-
-      - name: Run Scraper
+      - name: Run scraper
+        if: steps.timecheck.outputs.skip != 'true'
         run: node fetch-channel.js
         env:
-          # Set these in your repo Settings -> Secrets and variables -> Actions
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
 
-      - name: Commit and Push Changes
+      - name: Commit changes
+        if: steps.timecheck.outputs.skip != 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          echo "Workflow commit: $(git rev-parse HEAD)"
-          git status --porcelain
 
           git add channels.json
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
             exit 0
           fi
 
           git commit -m "Auto-update channels list [skip ci]"
 
-          # Push first; only rebase if remote moved.
-          git push || (git pull --rebase --autostash && git push)
+          git pull --rebase --autostash
+          git push
