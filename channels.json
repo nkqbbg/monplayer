@@ -29,1137 +29,13 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-panathinaikosvsrealbetis2404312",
-                    "name": "Panathinaikos vs Real Betis",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": " ● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307809/matches/img-panathinaikosvsrealbetis2404312.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-b520688a60ae",
-                            "name": "Panathinaikos - Real Betis",
-                            "contents": [
-                                {
-                                    "id": "ct-a953cc32e5a9",
-                                    "streams": [
-                                        {
-                                            "id": "st-66122921ca74",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-431a1d40ab0a",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/829b5fa337bb9fc95d99e46985b29225/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-b6a815afff76",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-26d86e4937b2",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-2dfe132867fe",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-bf9b6838e87c",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-8636d38d429f",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/panathinaikos-vs-real-betis-2404312"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-vfbstuttgartvsfcporto2404318",
-                    "name": "VfB Stuttgart vs FC Porto",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307811/matches/img-vfbstuttgartvsfcporto2404318.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-3380438c9d6a",
-                            "name": "VfB Stuttgart - FC Porto",
-                            "contents": [
-                                {
-                                    "id": "ct-bed445af9044",
-                                    "streams": [
-                                        {
-                                            "id": "st-fb83195400ed",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-42277a46f580",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/5adb529034574ff0ef691e9b87c59a68/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-09ffa913d2c8",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-05/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-742f7f6ab314",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-05/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-43451bb97a28",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-cfd21868059c",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-05.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-c842d54ff048",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-05.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/vfb-stuttgart-vs-fc-porto-2404318"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-bolognavsasroma2404319",
-                    "name": "Bologna vs AS Roma",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": " ● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307813/matches/img-bolognavsasroma2404319.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-f068bd14248a",
-                            "name": "Bologna - AS Roma",
-                            "contents": [
-                                {
-                                    "id": "ct-29b5b4762fa4",
-                                    "streams": [
-                                        {
-                                            "id": "st-ae997307ec30",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-e2bb6bd8ddcc",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/59613139c728d9bb3709938dfd2acf57/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-2c9c322827fa",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-04/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-781df5c7b4a9",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-04/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-403068b37cfa",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-68df41983b48",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-04.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-c92b19a95863",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-04.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/bologna-vs-as-roma-2404319"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-losclillevsastonvilla2404320",
-                    "name": "LOSC Lille vs Aston Villa",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": " ● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307816/matches/img-losclillevsastonvilla2404320.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-544e41b7c6a5",
-                            "name": "LOSC Lille - Aston Villa",
-                            "contents": [
-                                {
-                                    "id": "ct-99bcba844a93",
-                                    "streams": [
-                                        {
-                                            "id": "st-362d7a0ceb39",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-444400337ef6",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/695984ed629b51f3cefff4c97389905c/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-33724db87b32",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-11/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-83fc626c9620",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-11/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-97f8ae70b3d6",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-11/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-f6f63516950c",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-11.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4d8f3173f346",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-11.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/losc-lille-vs-aston-villa-2404320"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-nottinghamforestvsmidtjylland2404353",
-                    "name": "Nottingham Forest vs Midtjylland",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307817/matches/img-nottinghamforestvsmidtjylland2404353.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-6200d66772ce",
-                            "name": "Nottingham Forest - Midtjylland",
-                            "contents": [
-                                {
-                                    "id": "ct-4fefee65ec0f",
-                                    "streams": [
-                                        {
-                                            "id": "st-e0541dfbb893",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-f33a2be4ae47",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-dec870ed52af",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-0a9e5dba6712",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-80ce631c7fb5",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-82060cdadee5",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-f3d822b253d9",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/nottingham-forest-vs-midtjylland-2404353"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-rcceltavslyon2404355",
-                    "name": "RC Celta vs Lyon",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307819/matches/img-rcceltavslyon2404355.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-cbd2be098f2c",
-                            "name": "RC Celta - Lyon",
-                            "contents": [
-                                {
-                                    "id": "ct-d7a6b06ea9c7",
-                                    "streams": [
-                                        {
-                                            "id": "st-12a32056392e",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-20b090d7b07d",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/e784bc4feee967e8866bb2bd0eabdbcb/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-c06b31b38b4d",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-6be862b63948",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-0ed6b2f818f0",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-d75241f28d74",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-a9f10d690b68",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rc-celta-vs-lyon-2404355"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-racinggenkvsscfreiburg2404356",
-                    "name": "Racing Genk vs SC Freiburg",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307821/matches/img-racinggenkvsscfreiburg2404356.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-f01d940ca800",
-                            "name": "Racing Genk - SC Freiburg",
-                            "contents": [
-                                {
-                                    "id": "ct-ce9e216b54d8",
-                                    "streams": [
-                                        {
-                                            "id": "st-fbda8ec0f185",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-2b522b8163da",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-bcee56e99c48",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-0317ee88f9c6",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4a91710fdc1b",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-d066672f4e60",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-8b5c932f6f04",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/racing-genk-vs-sc-freiburg-2404356"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-ferencvarositcvssportingbraga2404357",
-                    "name": "Ferencvarosi TC vs Sporting Braga",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773307823/matches/img-ferencvarositcvssportingbraga2404357.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-d3bc360d9cc3",
-                            "name": "Ferencvarosi TC - Sporting Braga",
-                            "contents": [
-                                {
-                                    "id": "ct-fb2983acd852",
-                                    "streams": [
-                                        {
-                                            "id": "st-2513db5d0758",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-aa3020c607f4",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/97a0eff80ca658f45ef280653eefe5be/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-d11680e7ac09",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-09/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-a20b3c163dbd",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-09/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-f9b3a0d1ccf7",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-09/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-3df9b9a06878",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-09.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-a2a0ad31dd95",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-09.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/ferencvarosi-tc-vs-sporting-braga-2404357"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-brisbaneroarvswesternsydney2404416",
                     "name": "Brisbane Roar vs Western Sydney",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
+                            "text": "● Live",
+                            "color": "#FF0000",
                             "text_color": "#FFFFFF",
                             "font_size": 8
                         }
@@ -1174,18 +50,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-7918949b9c95",
+                            "id": "src-ebaaa42c9b0c",
                             "name": "Brisbane Roar - Western Sydney",
                             "contents": [
                                 {
-                                    "id": "ct-b95c394da553",
+                                    "id": "ct-b5ea94e7170c",
                                     "streams": [
                                         {
-                                            "id": "st-6693bef3e218",
+                                            "id": "st-4bf605558f86",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-f6a0a204d5de",
+                                                    "id": "lnk-577008ca7679",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1202,7 +78,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6bf7f5f08001",
+                                                    "id": "lnk-a01d7a30f288",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1219,7 +95,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-61143caf6a6f",
+                                                    "id": "lnk-edb7ab22bae5",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1236,7 +112,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-20036d3221c6",
+                                                    "id": "lnk-fa62470eb5bb",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1253,7 +129,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-795fbfbabc99",
+                                                    "id": "lnk-90a645936b67",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1270,7 +146,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a953891483f0",
+                                                    "id": "lnk-270605a8581f",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1316,18 +192,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-f712727617f4",
+                            "id": "src-637ad2a5efac",
                             "name": "Australia Women - North Korea Women",
                             "contents": [
                                 {
-                                    "id": "ct-ec4e5cf56226",
+                                    "id": "ct-77d6afc7efb6",
                                     "streams": [
                                         {
-                                            "id": "st-8ebd710288d7",
+                                            "id": "st-33d8758b4e49",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-6bb677e0051c",
+                                                    "id": "lnk-6b5e284ecbfb",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1343,7 +219,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c2d1f4a9f14b",
+                                                    "id": "lnk-1e5686b87f1c",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1359,7 +235,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6fa7c6ec0668",
+                                                    "id": "lnk-af3e44762ede",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1375,7 +251,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-af9c83d8e8a5",
+                                                    "id": "lnk-1644ef70af68",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1391,7 +267,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-69bbef5ef553",
+                                                    "id": "lnk-8b9523fbf269",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1407,7 +283,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-517a35ea7691",
+                                                    "id": "lnk-f7e0294ef949",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1452,18 +328,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-2c8249636083",
+                            "id": "src-1f9c9ecc0a9c",
                             "name": "Khatoco Khanh Hoa - Truong Tuoi Dong Nai",
                             "contents": [
                                 {
-                                    "id": "ct-0e34afbf3801",
+                                    "id": "ct-3d37b7fc7982",
                                     "streams": [
                                         {
-                                            "id": "st-8c700ee22591",
+                                            "id": "st-a7713ebec321",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-69565d8f9b28",
+                                                    "id": "lnk-14983a89383b",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1480,7 +356,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-79ce538cbcef",
+                                                    "id": "lnk-6c9c08fc303e",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1497,7 +373,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3b3d1abc7c93",
+                                                    "id": "lnk-5917dbc43714",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1514,7 +390,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2fd440bd1aa8",
+                                                    "id": "lnk-2a2c521fec18",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1531,7 +407,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2d1a61865cc8",
+                                                    "id": "lnk-076ebd464d7e",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1548,7 +424,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3c42ba6f21a8",
+                                                    "id": "lnk-c699fe779217",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1594,18 +470,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-8cbf4089c3f6",
+                            "id": "src-b89e66b3c1ab",
                             "name": "Thep Xanh Nam Dinh FC - CLB Thanh Hoa",
                             "contents": [
                                 {
-                                    "id": "ct-db08886e392f",
+                                    "id": "ct-3db3ee726b19",
                                     "streams": [
                                         {
-                                            "id": "st-78adb98981f5",
+                                            "id": "st-d35c5ecaad44",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-faf90dbf8f6a",
+                                                    "id": "lnk-43b40a1d0c44",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1621,7 +497,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c253f43e666a",
+                                                    "id": "lnk-d646c84a1787",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1637,7 +513,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3a971257a845",
+                                                    "id": "lnk-c8debe3117df",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1653,7 +529,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5f468ce2d474",
+                                                    "id": "lnk-8922859f194b",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1669,7 +545,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d05937fe6520",
+                                                    "id": "lnk-a1a1a8c428c4",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1685,7 +561,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-54f6b03391a1",
+                                                    "id": "lnk-6bf05d3e4c89",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1730,18 +606,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-baff88938427",
+                            "id": "src-adc5b6c5612c",
                             "name": "SHB Da Nang - Hoang Anh Gia Lai",
                             "contents": [
                                 {
-                                    "id": "ct-56ec80d1707a",
+                                    "id": "ct-ff23b56cbaf4",
                                     "streams": [
                                         {
-                                            "id": "st-f8d1b863252e",
+                                            "id": "st-4356a873a810",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-b153f2d4e038",
+                                                    "id": "lnk-49b904f20426",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1757,7 +633,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-ffa5a71d87b7",
+                                                    "id": "lnk-ae0188c4b48d",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1773,7 +649,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a55fd08d9fca",
+                                                    "id": "lnk-5e6b21ed06c8",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1789,7 +665,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0bbc1954f0f6",
+                                                    "id": "lnk-16c455f1745d",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -1805,7 +681,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-3082e8444ebe",
+                                                    "id": "lnk-91e5ff7bfd2e",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -1821,7 +697,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c6d64afda81c",
+                                                    "id": "lnk-f115990d958e",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -1866,18 +742,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-05abf72747ee",
+                            "id": "src-92be98e662dc",
                             "name": "Hanoi FC - Song Lam Nghe An",
                             "contents": [
                                 {
-                                    "id": "ct-dd05c32f12cb",
+                                    "id": "ct-8e61141fd969",
                                     "streams": [
                                         {
-                                            "id": "st-4a519be2c240",
+                                            "id": "st-43d41e6cf729",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e2e8d6f57810",
+                                                    "id": "lnk-b985d514698e",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -1894,11 +770,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-be78547128f4",
+                                                    "id": "lnk-8d34b056514f",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1911,11 +787,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-481d9ee4c325",
+                                                    "id": "lnk-5b5994467f28",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1928,11 +804,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-d3a03ced33c1",
+                                                    "id": "lnk-fe1cdc393aaa",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1945,11 +821,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7912a8a5118b",
+                                                    "id": "lnk-a4535070d220",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
+                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1962,11 +838,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4bd7d2b12090",
+                                                    "id": "lnk-b20b797833bf",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
+                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2008,18 +884,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-091f396ca3e1",
+                            "id": "src-4046734ed53c",
                             "name": "PDRM FC - Negeri Sembilan",
                             "contents": [
                                 {
-                                    "id": "ct-92fdef197fac",
+                                    "id": "ct-5ce73ec128a3",
                                     "streams": [
                                         {
-                                            "id": "st-268249108362",
+                                            "id": "st-5b8629e9db7f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-25b380f3227f",
+                                                    "id": "lnk-1aaad9c5d7fb",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -2035,7 +911,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8936e29d5f84",
+                                                    "id": "lnk-7390007644a8",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2051,7 +927,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f5038f8d9f11",
+                                                    "id": "lnk-469351b4011a",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2067,7 +943,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a9cc3cd3d08a",
+                                                    "id": "lnk-13bb1d27179d",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2083,7 +959,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a1f2180cdff4",
+                                                    "id": "lnk-0a5bca361f46",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -2099,7 +975,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-632599deaa81",
+                                                    "id": "lnk-c3f272497617",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -2144,18 +1020,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-27500876c628",
+                            "id": "src-6eb8a33a4827",
                             "name": "Dynamo Makhachkala - Gazovik Orenburg",
                             "contents": [
                                 {
-                                    "id": "ct-dd588c3c947f",
+                                    "id": "ct-e5755a194e68",
                                     "streams": [
                                         {
-                                            "id": "st-687a84660122",
+                                            "id": "st-6fa7578a7c7d",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-9dad6b398dce",
+                                                    "id": "lnk-1ddc3738bf9f",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -2172,11 +1048,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-77c659e6ec63",
+                                                    "id": "lnk-c3fe0c450888",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2189,11 +1065,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-9e61a1837a9e",
+                                                    "id": "lnk-ff823502075c",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2206,11 +1082,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-70a11959e932",
+                                                    "id": "lnk-63716692cbf8",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-08/index.m3u8",
+                                                    "url": "https://3046426067.global.cdnfastest.com/live/link-07/index.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2223,11 +1099,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2c3c87cafe8f",
+                                                    "id": "lnk-85b3831adf60",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
+                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2240,11 +1116,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-13f3446ad481",
+                                                    "id": "lnk-7a830c6d3a73",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-08.flv",
+                                                    "url": "https://3046542010.global.cdnfastest.com/live/link-07.flv",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -2265,8 +1141,144 @@
                     ]
                 },
                 {
-                    "id": "ch-rijekavsrcstrasbourgalsace2404314",
-                    "name": "Rijeka vs RC Strasbourg Alsace",
+                    "id": "ch-borussiamonchengladbachvsfcstpauli2405067",
+                    "name": "Borussia Monchengladbach vs FC St. Pauli",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 8
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773390223/matches/img-borussiamonchengladbachvsfcstpauli2405067.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-4e1ad4aa7db3",
+                            "name": "Borussia Monchengladbach - FC St. Pauli",
+                            "contents": [
+                                {
+                                    "id": "ct-f00e4686d05e",
+                                    "streams": [
+                                        {
+                                            "id": "st-115ce145a73b",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-689320090ef7",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0d6b1bedb134",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-4cae5b4c5187",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-679e58bbf9c1",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2b8f3da74cff",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b70de20de307",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.net/borussia-monchengladbach-vs-fc-st-pauli-2405067"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-newcastlejetswomenvssydneyfcwomen2404417",
+                    "name": "Newcastle Jets Women vs Sydney FC Women",
                     "labels": [
                         {
                             "position": "top-left",
@@ -2277,7 +1289,7 @@
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773340521/matches/img-rijekavsrcstrasbourgalsace2404314.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773390224/matches/img-newcastlejetswomenvssydneyfcwomen2404417.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -2286,26 +1298,26 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-60c7ffdc0fe9",
-                            "name": "Rijeka - RC Strasbourg Alsace",
+                            "id": "src-143228da7adf",
+                            "name": "Newcastle Jets Women - Sydney FC Women",
                             "contents": [
                                 {
-                                    "id": "ct-8468dcdcd2a9",
+                                    "id": "ct-a95d49192042",
                                     "streams": [
                                         {
-                                            "id": "st-7252f3c751d7",
+                                            "id": "st-859aaff7138e",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-70c5cc02f714",
+                                                    "id": "lnk-4e68f79df5ab",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://live.alilicloud.com/live/9333284606c8c1cfd657ac4610966f5f/playlist.m3u8",
+                                                    "url": "https://live.alilicloud.com/live/1b91dcd2bdc79bdd6e3bb38b5bce61b4/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2314,7 +1326,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-b52624d1a79d",
+                                                    "id": "lnk-0d571f39b71b",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2322,7 +1334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2331,7 +1343,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e68804fc56ac",
+                                                    "id": "lnk-34e37cba8a99",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2339,7 +1351,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2348,7 +1360,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-75dacbe47a78",
+                                                    "id": "lnk-802865fa0b40",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2356,7 +1368,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2365,7 +1377,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5375ecd1cea7",
+                                                    "id": "lnk-6466efd513e5",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -2373,7 +1385,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2382,7 +1394,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0edce68821b1",
+                                                    "id": "lnk-fa3978667781",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -2390,7 +1402,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/rijeka-vs-rc-strasbourg-alsace-2404314"
+                                                            "value": "https://hoadaotv.net/newcastle-jets-women-vs-sydney-fc-women-2404417"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2407,150 +1419,8 @@
                     ]
                 },
                 {
-                    "id": "ch-lechpoznanvsfcshakhtardonetsk2404315",
-                    "name": "Lech Poznan vs FC Shakhtar Donetsk",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": " ● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773340523/matches/img-lechpoznanvsfcshakhtardonetsk2404315.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-e6749945b6e4",
-                            "name": "Lech Poznan - FC Shakhtar Donetsk",
-                            "contents": [
-                                {
-                                    "id": "ct-ea05492f879b",
-                                    "streams": [
-                                        {
-                                            "id": "st-ba969ee28ab5",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-c184b477d423",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/81c72d58333276ad1b67c801ae3db074/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-46f9ea21e544",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4dbf6146e5c0",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-d02d745472c9",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-16fa63bc15e9",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-5785fae69021",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/lech-poznan-vs-fc-shakhtar-donetsk-2404315"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-samsunsporvsrayovallecano2404316",
-                    "name": "Samsunspor vs Rayo Vallecano",
+                    "id": "ch-adelaideunitedwomenvsperthglorywomen2404418",
+                    "name": "Adelaide United Women vs Perth Glory Women",
                     "labels": [
                         {
                             "position": "top-left",
@@ -2561,7 +1431,7 @@
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773340525/matches/img-samsunsporvsrayovallecano2404316.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773390226/matches/img-adelaideunitedwomenvsperthglorywomen2404418.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -2570,26 +1440,26 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-e623665352f1",
-                            "name": "Samsunspor - Rayo Vallecano",
+                            "id": "src-cece44eb23db",
+                            "name": "Adelaide United Women - Perth Glory Women",
                             "contents": [
                                 {
-                                    "id": "ct-5d4c4cbce526",
+                                    "id": "ct-cc45143da055",
                                     "streams": [
                                         {
-                                            "id": "st-a607557e64c3",
+                                            "id": "st-8eb956aff14a",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-7de19eb2d798",
+                                                    "id": "lnk-60be0f706b41",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://live.alilicloud.com/live/a7f0a3f375e9781c233fffa43851cc20/playlist.m3u8",
+                                                    "url": "https://live.alilicloud.com/live/3c56735e1ca173ca051351ccededd893/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2598,7 +1468,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-540e75c30fec",
+                                                    "id": "lnk-66ee28c5e776",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2606,7 +1476,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2615,7 +1485,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-66f1a35a26d7",
+                                                    "id": "lnk-ee367a67984f",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2623,7 +1493,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2632,7 +1502,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8144d9b0f7fd",
+                                                    "id": "lnk-27312f41c72e",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -2640,7 +1510,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2649,7 +1519,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-544e36a6a7af",
+                                                    "id": "lnk-27ef37e111eb",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -2657,7 +1527,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -2666,7 +1536,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7923a13138bc",
+                                                    "id": "lnk-addbbfc86f57",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -2674,291 +1544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://hoadaotv.net/samsunspor-vs-rayo-vallecano-2404316"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-alkahrbaaclubvsaltalaba2404323",
-                    "name": "Al-Kahrbaa Club vs Al Talaba",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773340530/matches/img-alkahrbaaclubvsaltalaba2404323.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-3d1ed7ef9b0e",
-                            "name": "Al-Kahrbaa Club - Al Talaba",
-                            "contents": [
-                                {
-                                    "id": "ct-908287c55b88",
-                                    "streams": [
-                                        {
-                                            "id": "st-dd36af2c08d7",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-56e1ba061fe1",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/4b1d5c3bed47f4c4b6d0c9b210ce9ad8/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-ba519809bbb0",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4c898abfc99b",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-aadfe0f138d0",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-71c77655bc31",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4c38635b74ad",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/al-kahrbaa-club-vs-al-talaba-2404323"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-amanatbaghdadvsnewrozsc2404324",
-                    "name": "Amanat Baghdad vs Newroz SC",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 8
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1773340532/matches/img-amanatbaghdadvsnewrozsc2404324.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-eaf2745fbb82",
-                            "name": "Amanat Baghdad - Newroz SC",
-                            "contents": [
-                                {
-                                    "id": "ct-0ab40567d547",
-                                    "streams": [
-                                        {
-                                            "id": "st-c03454bec767",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-f58c1d1155a7",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://live.alilicloud.com/live/7b5eee8cf8a342c610968e3792fb579c/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-6565ad3d3e0c",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-bdef868d40dc",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-ea0ef0ff32b7",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-663d7664509e",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-fc46f44aa024",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.net/amanat-baghdad-vs-newroz-sc-2404324"
+                                                            "value": "https://hoadaotv.net/adelaide-united-women-vs-perth-glory-women-2404418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
