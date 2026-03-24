@@ -219,11 +219,11 @@ async function main() {
         color: "#FF0000",
       },
       "Chưa Bắt Đầu": {
-        text: "● Upcoming",
+        text: "Upcoming",
         color: "#FF9800",
       },
       "Đã Kết Thúc": {
-        text: "● Fulltime",
+        text: "Fulltime",
         color: "#9E9E9E",
       },
     };
@@ -259,7 +259,7 @@ async function main() {
               position: "top-left",
               ...labelStatus,
               text_color: "#FFFFFF",
-              font_size: 8,
+              font_size: 6,
             },
           ],
           image: {
