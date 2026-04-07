@@ -10,7 +10,6 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-
 // ===== ERROR HELPER =====
 function getErrorMessage(error) {
   if (!error) return "Unknown error";
@@ -24,6 +23,9 @@ function getErrorMessage(error) {
 
 // ===== UPLOAD CORE =====
 function uploadImage(buffer, publicId) {
+  console.log(
+    `[cloudinary] Uploading image for publicId: ${publicId}, buffer size: ${buffer?.length}`,
+  );
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
@@ -33,8 +35,15 @@ function uploadImage(buffer, publicId) {
       },
       (error, result) => {
         if (error) {
+          console.error(
+            `[cloudinary] Upload error for ${publicId}:`,
+            getErrorMessage(error),
+          );
           return reject(new Error(getErrorMessage(error)));
         }
+        console.log(
+          `[cloudinary] Upload success for ${publicId}: ${result.secure_url}`,
+        );
         resolve(result.secure_url);
       },
     );
@@ -50,7 +59,8 @@ async function uploadWithRetry(buffer, publicId, retries = 3) {
       return await uploadImage(buffer, publicId);
     } catch (err) {
       if (i === retries) throw err;
-      console.log(`🔁 Retry ${i + 1}: ${publicId}`);
+      // Only log upload retry for upload
+      console.warn(`[cloudinary] Retry ${i + 1} for ${publicId}:`, err.message);
       await new Promise((r) => setTimeout(r, 1000 * (i + 1)));
     }
   }
@@ -155,22 +165,71 @@ class WorkerPool {
 // ===== EXPORT FUNCTION =====
 async function uploadMultiThread(tasks, options = {}) {
   const size = options.threads || 4;
-  const pool = new WorkerPool(size);
-
-  try {
-    const results = await Promise.all(
-      tasks.map((t) =>
-        pool.exec({
-          buffer: t.buffer,
+  // 1. Check which images already exist
+  console.log(`[cloudinary] Checking existence for ${tasks.length} images...`);
+  const concurrency = 6;
+  let idx = 0;
+  const existResults = Array(tasks.length);
+  async function existWorker() {
+    while (idx < tasks.length) {
+      const myIdx = idx++;
+      const t = tasks[myIdx];
+      try {
+        const res = await cloudinary.api.resource("matches/" + t.publicId);
+        existResults[myIdx] = {
+          exists: true,
+          url: res.secure_url,
           publicId: t.publicId,
-        }),
-      ),
-    );
-
-    return results;
-  } finally {
-    pool.destroy();
+        };
+      } catch (e) {
+        existResults[myIdx] = { exists: false, publicId: t.publicId };
+      }
+    }
   }
+  await Promise.all(Array.from({ length: concurrency }, existWorker));
+
+  // 2. Only upload those that do not exist
+  const toUpload = tasks.filter((t, i) => !existResults[i].exists);
+  let uploadResults = [];
+  if (toUpload.length > 0) {
+    const pool = new WorkerPool(size);
+    console.log(
+      `[cloudinary] Starting batch upload: ${toUpload.length} images, ${size} threads`,
+    );
+    try {
+      uploadResults = await Promise.all(
+        toUpload.map((t) =>
+          pool.exec({
+            buffer: t.buffer,
+            publicId: t.publicId,
+          }),
+        ),
+      );
+      console.log(`[cloudinary] Batch upload done.`);
+    } finally {
+      pool.destroy();
+    }
+  }
+
+  // 3. Merge results: already exist + newly uploaded
+  const uploadedMap = new Map();
+  for (const r of uploadResults) {
+    if (r && r.success !== false && r.url && r.publicId) {
+      uploadedMap.set(r.publicId, r);
+    }
+  }
+  const finalResults = existResults.map((r, i) => {
+    if (r.exists) {
+      return { success: true, url: r.url, publicId: r.publicId };
+    } else {
+      // Find upload result for this publicId
+      const t = tasks[i];
+      return (
+        uploadedMap.get(t.publicId) || { success: false, publicId: t.publicId }
+      );
+    }
+  });
+  return finalResults;
 }
 // ===== DELETE OLD IMAGES =====
 async function deleteOldImages(validIds = [], options = {}) {

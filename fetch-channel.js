@@ -76,70 +76,76 @@ async function scrapeSoccer() {
       }
     }
 
-    for (const el of $(".cm-wrap").toArray()) {
-      const card = $(el);
+    // Parallelize scrapelink with concurrency limit
+    const cmWrapEls = $(".cm-wrap").toArray();
+    const concurrency = 6; // adjust as needed
+    let idx = 0;
+    async function worker() {
+      while (idx < cmWrapEls.length) {
+        const myIdx = idx++;
+        const el = cmWrapEls[myIdx];
+        const card = $(el);
 
-      const home = card.find(".team-home .name-short").text().trim();
-      const away = card.find(".team-away .name-short").text().trim();
+        const home = card.find(".team-home .name-short").text().trim();
+        const away = card.find(".team-away .name-short").text().trim();
 
-      const [time, date] = card
-        .find(".time span")
-        .map((i, el) => $(el).text().trim())
-        .get();
+        const [time, date] = card
+          .find(".time span")
+          .map((i, el) => $(el).text().trim())
+          .get();
 
-      const league = card.find(".league").text().trim();
-      const status = card.find(".text-timeinplay").text().trim();
+        const league = card.find(".league").text().trim();
+        const status = card.find(".text-timeinplay").text().trim();
 
-      const leagueIcon = absolutizeUrl(
-        card.find(".corner img").attr("src"),
-        domain,
-      );
-      const homeIcon = absolutizeUrl(
-        card.find(".team-home .base-icon img").attr("data-src"),
-        domain,
-      );
-      const awayIcon = absolutizeUrl(
-        card.find(".team-away .base-icon img").attr("src"),
-        domain,
-      );
-      const matchPath = card.find(".match-link-overlay").attr("href");
-      if (!matchPath) continue;
+        const leagueIcon = absolutizeUrl(
+          card.find(".corner img").attr("src"),
+          domain,
+        );
+        const homeIcon = absolutizeUrl(
+          card.find(".team-home .base-icon img").attr("data-src"),
+          domain,
+        );
+        const awayIcon = absolutizeUrl(
+          card.find(".team-away .base-icon img").attr("src"),
+          domain,
+        );
+        const matchPath = card.find(".match-link-overlay").attr("href");
+        if (!matchPath) return;
 
-      const matchLink = matchPath.startsWith("http")
-        ? matchPath
-        : `${domain}${matchPath}`;
+        const matchLink = matchPath.startsWith("http")
+          ? matchPath
+          : `${domain}${matchPath}`;
 
-      console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
+        console.log(`🔗 Scraping stream for: ${home} vs ${away}`);
 
-      // ⭐ STREAM LINK Ở ĐÂY
-      const streamLinks = await scrapelink(matchLink);
-      // console.log(streamLinks);
+        // ⭐ STREAM LINK Ở ĐÂY
+        const streamLinks = await scrapelink(matchLink);
 
-      matches.push({
-        league,
-        time,
-        date,
-        status,
-        link: matchLink,
-        streams: streamLinks || [],
-        backUrl: backgroundUrl,
-
-        teams: {
-          home: {
-            name: home,
-            icon: homeIcon,
+        matches[myIdx] = {
+          league,
+          time,
+          date,
+          status,
+          link: matchLink,
+          streams: streamLinks || [],
+          backUrl: backgroundUrl,
+          teams: {
+            home: {
+              name: home,
+              icon: homeIcon,
+            },
+            away: {
+              name: away,
+              icon: awayIcon,
+            },
           },
-          away: {
-            name: away,
-            icon: awayIcon,
+          icons: {
+            league: leagueIcon || null,
           },
-        },
-
-        icons: {
-          league: leagueIcon || null,
-        },
-      });
+        };
+      }
     }
+    await Promise.all(Array.from({ length: concurrency }, worker));
 
     // console.log(matches);
 
@@ -229,41 +235,83 @@ async function main() {
     };
     const channels = [];
     const uploadedIds = [];
-    for (const item of list) {
+    // 1. Chuẩn bị danh sách publicId và item
+    const itemsWithIds = list.map((item) => {
       const channelId = stableChannelId(item.link);
       const publicId = channelId.replace("ch-", "img-");
-      const buffer = await createMatchImage(
-        item.league,
-        item.teams.home.name,
-        item.teams.home.icon,
-        item.teams.away.name,
-        item.teams.away.icon,
-        item.time,
-        item.date,
-        item.status,
-      );
-      // Collect for batch upload
-      uploadedIds.push(publicId);
-      if (!global.__uploadTasks) global.__uploadTasks = [];
-      global.__uploadTasks.push({ buffer, publicId, item, channelId });
-    }
-
-    // Batch upload all images
-    const uploadResults = await uploadMultiThread(
-      global.__uploadTasks.map((t) => ({
-        buffer: t.buffer,
-        publicId: t.publicId,
-      })),
-    );
-    // Map publicId to url
-    const urlMap = {};
-    uploadResults.forEach((r) => {
-      if (r && r.success && typeof r.url === "string")
-        urlMap[r.publicId] = r.url;
+      return { item, channelId, publicId };
     });
 
-    // Build channels array
-    for (const t of global.__uploadTasks) {
+    // 2. Kiểm tra tồn tại trên Cloudinary trước khi tạo buffer
+    const concurrency = 6;
+    let idx = 0;
+    const existResults = Array(itemsWithIds.length);
+    const { v2: cloudinary } = require("cloudinary");
+    async function existWorker() {
+      while (idx < itemsWithIds.length) {
+        const myIdx = idx++;
+        const t = itemsWithIds[myIdx];
+        try {
+          const res = await cloudinary.api.resource("matches/" + t.publicId);
+          existResults[myIdx] = {
+            exists: true,
+            url: res.secure_url,
+            publicId: t.publicId,
+          };
+        } catch (e) {
+          existResults[myIdx] = { exists: false, publicId: t.publicId };
+        }
+      }
+    }
+    await Promise.all(Array.from({ length: concurrency }, existWorker));
+
+    // 3. Chỉ tạo buffer và upload với ảnh chưa tồn tại
+    const uploadTasks = [];
+    for (let i = 0; i < itemsWithIds.length; ++i) {
+      const t = itemsWithIds[i];
+      if (!existResults[i].exists) {
+        const buffer = await createMatchImage(
+          t.item.league,
+          t.item.teams.home.name,
+          t.item.teams.home.icon,
+          t.item.teams.away.name,
+          t.item.teams.away.icon,
+          t.item.time,
+          t.item.date,
+          t.item.status,
+        );
+        uploadTasks.push({
+          buffer,
+          publicId: t.publicId,
+          item: t.item,
+          channelId: t.channelId,
+        });
+      }
+      uploadedIds.push(t.publicId);
+    }
+
+    // 4. Upload các ảnh chưa tồn tại
+    let uploadResults = [];
+    if (uploadTasks.length > 0) {
+      uploadResults = await uploadMultiThread(
+        uploadTasks.map((t) => ({ buffer: t.buffer, publicId: t.publicId })),
+      );
+    }
+    // Map publicId to url
+    const urlMap = {};
+    // Ảnh đã tồn tại
+    existResults.forEach((r) => {
+      if (r.exists && typeof r.url === "string") urlMap[r.publicId] = r.url;
+    });
+    // Ảnh vừa upload
+    uploadTasks.forEach((t, i) => {
+      const r = uploadResults[i];
+      if (r && r.success && typeof r.url === "string")
+        urlMap[t.publicId] = r.url;
+    });
+
+    // 5. Build channels array
+    for (const t of itemsWithIds) {
       const { item, channelId, publicId } = t;
       const urlImage = urlMap[publicId] || "";
       const labelStatus = statusConfig[item.status] || {
