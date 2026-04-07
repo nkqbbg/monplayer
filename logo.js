@@ -214,7 +214,7 @@ async function createMatchImage(
   ctx.font = `italic bold ${32 * SCALE}px Georgia`;
   ctx.shadowColor = "rgba(255,255,255,0.7)";
   ctx.shadowBlur = 18 * SCALE;
-  ctx.fillText("VS", centerX, matchCenterY + 9 * SCALE);
+  ctx.fillText("VS", centerX, matchCenterY - 20);
   ctx.shadowBlur = 0;
 
   // =====================================================
@@ -231,7 +231,7 @@ async function createMatchImage(
   ctx.beginPath();
   ctx.roundRect(
     centerX - badgeWidth / 2,
-    matchCenterY + 26 * SCALE,
+    matchCenterY - SCALE,
     badgeWidth,
     badgeHeight,
     14 * SCALE,
@@ -240,7 +240,7 @@ async function createMatchImage(
 
   ctx.fillStyle = "#fff";
   ctx.font = `bold ${25 * SCALE}px Arial`;
-  ctx.fillText(`${time} | ${day}`, centerX, matchCenterY + 52 * SCALE);
+  ctx.fillText(`${time} | ${day}`, centerX, matchCenterY + 25 * SCALE);
 
   // =====================================================
   // TEAM NAME
