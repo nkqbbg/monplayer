@@ -4,6 +4,16 @@ const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 
+const _imagePromiseCache = new Map();
+let _backgroundPromise = null;
+
+function getBackgroundImage() {
+  if (!_backgroundPromise) {
+    _backgroundPromise = loadImage("bg-soccer.jpg");
+  }
+  return _backgroundPromise;
+}
+
 async function loadImageSmart(src) {
   if (!src) return null;
 
@@ -13,65 +23,79 @@ async function loadImageSmart(src) {
 
   if (typeof src !== "string") return null;
 
-  // Local file path or data URL
-  if (!/^https?:\/\//i.test(src)) {
+  // Cache by URL/path/dataURL to avoid repeated fetch+decode
+  if (_imagePromiseCache.has(src)) {
+    return _imagePromiseCache.get(src);
+  }
+
+  const promise = (async () => {
+    // Local file path or data URL
+    if (!/^https?:\/\//i.test(src)) {
+      try {
+        return await loadImage(src);
+      } catch {
+        return null;
+      }
+    }
+
+    let response;
     try {
-      return await loadImage(src);
+      response = await axios.get(src, {
+        responseType: "arraybuffer",
+        timeout: 15000,
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+          Accept: "image/avif,image/webp,image/*,*/*;q=0.8",
+        },
+        validateStatus: (s) => s >= 200 && s < 300,
+      });
     } catch {
       return null;
     }
-  }
 
-  let response;
-  try {
-    response = await axios.get(src, {
-      responseType: "arraybuffer",
-      timeout: 15000,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        Accept: "image/avif,image/webp,image/*,*/*;q=0.8",
-      },
-      validateStatus: (s) => s >= 200 && s < 300,
-    });
-  } catch {
-    return null;
-  }
+    const contentType = String(response.headers?.["content-type"] || "")
+      .split(";")[0]
+      .trim()
+      .toLowerCase();
+    const originalBuffer = Buffer.from(response.data);
 
-  const contentType = String(response.headers?.["content-type"] || "")
-    .split(";")[0]
-    .trim()
-    .toLowerCase();
-  const originalBuffer = Buffer.from(response.data);
-
-  // Try the original first when it's a known-safe format.
-  if (
-    contentType === "image/png" ||
-    contentType === "image/jpeg" ||
-    contentType === "image/jpg" ||
-    contentType === "image/gif"
-  ) {
-    try {
-      return await loadImage(originalBuffer);
-    } catch {
-      // fall through to conversion
+    // Try the original first when it's a known-safe format.
+    if (
+      contentType === "image/png" ||
+      contentType === "image/jpeg" ||
+      contentType === "image/jpg" ||
+      contentType === "image/gif"
+    ) {
+      try {
+        return await loadImage(originalBuffer);
+      } catch {
+        // fall through to conversion
+      }
     }
-  }
 
-  // Convert webp/avif/svg/etc -> PNG for node-canvas.
-  try {
-    const pngBuffer = await sharp(originalBuffer, { failOn: "none" })
-      .png()
-      .toBuffer();
-    return await loadImage(pngBuffer);
-  } catch {
-    // Last attempt: maybe it already was a supported type.
+    // Convert webp/avif/svg/etc -> PNG for node-canvas.
     try {
-      return await loadImage(originalBuffer);
+      const pngBuffer = await sharp(originalBuffer, { failOn: "none" })
+        .png()
+        .toBuffer();
+      return await loadImage(pngBuffer);
     } catch {
-      return null;
+      // Last attempt: maybe it already was a supported type.
+      try {
+        return await loadImage(originalBuffer);
+      } catch {
+        return null;
+      }
     }
+  })();
+
+  _imagePromiseCache.set(src, promise);
+  const img = await promise;
+  if (!img) {
+    _imagePromiseCache.delete(src);
   }
+  return img;
 }
 
 function clearFolder(folderPath) {
@@ -113,7 +137,7 @@ async function createMatchImage(
   // BACKGROUND
   // =====================================================
 
-  const bg = await loadImage("bg-soccer.jpg");
+  const bg = await getBackgroundImage();
   ctx.drawImage(bg, 0, 0, width, height);
 
   ctx.fillStyle = "rgba(0,0,0,0.65)";

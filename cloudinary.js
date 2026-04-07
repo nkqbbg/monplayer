@@ -1,7 +1,7 @@
+require("dotenv").config({ quiet: true });
 const { Worker, isMainThread, parentPort } = require("worker_threads");
 const { v2: cloudinary } = require("cloudinary");
 const streamifier = require("streamifier");
-require("dotenv").config();
 
 // ===== CONFIG =====
 cloudinary.config({
@@ -10,21 +10,20 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+
 // ===== ERROR HELPER =====
 function getErrorMessage(error) {
   if (!error) return "Unknown error";
   if (typeof error === "string") return error;
   if (error.message) return error.message;
 
-  const nested =
-    error?.error?.message ||
-    error?.response?.data?.error?.message;
+  const nested = error?.error?.message || error?.response?.data?.error?.message;
 
   return nested || JSON.stringify(error);
 }
 
 // ===== UPLOAD CORE =====
-function uploadMultiThread(buffer, publicId) {
+function uploadImage(buffer, publicId) {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
@@ -37,7 +36,7 @@ function uploadMultiThread(buffer, publicId) {
           return reject(new Error(getErrorMessage(error)));
         }
         resolve(result.secure_url);
-      }
+      },
     );
 
     streamifier.createReadStream(buffer).pipe(stream);
@@ -123,13 +122,28 @@ class WorkerPool {
     worker._resolve = resolve;
     worker._reject = reject;
 
+    // Validate buffer
+    if (
+      !task.buffer ||
+      !(Buffer.isBuffer(task.buffer) || task.buffer instanceof Uint8Array) ||
+      !task.buffer.buffer
+    ) {
+      const err = new TypeError(
+        `Invalid or missing buffer for publicId: ${task.publicId}`,
+      );
+      if (worker._reject) worker._reject(err);
+      this.freeWorkers.push(worker);
+      this.next();
+      return;
+    }
+
     // ⚡ transfer buffer để nhanh hơn
     worker.postMessage(
       {
         buffer: task.buffer,
         publicId: task.publicId,
       },
-      [task.buffer.buffer]
+      [task.buffer.buffer],
     );
   }
 
@@ -139,7 +153,7 @@ class WorkerPool {
 }
 
 // ===== EXPORT FUNCTION =====
-async function uploadImage(tasks, options = {}) {
+async function uploadMultiThread(tasks, options = {}) {
   const size = options.threads || 4;
   const pool = new WorkerPool(size);
 
@@ -149,8 +163,8 @@ async function uploadImage(tasks, options = {}) {
         pool.exec({
           buffer: t.buffer,
           publicId: t.publicId,
-        })
-      )
+        }),
+      ),
     );
 
     return results;
@@ -214,6 +228,6 @@ async function deleteOldImages(validIds = [], options = {}) {
   }
 }
 module.exports = {
-  uploadImage,
+  uploadMultiThread,
   deleteOldImages,
 };

@@ -4,8 +4,8 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const { uploadImage, deleteOldImages } = require("./cloudinary.js");
-const { channel } = require("diagnostics_channel");
+const { uploadMultiThread, deleteOldImages } = require("./cloudinary.js");
+// const { channel } = require("diagnostics_channel");
 
 function absolutizeUrl(url, domain) {
   if (!url) return null;
@@ -231,7 +231,7 @@ async function main() {
     const uploadedIds = [];
     for (const item of list) {
       const channelId = stableChannelId(item.link);
-      const chanelId1 = channelId.replace("ch-", "img-");
+      const publicId = channelId.replace("ch-", "img-");
       const buffer = await createMatchImage(
         item.league,
         item.teams.home.name,
@@ -242,10 +242,30 @@ async function main() {
         item.date,
         item.status,
       );
+      // Collect for batch upload
+      uploadedIds.push(publicId);
+      if (!global.__uploadTasks) global.__uploadTasks = [];
+      global.__uploadTasks.push({ buffer, publicId, item, channelId });
+    }
 
-      const urlImage = await uploadImage(buffer, chanelId1);
-      uploadedIds.push(chanelId1);
-      // console.log(urlImage);
+    // Batch upload all images
+    const uploadResults = await uploadMultiThread(
+      global.__uploadTasks.map((t) => ({
+        buffer: t.buffer,
+        publicId: t.publicId,
+      })),
+    );
+    // Map publicId to url
+    const urlMap = {};
+    uploadResults.forEach((r) => {
+      if (r && r.success && typeof r.url === "string")
+        urlMap[r.publicId] = r.url;
+    });
+
+    // Build channels array
+    for (const t of global.__uploadTasks) {
+      const { item, channelId, publicId } = t;
+      const urlImage = urlMap[publicId] || "";
       const labelStatus = statusConfig[item.status] || {
         text: " ● Live",
         color: "#FF0000",
