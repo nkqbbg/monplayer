@@ -314,6 +314,9 @@ async function main() {
     for (const t of itemsWithIds) {
       const { item, channelId, publicId } = t;
       const urlImage = urlMap[publicId] || "";
+      if (existResults.find((r) => r.publicId === publicId && r.exists)) {
+        console.log(`[cache] Using cached image for publicId: ${publicId}`);
+      }
       const labelStatus = statusConfig[item.status] || {
         text: " ● Live",
         color: "#FF0000",

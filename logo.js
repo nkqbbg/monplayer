@@ -127,11 +127,14 @@ async function createMatchImage(
 
   const SCALE = 1.2; // 🔥 chỉnh size toàn bộ UI ở đây
 
+  // Move everything up by this many pixels
+  const Y_OFFSET = -32; // adjust this value as needed
+
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext("2d");
 
   const centerX = width / 2;
-  const centerY = height / 2;
+  const centerY = height / 2 + Y_OFFSET;
 
   // =====================================================
   // BACKGROUND
@@ -164,37 +167,12 @@ async function createMatchImage(
   const matchHeight = height * 0.5;
   const footerHeight = height * 0.25;
 
-  const headerCenterY = headerHeight / 2;
-  const matchCenterY = headerHeight + matchHeight / 2;
-  const footerCenterY = headerHeight + matchHeight + footerHeight / 1.5;
+  const headerCenterY = headerHeight / 2 + Y_OFFSET;
+  const matchCenterY = headerHeight + matchHeight / 2 + Y_OFFSET;
+  const footerCenterY = headerHeight + matchHeight + footerHeight / 1.5 - 15;
 
   ctx.textAlign = "center";
   ctx.fillStyle = "#fff";
-
-  // =====================================================
-  // HEADER
-  // =====================================================
-
-  // ctx.font = `bold ${22 * SCALE}px Arial`;
-  // ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
-
-  const badgeWidth = 175 * SCALE;
-  const badgeHeight = 38 * SCALE;
-
-  ctx.fillStyle = "#ff4d4f";
-  ctx.beginPath();
-  ctx.roundRect(
-    centerX - badgeWidth / 2,
-    headerCenterY + 35 * SCALE,
-    badgeWidth,
-    badgeHeight,
-    14 * SCALE,
-  );
-  ctx.fill();
-
-  ctx.fillStyle = "#fff";
-  ctx.font = `bold ${25 * SCALE}px Arial`;
-  ctx.fillText(`${time} | ${day}`, centerX, headerCenterY + 62 * SCALE);
 
   // =====================================================
   // LOGO
@@ -206,8 +184,9 @@ async function createMatchImage(
   const logoSize = 120 * SCALE;
   const gap = 100 * SCALE;
 
-  const homeLogoX = centerX - gap - logoSize;
-  const awayLogoX = centerX + gap;
+  // Center logos horizontally, add +/- 20px for more spacing
+  const homeLogoX = centerX - gap - logoSize - 20;
+  const awayLogoX = centerX + gap + 20;
   const logoY = matchCenterY - logoSize / 2;
 
   function drawCircleLogo(img, x, y, size) {
@@ -235,8 +214,33 @@ async function createMatchImage(
   ctx.font = `italic bold ${32 * SCALE}px Georgia`;
   ctx.shadowColor = "rgba(255,255,255,0.7)";
   ctx.shadowBlur = 18 * SCALE;
-  ctx.fillText("VS", centerX, matchCenterY + 12 * SCALE);
+  ctx.fillText("VS", centerX, matchCenterY + 9 * SCALE);
   ctx.shadowBlur = 0;
+
+  // =====================================================
+  // Time | Day badge
+  // =====================================================
+
+  // ctx.font = `bold ${22 * SCALE}px Arial`;
+  // ctx.fillText(league, centerX, headerCenterY - 20 * SCALE);
+
+  const badgeWidth = 158 * SCALE;
+  const badgeHeight = 38 * SCALE;
+
+  ctx.fillStyle = "#ff4d4f";
+  ctx.beginPath();
+  ctx.roundRect(
+    centerX - badgeWidth / 2,
+    matchCenterY + 26 * SCALE,
+    badgeWidth,
+    badgeHeight,
+    14 * SCALE,
+  );
+  ctx.fill();
+
+  ctx.fillStyle = "#fff";
+  ctx.font = `bold ${25 * SCALE}px Arial`;
+  ctx.fillText(`${time} | ${day}`, centerX, matchCenterY + 52 * SCALE);
 
   // =====================================================
   // TEAM NAME
@@ -263,11 +267,13 @@ async function createMatchImage(
 
   const nameY = logoY + logoSize + 40 * SCALE;
 
+  // Center team name exactly under the logo center
+  // Align team names to the new logo centers
   wrapText(homeName, homeLogoX + logoSize / 2, nameY, 160 * SCALE, 26 * SCALE);
   wrapText(awayName, awayLogoX + logoSize / 2, nameY, 160 * SCALE, 26 * SCALE);
 
   // =====================================================
-  // FOOTER TIME
+  // FOOTER LEAGUE
   // =====================================================
 
   ctx.font = `bold ${20 * SCALE}px Arial`;
@@ -276,35 +282,24 @@ async function createMatchImage(
   // =====================================================
   // SAVE
   // =====================================================
-  // const buffer = canvas.toBuffer("image/png");
-  // fs.writeFileSync(output, buffer);
-  return canvas.toBuffer("image/png");
+  const buffer = canvas.toBuffer("image/png");
+  fs.writeFileSync(output, buffer);
+  // return canvas.toBuffer("image/png");
 }
 
 // =====================================================
 // TEST
 // =====================================================
 
-// createMatchImage(
-// "Vô Địch Nữ FUSAL ĐNA",
-// "Việt Nam Nữ Indonesia",
-// "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
-// "Indonesia Nữ Malaysia",
-// "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
-// "15:00",
-// "02/03",
-// "Chưa Bắt Đầu",
-//   ".\\resource\\match1.png",
-// );
-// const buffer = createMatchImage(
-//   "Vô Địch Nữ FUSAL ĐNA",
-//   "Việt Nam Nữ Indonesia",
-//   "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
-//   "Indonesia Nữ Malaysia",
-//   "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
-//   "15:00",
-//   "02/03",
-//   "Chưa Bắt Đầu",
-//   ".\\resource\\match1.png",
-// );
+createMatchImage(
+  "Vô Địch Nữ FUSAL",
+  "Việt Nam Nữ Malay",
+  "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
+  "Indonesia Nữ Malaysia",
+  "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
+  "15:00",
+  "11/03",
+  "Chưa Bắt Đầu",
+  ".\\resource\\match1.png",
+);
 module.exports = { createMatchImage, clearFolder };
