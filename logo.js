@@ -282,24 +282,24 @@ async function createMatchImage(
   // =====================================================
   // SAVE
   // =====================================================
-  const buffer = canvas.toBuffer("image/png");
-  fs.writeFileSync(output, buffer);
-  // return canvas.toBuffer("image/png");
+  // const buffer = canvas.toBuffer("image/png");
+  // fs.writeFileSync(output, buffer);
+  return canvas.toBuffer("image/png");
 }
 
 // =====================================================
 // TEST
 // =====================================================
 
-createMatchImage(
-  "Vô Địch Nữ FUSAL",
-  "Việt Nam Nữ Malay",
-  "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
-  "Indonesia Nữ Malaysia",
-  "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
-  "15:00",
-  "11/03",
-  "Chưa Bắt Đầu",
-  ".\\resource\\match1.png",
-);
+// createMatchImage(
+//   "Vô Địch Nữ FUSAL",
+//   "Việt Nam Nữ Malay",
+//   "https://img.rapid-api.icu/football/team/f8e1d380a8a8a3caa43a71527fa119d2/image/small?v=1768601124",
+//   "Indonesia Nữ Malaysia",
+//   "https://img.rapid-api.icu/football/team/9227867a0e57a6f39222448943fdbf34/image/small?v=1768601124",
+//   "15:00",
+//   "11/03",
+//   "Chưa Bắt Đầu",
+//   ".\\resource\\match1.png",
+// );
 module.exports = { createMatchImage, clearFolder };
