@@ -29,155 +29,13 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-baliunitedvspersatuansepakbolamakassar2438407",
-                    "name": "Bali United vs Persatuan Sepakbola Makassar",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777221313/matches/img-baliunitedvspersatuansepakbolamakassar2438407.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-7004b734b3d7",
-                            "name": "Bali United - Persatuan Sepakbola Makassar",
-                            "contents": [
-                                {
-                                    "id": "ct-0f60995ce63e",
-                                    "streams": [
-                                        {
-                                            "id": "st-e53a1d148d58",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-96300716c110",
-                                                    "name": "Nhà đài",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-88ac19f33e91",
-                                                    "name": "HD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-e469974bc87e",
-                                                    "name": "SD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-5bb7cd240a8a",
-                                                    "name": "FullHD",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-d1c1a898dfbe",
-                                                    "name": "FL",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-bc8f8de4133c",
-                                                    "name": "FLV2",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://hoadaotv.me/bali-united-vs-persatuan-sepakbola-makassar-2438407"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-fkepitsentrdunayivtsivsfkoleksandria2436418",
                     "name": "FK Epitsentr Dunayivtsi vs FK Oleksandria",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "Upcoming",
-                            "color": "#FF9800",
+                            "text": "Fulltime",
+                            "color": "#9E9E9E",
                             "text_color": "#FFFFFF",
                             "font_size": 6
                         }
@@ -192,22 +50,22 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-34bb2fb540af",
+                            "id": "src-c7a7ad0534f5",
                             "name": "FK Epitsentr Dunayivtsi - FK Oleksandria",
                             "contents": [
                                 {
-                                    "id": "ct-f271442bb4e1",
+                                    "id": "ct-cbe9c6d2df8d",
                                     "streams": [
                                         {
-                                            "id": "st-a1b505fd90d5",
+                                            "id": "st-20e384e57d46",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-f00ab7282a03",
+                                                    "id": "lnk-5dd4dc8dbb5e",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "",
+                                                    "url": "https://live.alilicloud.com/live/a1a3a82a8504340df8be271fb41f11fa/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -220,7 +78,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8cd9d91b1894",
+                                                    "id": "lnk-200272d0aacd",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -237,7 +95,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-02468bec91ed",
+                                                    "id": "lnk-81e6f7e7e044",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -254,7 +112,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4860d8754043",
+                                                    "id": "lnk-3e734055c6e9",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -271,7 +129,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-217736e905b2",
+                                                    "id": "lnk-6f168ddb5459",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -288,7 +146,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-489ad3e3b7a4",
+                                                    "id": "lnk-93d2af48562c",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -334,18 +192,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-eabbc3fdccb6",
+                            "id": "src-c52504efd08c",
                             "name": "Persatuan Sepakbola Indonesia Jakarta - Persis Solo FC",
                             "contents": [
                                 {
-                                    "id": "ct-64c5aff8ebff",
+                                    "id": "ct-628111439224",
                                     "streams": [
                                         {
-                                            "id": "st-fa7cdcf8dc8a",
+                                            "id": "st-bf7c98d4154f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ebdb34ab0a2a",
+                                                    "id": "lnk-dfbbe41b8f2b",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -362,7 +220,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4315e707c145",
+                                                    "id": "lnk-c2f61f390923",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -379,7 +237,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4102a9c520bb",
+                                                    "id": "lnk-2cdd29943b92",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -396,7 +254,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f37a2ce6d22b",
+                                                    "id": "lnk-f0df61bfe546",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -413,7 +271,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-23815ebbd136",
+                                                    "id": "lnk-5d457801baf5",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -430,7 +288,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-31745cad4982",
+                                                    "id": "lnk-af93d830d201",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -476,18 +334,18 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a7ef08c9d66a",
+                            "id": "src-9cf9487d997e",
                             "name": "Cagliari - Atalanta",
                             "contents": [
                                 {
-                                    "id": "ct-806497280390",
+                                    "id": "ct-e7c726eefc60",
                                     "streams": [
                                         {
-                                            "id": "st-6130af68542b",
+                                            "id": "st-337f5f3a93bd",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-d01d58855c39",
+                                                    "id": "lnk-b5d861279dca",
                                                     "name": "Nhà đài",
                                                     "type": "hls",
                                                     "default": true,
@@ -504,7 +362,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-e080ee195a2d",
+                                                    "id": "lnk-eaac0c859923",
                                                     "name": "HD",
                                                     "type": "hls",
                                                     "default": true,
@@ -521,7 +379,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-06552c21289f",
+                                                    "id": "lnk-283bed235202",
                                                     "name": "SD",
                                                     "type": "hls",
                                                     "default": true,
@@ -538,7 +396,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c587d1f21710",
+                                                    "id": "lnk-a6ad2d2869b4",
                                                     "name": "FullHD",
                                                     "type": "hls",
                                                     "default": true,
@@ -555,7 +413,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f54756580269",
+                                                    "id": "lnk-88ee48f8be64",
                                                     "name": "FL",
                                                     "type": "hls",
                                                     "default": true,
@@ -572,7 +430,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-9e82a66e6585",
+                                                    "id": "lnk-10d4717adc27",
                                                     "name": "FLV2",
                                                     "type": "hls",
                                                     "default": true,
@@ -581,6 +439,2420 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://hoadaotv.me/cagliari-vs-atalanta-2438752"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-besiktasjkvskaragumruk2438231",
+                    "name": "Besiktas JK vs Karagumruk",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291062/matches/img-besiktasjkvskaragumruk2438231.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-a3813dfb7007",
+                            "name": "Besiktas JK - Karagumruk",
+                            "contents": [
+                                {
+                                    "id": "ct-7d8a0313a5b6",
+                                    "streams": [
+                                        {
+                                            "id": "st-1b0db157cc7d",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3f8fedef1db4",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-c0233ee995f4",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-964d287cf6af",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ee5114004a79",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3916dc69037c",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d9b3c286b3be",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/besiktas-jk-vs-karagumruk-2438231"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-laziovsudinese2438787",
+                    "name": "Lazio vs Udinese",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291062/matches/img-laziovsudinese2438787.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-1634222455da",
+                            "name": "Lazio - Udinese",
+                            "contents": [
+                                {
+                                    "id": "ct-113766362a64",
+                                    "streams": [
+                                        {
+                                            "id": "st-47e3f9d505eb",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-069f086330b7",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-139c32ff464a",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-cb921c157b7a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1541184678bc",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9f07240fc654",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3b815e780333",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lazio-vs-udinese-2438787"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-manchesterunitedvsbrentford2438790",
+                    "name": "Manchester United vs Brentford",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291062/matches/img-manchesterunitedvsbrentford2438790.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-981184bbde6d",
+                            "name": "Manchester United - Brentford",
+                            "contents": [
+                                {
+                                    "id": "ct-77c0c62ea41f",
+                                    "streams": [
+                                        {
+                                            "id": "st-f12731d4cd3f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3e25ed3cc711",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-685496bbb296",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-lo-a-ton/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-88321d5f24ca",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-lo-a-ton/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-05a4bf9fccff",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-lo-a-ton/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-beee192f08fd",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-lo-a-ton.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d7dead629463",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-lo-a-ton.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-2438790"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-rcdespanyoldebarcelonavslevante2438791",
+                    "name": "RCD Espanyol de Barcelona vs Levante",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291062/matches/img-rcdespanyoldebarcelonavslevante2438791.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-21d3cd3b0c02",
+                            "name": "RCD Espanyol de Barcelona - Levante",
+                            "contents": [
+                                {
+                                    "id": "ct-4b8f44f68fd7",
+                                    "streams": [
+                                        {
+                                            "id": "st-d56dd1ca4dd5",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-199bb2812989",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-09366b6da17f",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ed5d01668d13",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-507607d21b43",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5eb9723c6b6e",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-691e3f317a3f",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/rcd-espanyol-de-barcelona-vs-levante-2438791"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-manchesterunitedvsbrentfordquay2443572",
+                    "name": "Manchester United vs Brentford",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291063/matches/img-manchesterunitedvsbrentfordquay2443572.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-e943bb5670e3",
+                            "name": "Manchester United - Brentford",
+                            "contents": [
+                                {
+                                    "id": "ct-1377f05a8e3b",
+                                    "streams": [
+                                        {
+                                            "id": "st-af87f25ead94",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3915afda3804",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-712d33a63918",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2c528329142e",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8dd28f13cf73",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-cddc8e839be0",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3369f8365244",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-quay-2443572"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-manchesterunitedvsbrentfordmap2443573",
+                    "name": "Manchester United vs Brentford",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291063/matches/img-manchesterunitedvsbrentfordmap2443573.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-51d027eb49a1",
+                            "name": "Manchester United - Brentford",
+                            "contents": [
+                                {
+                                    "id": "ct-50e4072f7214",
+                                    "streams": [
+                                        {
+                                            "id": "st-0764e4b4684d",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3f51d3aa24ff",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9477dea26ce1",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-a-map/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2caca7bd5056",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-a-map/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3c64937dfaff",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-a-map/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6be416410b11",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-a-map.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-4aed31af185e",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-a-map.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-map-2443573"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-manchesterunitedvsbrentfordfanta2443574",
+                    "name": "Manchester United vs Brentford",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291063/matches/img-manchesterunitedvsbrentfordfanta2443574.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-9c1ae4d8f76e",
+                            "name": "Manchester United - Brentford",
+                            "contents": [
+                                {
+                                    "id": "ct-84e39f84288d",
+                                    "streams": [
+                                        {
+                                            "id": "st-89b0f2dd91f2",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-2bcba2ef6930",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-e8cafcfb725a",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-fanta/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-2bf90b1a546c",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-fanta/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9c9d15f10c35",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-fanta/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9b48ff32a734",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-fanta.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-685fc900a076",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-fanta.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/manchester-united-vs-brentford-fanta-2443574"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-aremafcvspersebayasurabaya2438818",
+                    "name": "Arema FC vs Persebaya Surabaya",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291063/matches/img-aremafcvspersebayasurabaya2438818.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-0aa1e81cab70",
+                            "name": "Arema FC - Persebaya Surabaya",
+                            "contents": [
+                                {
+                                    "id": "ct-b177e27b889b",
+                                    "streams": [
+                                        {
+                                            "id": "st-a481dcf7c588",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-06de73ab1db3",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-dbb1db1517f7",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-732176ecdcf6",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-019edfce362e",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8233bd246dfe",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-66129ce9151b",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/arema-fc-vs-persebaya-surabaya-2438818"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-psbsbiaknumforvsmalutunited2438824",
+                    "name": "PSBS Biak Numfor vs Malut United",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291063/matches/img-psbsbiaknumforvsmalutunited2438824.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-c134a307ea75",
+                            "name": "PSBS Biak Numfor - Malut United",
+                            "contents": [
+                                {
+                                    "id": "ct-2face8597427",
+                                    "streams": [
+                                        {
+                                            "id": "st-24f3cbad17f0",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-39574cc92dbf",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3417e84c10ac",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ef5a3aa79eeb",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-50824423a052",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-716dcb078f0f",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-0627f7a5e769",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/psbs-biak-numfor-vs-malut-united-2438824"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-melakafcvsjohordarultazimfc2438833",
+                    "name": "Melaka FC vs Johor Darul Ta'zim FC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291064/matches/img-melakafcvsjohordarultazimfc2438833.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-8ee63dca61e6",
+                            "name": "Melaka FC - Johor Darul Ta'zim FC",
+                            "contents": [
+                                {
+                                    "id": "ct-040a8f4095d1",
+                                    "streams": [
+                                        {
+                                            "id": "st-0e441c7b7ea0",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-f979e902b80e",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b3b793f3d3e9",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-tao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-59baeaa626db",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-tao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3fcb61f77273",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-tao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-55dff2118d62",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-tao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ecc9817683d7",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-tao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/melaka-fc-vs-johor-darul-tazim-fc-2438833"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-eastbengalfcvsodishafc2438837",
+                    "name": "East Bengal FC vs Odisha FC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291064/matches/img-eastbengalfcvsodishafc2438837.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-493032e09c31",
+                            "name": "East Bengal FC - Odisha FC",
+                            "contents": [
+                                {
+                                    "id": "ct-fd5665bfa74e",
+                                    "streams": [
+                                        {
+                                            "id": "st-1a4e6d7033b3",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-d69b0e073b70",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-dcc95c4457f3",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a98481b5f2fe",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3d93ea769d31",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-300fbf52dbcb",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-c0c2049e6d99",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/east-bengal-fc-vs-odisha-fc-2438837"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-pakhtakorvsnasafqarshi2438435",
+                    "name": "Pakhtakor vs Nasaf Qarshi",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291064/matches/img-pakhtakorvsnasafqarshi2438435.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-9cd20b203e54",
+                            "name": "Pakhtakor - Nasaf Qarshi",
+                            "contents": [
+                                {
+                                    "id": "ct-27cc698fe41b",
+                                    "streams": [
+                                        {
+                                            "id": "st-ebc348c1085f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1c55d6fde193",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-39b17c524336",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-49fae8637fcb",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5783dd807835",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-7a2240ce0579",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-49271c077a56",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/pakhtakor-vs-nasaf-qarshi-2438435"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-alshababfcvsalfatehsc2439159",
+                    "name": "Al Shabab FC vs Al Fateh SC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291064/matches/img-alshababfcvsalfatehsc2439159.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-9ba1c0584fd8",
+                            "name": "Al Shabab FC - Al Fateh SC",
+                            "contents": [
+                                {
+                                    "id": "ct-315c67eecba4",
+                                    "streams": [
+                                        {
+                                            "id": "st-4f921375025e",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-687c9185e14a",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6d9ebfcca6cc",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a3b4dd8f0b13",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-95f200b8534c",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao/index.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a4f93550d532",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f2d46a935b48",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/al-shabab-fc-vs-al-fateh-sc-2439159"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-haugesundbvsstabaekb2438409",
+                    "name": "Haugesund B vs Stabaek B",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": " ● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291065/matches/img-haugesundbvsstabaekb2438409.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-13a231c2436d",
+                            "name": "Haugesund B - Stabaek B",
+                            "contents": [
+                                {
+                                    "id": "ct-3a82f00784b7",
+                                    "streams": [
+                                        {
+                                            "id": "st-79a144561e38",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-6343c8b360ab",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live.alilicloud.com/live/fa559264286366f36fb0ed00f0b4e704/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-34f179042760",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-5b637ac24bfe",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d0a99f82ad2c",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-7a5eedfe249f",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-13c254bc570b",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/haugesund-b-vs-stabaek-b-2438409"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-lokomotivvitebskwomenvsdneprmogilevwomen2438410",
+                    "name": "Lokomotiv Vitebsk Women vs Dnepr Mogilev Women",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": " ● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291065/matches/img-lokomotivvitebskwomenvsdneprmogilevwomen2438410.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-8d995db73ce2",
+                            "name": "Lokomotiv Vitebsk Women - Dnepr Mogilev Women",
+                            "contents": [
+                                {
+                                    "id": "ct-5e0a2781477a",
+                                    "streams": [
+                                        {
+                                            "id": "st-19e3765a4065",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-26394d582c10",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live.alilicloud.com/live/0e3b42ff6d40910fb766b6125add7004/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ae2e86e3cc84",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6c0c285e11af",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6310f3ca833f",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8596e5b89710",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6528108ab182",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/lokomotiv-vitebsk-women-vs-dnepr-mogilev-women-2438410"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ordabasyshymkentwvsulytauw2443514",
+                    "name": "Ordabasy Shymkent (W) vs Ulytau W",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": " ● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291065/matches/img-ordabasyshymkentwvsulytauw2443514.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-78dfcab64284",
+                            "name": "Ordabasy Shymkent (W) - Ulytau W",
+                            "contents": [
+                                {
+                                    "id": "ct-251be7158077",
+                                    "streams": [
+                                        {
+                                            "id": "st-769ea9a8e3b4",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-6cc805ab82da",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live.alilicloud.com/live/9ce7647c3912818e35f222f7a8dd75bc/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a43167ddd4a0",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a3601ac83f3a",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a9075ae9bdac",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b464343a5328",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f90f55753796",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/ordabasy-shymkent-w-vs-ulytau-w-2443514"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-balestierkhalsafcvshougangunitedfc2442354",
+                    "name": "Balestier Khalsa FC vs Hougang United FC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1777291066/matches/img-balestierkhalsafcvshougangunitedfc2442354.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-5d283fbd3a49",
+                            "name": "Balestier Khalsa FC - Hougang United FC",
+                            "contents": [
+                                {
+                                    "id": "ct-0fd35022158a",
+                                    "streams": [
+                                        {
+                                            "id": "st-c5a904ce800f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-e74866ff0d0a",
+                                                    "name": "Nhà đài",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://live.alilicloud.com/live/0ada799831ec00abdcbaf9e4928892a6/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-a8bb51fb46ab",
+                                                    "name": "HD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-f466a904d275",
+                                                    "name": "SD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-51c2a9a8f7b9",
+                                                    "name": "FullHD",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-8033f785daf5",
+                                                    "name": "FL",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-bd5a127e44c8",
+                                                    "name": "FLV2",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://hoadaotv.me/balestier-khalsa-fc-vs-hougang-united-fc-2442354"
                                                         },
                                                         {
                                                             "key": "User-Agent",
