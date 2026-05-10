@@ -313,7 +313,7 @@ async function main() {
         text: "● Live",
         color: "#FF0000",
       },
-      "Sắp bắt đầu": {
+      "SẮP LIVE": {
         text: "Upcoming",
         color: "#FF9800",
       },
@@ -417,8 +417,8 @@ async function main() {
       }
 
       const labelStatus = statusConfig[item.status] || {
-        text: "● Live",
-        color: "#FF0000",
+        text: "● Upcoming",
+        color: "#FF9800",
       };
 
       if (!channels.some((c) => c.id === channelId)) {
