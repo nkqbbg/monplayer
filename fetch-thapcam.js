@@ -410,7 +410,7 @@ async function main() {
         const myIdx = idx++;
         const t = itemsWithIds[myIdx];
         try {
-          const res = await cloudinary.api.resource("thamcam/" + t.publicId);
+          const res = await cloudinary.api.resource("thapcam/" + t.publicId);
           existResults[myIdx] = {
             exists: true,
             url: res.secure_url,
