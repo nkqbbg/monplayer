@@ -129,7 +129,7 @@ async function scrapeThapcamHot() {
           .trim();
         const timeText = card.find(".grid-match__datef").text().trim();
         const timeLoad = card
-          .find('.time-loaded span[class^="time-loaded-"]')
+          .find('.time-loaded span[class^="time-load-"]')
           .first()
           .text()
           .trim();
