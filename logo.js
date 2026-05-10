@@ -240,7 +240,9 @@ async function createMatchImage(
 
   ctx.fillStyle = "#fff";
   ctx.font = `bold ${25 * SCALE}px Arial`;
-  ctx.fillText(`${time} | ${day}`, centerX, matchCenterY + 25 * SCALE);
+  if (day !== "")
+    ctx.fillText(`${time} | ${day}`, centerX, matchCenterY + 25 * SCALE);
+  else ctx.fillText(`${time}`, centerX, matchCenterY + 25 * SCALE);
 
   // =====================================================
   // TEAM NAME

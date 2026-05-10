@@ -127,11 +127,8 @@ async function scrapeThapcamHot() {
           .first()
           .text()
           .trim();
-        const timeText = card
-          .find(".grid-match__status .time-load-")
-          .text()
-          .trim();
-
+        const timeText = card.find(".grid-match__datef").text().trim();
+        // console.log(`time text: ${timeText}, status: ${statusText}`);
         console.log(`🔗 Scraping stream for: ${homeName} vs ${awayName}`);
 
         // Scrape stream links from the match page
@@ -377,7 +374,7 @@ async function main() {
           t.item.teams.away.name,
           t.item.teams.away.icon,
           t.item.time,
-          t.item.status,
+          "",
           t.item.status,
         );
         uploadTasks.push({
