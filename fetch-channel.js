@@ -42,21 +42,36 @@ async function scrapeSoccer() {
 
     const html = response.data;
     const $ = cheerio.load(html);
-    // console.log($);
-    const btnWatchElements = $(".btn-watch");
-    console.log(
-      `✅ Found ${btnWatchElements.length} elements with class "btn-watch":\n`,
-    );
 
-    let elementLinks = btnWatchElements
+    // Only scrape HOT matches (avoid "đang diễn ra" section)
+    // IMPORTANT: container class names can overlap; filter strictly by `.card-match.hot-match`.
+    const isHotCmWrap = (el) =>
+      $(el).closest(".card-match").hasClass("hot-match") ||
+      $(el).find(".card-match.hot-match").length > 0;
+
+    let cmWrapEls = $(".match-hot-section-container .cm-wrap")
       .toArray()
-      .map((el) => $(el).attr("href"));
+      .filter(isHotCmWrap);
 
-    // Add the user requested link as a fallback if it's not already there
-    const testLink = "/havre-athletic-club-vs-paris-saint-germain-2397996";
-    if (!elementLinks.includes(testLink)) {
-      elementLinks.unshift(testLink);
+    if (cmWrapEls.length === 0) {
+      cmWrapEls = $(".match-hot-card-container .cm-wrap")
+        .toArray()
+        .filter(isHotCmWrap);
     }
+
+    if (cmWrapEls.length === 0) {
+      // Fallback: use hot cards directly (structure can vary)
+      cmWrapEls = $(".card-match.hot-match").toArray();
+    }
+
+    if (cmWrapEls.length === 0) {
+      console.log(
+        "⚠️ No HOT matches found (selectors not present). Skip scraping to avoid pulling ongoing matches.",
+      );
+      return [];
+    }
+
+    console.log(`🔥 Found ${cmWrapEls.length} HOT match cards`);
 
     const matches = [];
 
@@ -77,7 +92,6 @@ async function scrapeSoccer() {
     }
 
     // Parallelize scrapelink with concurrency limit
-    const cmWrapEls = $(".cm-wrap").toArray();
     const concurrency = 6; // adjust as needed
     let idx = 0;
     async function worker() {
