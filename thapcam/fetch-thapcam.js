@@ -425,7 +425,7 @@ async function main() {
         text: "● Upcoming",
         color: "#FF9800",
       };
-      console.log(`status: ${item.status}, label: ${labelStatus.text}`);
+      // console.log(`status: ${item.status}, label: ${labelStatus.text}`);
 
       if (!channels.some((c) => c.id === channelId)) {
         channels.push({
