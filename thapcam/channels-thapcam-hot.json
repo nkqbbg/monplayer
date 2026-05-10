@@ -21,190 +21,6 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-471243",
-                    "name": "West Ham United vs Arsenal",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430203/thapcam/img-471243.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-365722d6d2a2",
-                            "name": "West Ham United - Arsenal",
-                            "contents": [
-                                {
-                                    "id": "ct-390e24622da7",
-                                    "name": "English Premier League",
-                                    "streams": [
-                                        {
-                                            "id": "st-716c8779b2fc",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-96f233dfda06",
-                                                    "name": "BLV_SIEU_BUONG",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a09a51ddc_151/index.m3u8?expire=1779030810&sign=3d4c34886c7a82f1411d41b17303b666",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-33d9cec403e9",
-                                                    "name": "BLV_CA_MAP",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d7951ddc_154/index.m3u8?expire=1779030009&sign=7cca7497d56e526b1ba7aa8102a790b5",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-9d734a62cc47",
-                                                    "name": "BLV_NGUOI_RUNG",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009c5c137e5_148/index.m3u8?expire=1779029724&sign=cb50aac1ae87bb67bc4f67018d8f2c0e",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-5edf033b2258",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/92ec2989379df543efbe9e37006d8908/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-471246",
-                    "name": "FC Köln vs 1. FC Heidenheim 1846",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430203/thapcam/img-471246.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-07de678a270f",
-                            "name": "FC Köln - 1. FC Heidenheim 1846",
-                            "contents": [
-                                {
-                                    "id": "ct-c1f49b7cf4b4",
-                                    "name": "Bundesliga",
-                                    "streams": [
-                                        {
-                                            "id": "st-47c3a95de913",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-e9c2d819b316",
-                                                    "name": "BLV_NGUOI_CO",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d25137e5_14559/index.m3u8?expire=1779029925&sign=898fc2159a177711a8a2aa475706ae00",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/fc-kln-vs-1-fc-heidenheim-1846-2230-10-05-2026/471246"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-18f834e87e22",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/a3f29475b33a559a552d004088a336a2/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/fc-kln-vs-1-fc-heidenheim-1846-2230-10-05-2026/471246"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-471306",
                     "name": "Parma vs AS Roma",
                     "labels": [
@@ -226,19 +42,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-39441abff3e0",
+                            "id": "src-fb2677f17d64",
                             "name": "Parma - AS Roma",
                             "contents": [
                                 {
-                                    "id": "ct-b435d938d74a",
+                                    "id": "ct-1b17bdc4ed12",
                                     "name": "Italian Serie A",
                                     "streams": [
                                         {
-                                            "id": "st-796bf8a809b7",
+                                            "id": "st-de4928f8559e",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-72914f161d3a",
+                                                    "id": "lnk-4d017f698731",
                                                     "name": "BLV_TON_QUYEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -255,7 +71,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-9e53d42eae9c",
+                                                    "id": "lnk-79af4261e0be",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -301,19 +117,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-08becea95ace",
+                            "id": "src-894fced80c96",
                             "name": "Vietnam U17 - South Korea U17",
                             "contents": [
                                 {
-                                    "id": "ct-aad1be5c0a1f",
+                                    "id": "ct-47038084b767",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-ec4705d83811",
+                                            "id": "st-4f5bd4861901",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ddce62f6c468",
+                                                    "id": "lnk-93ab4d4daa77",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -330,7 +146,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-103d27a43496",
+                                                    "id": "lnk-71bac90b737d",
                                                     "name": "BLV_NGUOI_LA",
                                                     "type": "hls",
                                                     "default": true,
@@ -347,7 +163,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-12e158797cac",
+                                                    "id": "lnk-045613dd2ee9",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -393,19 +209,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-7f9232e565fa",
+                            "id": "src-40bb629d302b",
                             "name": "Real Oviedo - Getafe",
                             "contents": [
                                 {
-                                    "id": "ct-3e8ff1941c22",
+                                    "id": "ct-997508e630f6",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-21860eaa61f8",
+                                            "id": "st-93eb4b1dde3a",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-dbed2c27fb22",
+                                                    "id": "lnk-9f7fec647e9d",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -422,7 +238,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-2ddbca7e629c",
+                                                    "id": "lnk-4a17478281fa",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -468,19 +284,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-bab0a4e72f60",
+                            "id": "src-66773a644e02",
                             "name": "United Arab Emirates U17 - Yemen U17",
                             "contents": [
                                 {
-                                    "id": "ct-6a9e748119ab",
+                                    "id": "ct-d22b82f9ed2b",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-771ac8464772",
+                                            "id": "st-8a22df5d1d25",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-d061f7d1686b",
+                                                    "id": "lnk-b249cfd34059",
                                                     "name": "BLV_CHAN_DAT",
                                                     "type": "hls",
                                                     "default": true,
@@ -497,7 +313,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f6234bbfc099",
+                                                    "id": "lnk-fac6fa338093",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -527,8 +343,8 @@
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
+                            "text": "● Live",
+                            "color": "#FF0000",
                             "text_color": "#FFFFFF",
                             "font_size": 6
                         }
@@ -543,19 +359,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-49234a5237ae",
+                            "id": "src-fe1a47c87e6a",
                             "name": "India U17 - Uzbekistan U17",
                             "contents": [
                                 {
-                                    "id": "ct-891bc59af350",
+                                    "id": "ct-efb56338cefd",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-213eba59188e",
+                                            "id": "st-13a185688754",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a5cb5a5f5dc3",
+                                                    "id": "lnk-eeaad9c09988",
                                                     "name": "BLV_JAYCE",
                                                     "type": "hls",
                                                     "default": true,
@@ -572,7 +388,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-f9c8be5c70f7",
+                                                    "id": "lnk-5a62641a84bd",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -602,8 +418,8 @@
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
+                            "text": "● Live",
+                            "color": "#FF0000",
                             "text_color": "#FFFFFF",
                             "font_size": 6
                         }
@@ -618,19 +434,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-5a627c5711e1",
+                            "id": "src-76cd1b2adbcb",
                             "name": "1. FSV Mainz 05 - 1. FC Union Berlin",
                             "contents": [
                                 {
-                                    "id": "ct-c771f083dc3a",
+                                    "id": "ct-b1dac31b6e37",
                                     "name": "Bundesliga",
                                     "streams": [
                                         {
-                                            "id": "st-28ff04e9912a",
+                                            "id": "st-2065ea7d4ca4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a45879755f6e",
+                                                    "id": "lnk-1e235486a7b5",
                                                     "name": "BLV_NGUOI_DA",
                                                     "type": "hls",
                                                     "default": true,
@@ -647,7 +463,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-6ab82cfdad40",
+                                                    "id": "lnk-c435a5753cd9",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -693,19 +509,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-2dacfeb68119",
+                            "id": "src-2b9b72856f21",
                             "name": "AC Milan - Atalanta",
                             "contents": [
                                 {
-                                    "id": "ct-3dc5e70ff61b",
+                                    "id": "ct-089670059f69",
                                     "name": "Italian Serie A",
                                     "streams": [
                                         {
-                                            "id": "st-d96ab78e2582",
+                                            "id": "st-67785f077b9f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e63d6d11e97a",
+                                                    "id": "lnk-e4a51d94d44f",
                                                     "name": "BLV_NGUOI_CO",
                                                     "type": "hls",
                                                     "default": true,
@@ -722,7 +538,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8e9bb90b7771",
+                                                    "id": "lnk-ba49e5648815",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -768,19 +584,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-4bd484c5a7a5",
+                            "id": "src-ac44d59c70b4",
                             "name": "Angers SCO - RC Strasbourg Alsace",
                             "contents": [
                                 {
-                                    "id": "ct-92d441879c58",
+                                    "id": "ct-249867201aa2",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-a8ea5b7acadb",
+                                            "id": "st-43ee69b9ca56",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-caf40673525a",
+                                                    "id": "lnk-a5f7f6b0a87a",
                                                     "name": "BLV_NGUOI_RUNG",
                                                     "type": "hls",
                                                     "default": true,
@@ -797,7 +613,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-87db389a12f6",
+                                                    "id": "lnk-242c4eb6fc07",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -843,19 +659,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-02c82271c3df",
+                            "id": "src-51a74495ba24",
                             "name": "AJ Auxerre - OGC Nice",
                             "contents": [
                                 {
-                                    "id": "ct-716ec9f9efe6",
+                                    "id": "ct-790a3ea96083",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-9ff7aad5f51b",
+                                            "id": "st-8d0d1bcede44",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c925e1eeec79",
+                                                    "id": "lnk-49aa8d425448",
                                                     "name": "BLV_CHAN_DAT",
                                                     "type": "hls",
                                                     "default": true,
@@ -872,7 +688,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-272bfc074197",
+                                                    "id": "lnk-7eb936ce8125",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -918,19 +734,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-bc54590c827f",
+                            "id": "src-28a41448023e",
                             "name": "Havre Athletic Club - Marseille",
                             "contents": [
                                 {
-                                    "id": "ct-93dd8a1f6f2b",
+                                    "id": "ct-5e2b56304d35",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-936d425df659",
+                                            "id": "st-2b3074c1b93e",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0d1f603f1afa",
+                                                    "id": "lnk-2dd6a62d23e2",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -947,7 +763,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bd7847dba56f",
+                                                    "id": "lnk-bf070c85c3c8",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -993,19 +809,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-33050e85f624",
+                            "id": "src-eb55713358ae",
                             "name": "Metz - Lorient",
                             "contents": [
                                 {
-                                    "id": "ct-8a96a55dc3f0",
+                                    "id": "ct-99f4228b3617",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-149cd1569b35",
+                                            "id": "st-a0512d60e7c7",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-f09d52de4e8f",
+                                                    "id": "lnk-4faba91799ae",
                                                     "name": "BLV_NGUOI_LA",
                                                     "type": "hls",
                                                     "default": true,
@@ -1022,7 +838,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-4fac049c4b05",
+                                                    "id": "lnk-87064f38fe04",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1068,19 +884,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a9ba267adddd",
+                            "id": "src-a52f53dab427",
                             "name": "AS Monaco - LOSC Lille",
                             "contents": [
                                 {
-                                    "id": "ct-a8c845e20fcf",
+                                    "id": "ct-ae0f72e37532",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-00fe2a4dba97",
+                                            "id": "st-5b9ecbed11a3",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-3dd701e6630a",
+                                                    "id": "lnk-13825cdbaee3",
                                                     "name": "BLV_SIEU_QUAY",
                                                     "type": "hls",
                                                     "default": true,
@@ -1097,7 +913,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-7829a98a4697",
+                                                    "id": "lnk-8d8be7092c4b",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1143,19 +959,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-798c1ffa7204",
+                            "id": "src-5ffac671fed7",
                             "name": "Paris Saint Germain - Stade Brestois 29",
                             "contents": [
                                 {
-                                    "id": "ct-11dd0f1e09c0",
+                                    "id": "ct-5e1e7dc464e7",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-8ca87e352234",
+                                            "id": "st-d81d950bb0d2",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-03d19bbe9de6",
+                                                    "id": "lnk-c9ace9916e20",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -1172,7 +988,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-54b263496129",
+                                                    "id": "lnk-8de893025df0",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1218,19 +1034,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-645cff749ee1",
+                            "id": "src-a32271884b42",
                             "name": "Stade Rennais FC - Paris FC",
                             "contents": [
                                 {
-                                    "id": "ct-286f7ca75f77",
+                                    "id": "ct-8d3d6af46e1a",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-6787843b243e",
+                                            "id": "st-107b19508ee4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-73c3de1b4818",
+                                                    "id": "lnk-ee8e2e2e04c9",
                                                     "name": "BLV_NGUOI_DIEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -1247,7 +1063,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-408fbcb0f42f",
+                                                    "id": "lnk-a384c105b04b",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1293,19 +1109,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-ac77c94bca14",
+                            "id": "src-47ec3c8793c4",
                             "name": "Toulouse FC - Lyon",
                             "contents": [
                                 {
-                                    "id": "ct-8ee2f6eb501d",
+                                    "id": "ct-c209961129de",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-79363471a8b4",
+                                            "id": "st-94236fd437c2",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-adb20a228f37",
+                                                    "id": "lnk-f853bbd3f663",
                                                     "name": "BLV_TON_QUYEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -1322,7 +1138,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bbd50400c31c",
+                                                    "id": "lnk-1dedcb5dbf88",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1368,19 +1184,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-e842219de7e9",
+                            "id": "src-7b3889604a7c",
                             "name": "FC Barcelona - Real Madrid",
                             "contents": [
                                 {
-                                    "id": "ct-81305d6a24e7",
+                                    "id": "ct-4f117350e40e",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-dba0cef78b13",
+                                            "id": "st-52e6f16a14df",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-12bbbd636300",
+                                                    "id": "lnk-010533bc3e98",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
@@ -1397,7 +1213,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a60541f0fa4b",
+                                                    "id": "lnk-0748e6057bdd",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1443,19 +1259,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-57cfb90e5b6d",
+                            "id": "src-2ad20a3d5cfc",
                             "name": "Vietnam U17 Women - Australia Women U17",
                             "contents": [
                                 {
-                                    "id": "ct-e47d3acfa6b0",
+                                    "id": "ct-4792fd4b6f97",
                                     "name": "AFC U17 Women's Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-8e948bcdb9ae",
+                                            "id": "st-708cf0ba5ec6",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0da2cf16792b",
+                                                    "id": "lnk-a3be15fbaab6",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
@@ -1501,19 +1317,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-2931406bc215",
+                            "id": "src-ed4111e65ca7",
                             "name": "Japan Women U17 - Korea Rep. Women U17",
                             "contents": [
                                 {
-                                    "id": "ct-b8afd4428c3d",
+                                    "id": "ct-7908edbf74f8",
                                     "name": "AFC U17 Women's Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-5c4a8f8c3868",
+                                            "id": "st-c62050dd5ee3",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4abab2c98d50",
+                                                    "id": "lnk-4d859d8cefff",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -1559,19 +1375,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-1400f9f0af92",
+                            "id": "src-36c4e1e7e899",
                             "name": "Napoli - Bologna",
                             "contents": [
                                 {
-                                    "id": "ct-73ed8a8b95ae",
+                                    "id": "ct-e75cc18876f4",
                                     "name": "Italian Serie A",
                                     "streams": [
                                         {
-                                            "id": "st-f8db5f1149de",
+                                            "id": "st-81ecd78582da",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-7bb55685516a",
+                                                    "id": "lnk-ac877dc6e77c",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -1617,19 +1433,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-0183c6cd4b99",
+                            "id": "src-466ed9bc5f50",
                             "name": "Tottenham Hotspur - Leeds United",
                             "contents": [
                                 {
-                                    "id": "ct-8be767df86de",
+                                    "id": "ct-1ffb26ed08af",
                                     "name": "English Premier League",
                                     "streams": [
                                         {
-                                            "id": "st-6a9d44628159",
+                                            "id": "st-177cb0954ad7",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-6ab40e93f713",
+                                                    "id": "lnk-97d41edde5a3",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -1675,19 +1491,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-8e9b5d55ca69",
+                            "id": "src-be29daba6373",
                             "name": "Rayo Vallecano - Girona FC",
                             "contents": [
                                 {
-                                    "id": "ct-3a8d246209bd",
+                                    "id": "ct-99f655b278d8",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-d57faa7d8b36",
+                                            "id": "st-975863daf3d9",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-89c41e739ce8",
+                                                    "id": "lnk-fc876fd0bbca",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -1733,19 +1549,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b67c527c94d4",
+                            "id": "src-da28b74d015b",
                             "name": "Japan U17 - Indonesia U17",
                             "contents": [
                                 {
-                                    "id": "ct-f4be1724ed56",
+                                    "id": "ct-ef2d338d63bc",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-aa90245496e6",
+                                            "id": "st-6305c28e2fa1",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c31182c7befb",
+                                                    "id": "lnk-9d2e866f54f7",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -1791,19 +1607,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-3086faf34db3",
+                            "id": "src-75a6726afd90",
                             "name": "China U17 - Qatar U17",
                             "contents": [
                                 {
-                                    "id": "ct-32e175dea235",
+                                    "id": "ct-c3bac8e36631",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-a3562bff5fb0",
+                                            "id": "st-4e0fc1d52356",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c382f5804cb2",
+                                                    "id": "lnk-401b482cf7eb",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -1849,19 +1665,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-e9d7479c3b0b",
+                            "id": "src-9a9bf8bb323e",
                             "name": "Al Kholood - Al Okhdood",
                             "contents": [
                                 {
-                                    "id": "ct-958fedd90d05",
+                                    "id": "ct-3ce82f63afaa",
                                     "name": "Saudi Professional League",
                                     "streams": [
                                         {
-                                            "id": "st-24d4bf4ead44",
+                                            "id": "st-c3263b42b40c",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-560084a54d78",
+                                                    "id": "lnk-78b45cddd92c",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
