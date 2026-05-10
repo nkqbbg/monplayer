@@ -21,323 +21,6 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-471306",
-                    "name": "Parma vs AS Roma",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430203/thapcam/img-471306.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-fb2677f17d64",
-                            "name": "Parma - AS Roma",
-                            "contents": [
-                                {
-                                    "id": "ct-1b17bdc4ed12",
-                                    "name": "Italian Serie A",
-                                    "streams": [
-                                        {
-                                            "id": "st-de4928f8559e",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-4d017f698731",
-                                                    "name": "BLV_TON_QUYEN",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00aa77137e5_793/index.m3u8?expire=1779033335&sign=6bbf4e2d8e5d719a8cb7bc3059b3af22",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/parma-vs-as-roma-2300-10-05-2026/471306"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-79af4261e0be",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/300227633bee73928fafefb0a8764665/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/parma-vs-as-roma-2300-10-05-2026/471306"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-471456",
-                    "name": "Vietnam U17 vs South Korea U17",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430205/thapcam/img-471456.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-894fced80c96",
-                            "name": "Vietnam U17 - South Korea U17",
-                            "contents": [
-                                {
-                                    "id": "ct-47038084b767",
-                                    "name": "AFC U17 Asian Cup",
-                                    "streams": [
-                                        {
-                                            "id": "st-4f5bd4861901",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-93ab4d4daa77",
-                                                    "name": "BLV_LENH",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d2d137e5_1549/index.m3u8?expire=1779029933&sign=eee55a3fc97d622ff61b41448071c2aa",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-71bac90b737d",
-                                                    "name": "BLV_NGUOI_LA",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a1a251ddc_11241/index.m3u8?expire=1779031074&sign=49b86727a48803681f8918114480e2c6",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-045613dd2ee9",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/e5b87721757512177d527e2c613834e0/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-471483",
-                    "name": "Real Oviedo vs Getafe",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778431527/thapcam/img-471483.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-40bb629d302b",
-                            "name": "Real Oviedo - Getafe",
-                            "contents": [
-                                {
-                                    "id": "ct-997508e630f6",
-                                    "name": "Spanish La Liga",
-                                    "streams": [
-                                        {
-                                            "id": "st-93eb4b1dde3a",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-9f7fec647e9d",
-                                                    "name": "BLV_MAX",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d17137e5_35/index.m3u8?expire=1779029911&sign=01ba5848358f924dad9e3524bee88993",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/real-oviedo-vs-getafe-2330-10-05-2026/471483"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-4a17478281fa",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/9134ef5a0e80d09250fa175679fcc3ac/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/real-oviedo-vs-getafe-2330-10-05-2026/471483"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-471537",
-                    "name": "United Arab Emirates U17 vs Yemen U17",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Live",
-                            "color": "#FF0000",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778431527/thapcam/img-471537.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-66773a644e02",
-                            "name": "United Arab Emirates U17 - Yemen U17",
-                            "contents": [
-                                {
-                                    "id": "ct-d22b82f9ed2b",
-                                    "name": "AFC U17 Asian Cup",
-                                    "streams": [
-                                        {
-                                            "id": "st-8a22df5d1d25",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-b249cfd34059",
-                                                    "name": "BLV_CHAN_DAT",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a417137e5_145/index.m3u8?expire=1779031703&sign=65e1c4d169cfd0f9a7e2dab38a1673f2",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/united-arab-emirates-u17-vs-yemen-u17-2330-10-05-2026/471537"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-fac6fa338093",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/d06e6a5d0a25e51ff17b82b6891e9e6a/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/united-arab-emirates-u17-vs-yemen-u17-2330-10-05-2026/471537"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-474576",
                     "name": "India U17 vs Uzbekistan U17",
                     "labels": [
@@ -359,19 +42,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-fe1a47c87e6a",
+                            "id": "src-37782efd78e0",
                             "name": "India U17 - Uzbekistan U17",
                             "contents": [
                                 {
-                                    "id": "ct-efb56338cefd",
+                                    "id": "ct-182ccaead2f8",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-13a185688754",
+                                            "id": "st-69c63f87d142",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-eeaad9c09988",
+                                                    "id": "lnk-f305cf2651d3",
                                                     "name": "BLV_JAYCE",
                                                     "type": "hls",
                                                     "default": true,
@@ -388,7 +71,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-5a62641a84bd",
+                                                    "id": "lnk-3dadc5374234",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -434,19 +117,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-76cd1b2adbcb",
+                            "id": "src-0ae8e1d2efaf",
                             "name": "1. FSV Mainz 05 - 1. FC Union Berlin",
                             "contents": [
                                 {
-                                    "id": "ct-b1dac31b6e37",
+                                    "id": "ct-962b96dc95e8",
                                     "name": "Bundesliga",
                                     "streams": [
                                         {
-                                            "id": "st-2065ea7d4ca4",
+                                            "id": "st-95bbadb8f8a4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-1e235486a7b5",
+                                                    "id": "lnk-13b65cc6ab35",
                                                     "name": "BLV_NGUOI_DA",
                                                     "type": "hls",
                                                     "default": true,
@@ -463,7 +146,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-c435a5753cd9",
+                                                    "id": "lnk-d189f7b00ee7",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -509,40 +192,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-2b9b72856f21",
+                            "id": "src-5b9d5b375553",
                             "name": "AC Milan - Atalanta",
                             "contents": [
                                 {
-                                    "id": "ct-089670059f69",
+                                    "id": "ct-15caaf0cbca2",
                                     "name": "Italian Serie A",
                                     "streams": [
                                         {
-                                            "id": "st-67785f077b9f",
+                                            "id": "st-226ef5abda40",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-e4a51d94d44f",
+                                                    "id": "lnk-42db2e87fa6c",
                                                     "name": "BLV_NGUOI_CO",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/ac-milan-vs-atalanta-0145-11-05-2026/474774"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-ba49e5648815",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/f9acb26173c5dca63bdd8d951fd6ab63/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00cd6d137e5_14559/index.m3u8?expire=1779042285&sign=b91ad333024466f5aea8db5a7e1dbeab",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -563,8 +229,8 @@
                     ]
                 },
                 {
-                    "id": "ch-474783",
-                    "name": "Angers SCO vs RC Strasbourg Alsace",
+                    "id": "ch-474804",
+                    "name": "Toulouse FC vs Lyon",
                     "labels": [
                         {
                             "position": "top-left",
@@ -575,7 +241,7 @@
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430206/thapcam/img-474783.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430209/thapcam/img-474804.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -584,27 +250,27 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-ac44d59c70b4",
-                            "name": "Angers SCO - RC Strasbourg Alsace",
+                            "id": "src-6632b88f137f",
+                            "name": "Toulouse FC - Lyon",
                             "contents": [
                                 {
-                                    "id": "ct-249867201aa2",
+                                    "id": "ct-03709f9e265d",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-43ee69b9ca56",
+                                            "id": "st-30b123bd07a4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-a5f7f6b0a87a",
-                                                    "name": "BLV_NGUOI_RUNG",
+                                                    "id": "lnk-93b55532ed0a",
+                                                    "name": "BLV_TON_QUYEN",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00c88d137e5_793/index.m3u8?expire=1779041037&sign=74820e4ed4dc02d12b3b6756897dbadb",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/angers-sco-vs-rc-strasbourg-alsace-0200-11-05-2026/474783"
+                                                            "value": "https://thapcam24h.net/truc-tiep/toulouse-fc-vs-lyon-0200-11-05-2026/474804"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -613,90 +279,15 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-242c4eb6fc07",
+                                                    "id": "lnk-b3e31ada12be",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/795dc4f63a1ac7f8674c8f1e5a38650b/playlist.m3u8",
+                                                    "url": "https://dlqcalr.alilicloud.com/live/3433d530c49a3e8e715fe597847a9322/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/angers-sco-vs-rc-strasbourg-alsace-0200-11-05-2026/474783"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-474786",
-                    "name": "AJ Auxerre vs OGC Nice",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430206/thapcam/img-474786.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-51a74495ba24",
-                            "name": "AJ Auxerre - OGC Nice",
-                            "contents": [
-                                {
-                                    "id": "ct-790a3ea96083",
-                                    "name": "French Ligue 1",
-                                    "streams": [
-                                        {
-                                            "id": "st-8d0d1bcede44",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-49aa8d425448",
-                                                    "name": "BLV_CHAN_DAT",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/aj-auxerre-vs-ogc-nice-0200-11-05-2026/474786"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-7eb936ce8125",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/e26ec0f2f0245ca8868f17e6009ec309/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/aj-auxerre-vs-ogc-nice-0200-11-05-2026/474786"
+                                                            "value": "https://thapcam24h.net/truc-tiep/toulouse-fc-vs-lyon-0200-11-05-2026/474804"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -734,23 +325,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-28a41448023e",
+                            "id": "src-c8f616791c7c",
                             "name": "Havre Athletic Club - Marseille",
                             "contents": [
                                 {
-                                    "id": "ct-5e2b56304d35",
+                                    "id": "ct-b72e80841248",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-2b3074c1b93e",
+                                            "id": "st-0560569824e4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-2dd6a62d23e2",
+                                                    "id": "lnk-a2342efa315e",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00c95b137e5_32/index.m3u8?expire=1779041243&sign=96e27e298b12e74975b87373bacf0f2f",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -763,7 +354,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-bf070c85c3c8",
+                                                    "id": "lnk-31577d4b0de8",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -809,23 +400,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-eb55713358ae",
+                            "id": "src-005785bb919c",
                             "name": "Metz - Lorient",
                             "contents": [
                                 {
-                                    "id": "ct-99f4228b3617",
+                                    "id": "ct-4ca1ee263924",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-a0512d60e7c7",
+                                            "id": "st-d49cb156712f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4faba91799ae",
+                                                    "id": "lnk-a3a7169b29a6",
                                                     "name": "BLV_NGUOI_LA",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00c77a51ddc_11241/index.m3u8?expire=1779040762&sign=c358a9a1ae444ee6d7adcb3ed0954d5e",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -838,7 +429,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-87064f38fe04",
+                                                    "id": "lnk-6cb9093169a8",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -884,23 +475,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a52f53dab427",
+                            "id": "src-26dfb1b11b84",
                             "name": "AS Monaco - LOSC Lille",
                             "contents": [
                                 {
-                                    "id": "ct-ae0f72e37532",
+                                    "id": "ct-c66d4c004505",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-5b9ecbed11a3",
+                                            "id": "st-a9c91ddc4e41",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-13825cdbaee3",
+                                                    "id": "lnk-c002342dbc06",
                                                     "name": "BLV_SIEU_QUAY",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00cf4b51ddc_26/index.m3u8?expire=1779042763&sign=c73647f1d1a0c8c83ae6dc26d96c6e84",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -913,7 +504,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8d8be7092c4b",
+                                                    "id": "lnk-9153d0bcb1bb",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -959,23 +550,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-5ffac671fed7",
+                            "id": "src-32c4bf6da0eb",
                             "name": "Paris Saint Germain - Stade Brestois 29",
                             "contents": [
                                 {
-                                    "id": "ct-5e1e7dc464e7",
+                                    "id": "ct-bda8cea02db8",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-d81d950bb0d2",
+                                            "id": "st-2539b63392b5",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-c9ace9916e20",
-                                                    "name": "BLV_MAX",
+                                                    "id": "lnk-e36e2eb41ccd",
+                                                    "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00cdf051ddc_1549/index.m3u8?expire=1779042416&sign=8485fb67925ab84fbac5883522e8f27b",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -988,7 +579,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-8de893025df0",
+                                                    "id": "lnk-de132dc9666c",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -997,6 +588,156 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://thapcam24h.net/truc-tiep/paris-saint-germain-vs-stade-brestois-29-0200-11-05-2026/474798"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474786",
+                    "name": "AJ Auxerre vs OGC Nice",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430206/thapcam/img-474786.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-96be9bf249c6",
+                            "name": "AJ Auxerre - OGC Nice",
+                            "contents": [
+                                {
+                                    "id": "ct-41b5c3287932",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-942a39b4e188",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-89703121e177",
+                                                    "name": "BLV_CHAN_DAT",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00ce76137e5_145/index.m3u8?expire=1779042550&sign=c68361eab3a695f19de3f264f23e9d9f",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/aj-auxerre-vs-ogc-nice-0200-11-05-2026/474786"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-aee26dc228a1",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/e26ec0f2f0245ca8868f17e6009ec309/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/aj-auxerre-vs-ogc-nice-0200-11-05-2026/474786"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474783",
+                    "name": "Angers SCO vs RC Strasbourg Alsace",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430206/thapcam/img-474783.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-47da21681494",
+                            "name": "Angers SCO - RC Strasbourg Alsace",
+                            "contents": [
+                                {
+                                    "id": "ct-13f48d0af07d",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-d7e1faf600e0",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1d0f8aeaaff5",
+                                                    "name": "BLV_NGUOI_RUNG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00d0d8137e5_148/index.m3u8?expire=1779043160&sign=3c9b48801590b4a90e041e56a38464e7",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/angers-sco-vs-rc-strasbourg-alsace-0200-11-05-2026/474783"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-6f2f14437c0d",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/795dc4f63a1ac7f8674c8f1e5a38650b/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/angers-sco-vs-rc-strasbourg-alsace-0200-11-05-2026/474783"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1034,23 +775,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a32271884b42",
+                            "id": "src-1810703f7bca",
                             "name": "Stade Rennais FC - Paris FC",
                             "contents": [
                                 {
-                                    "id": "ct-8d3d6af46e1a",
+                                    "id": "ct-24f3b2412421",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-107b19508ee4",
+                                            "id": "st-c3d0e65b6cbf",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ee8e2e2e04c9",
+                                                    "id": "lnk-4ede4ce93f41",
                                                     "name": "BLV_NGUOI_DIEN",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00d058137e5_1984/index.m3u8?expire=1779043032&sign=95368eb776d5f5cb145f67eb536cf43f",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1063,7 +804,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-a384c105b04b",
+                                                    "id": "lnk-5d838e34297c",
                                                     "name": "SONG_QUOC_TE",
                                                     "type": "hls",
                                                     "default": true,
@@ -1072,81 +813,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://thapcam24h.net/truc-tiep/stade-rennais-fc-vs-paris-fc-0200-11-05-2026/474801"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-474804",
-                    "name": "Toulouse FC vs Lyon",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430209/thapcam/img-474804.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-47ec3c8793c4",
-                            "name": "Toulouse FC - Lyon",
-                            "contents": [
-                                {
-                                    "id": "ct-c209961129de",
-                                    "name": "French Ligue 1",
-                                    "streams": [
-                                        {
-                                            "id": "st-94236fd437c2",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-f853bbd3f663",
-                                                    "name": "BLV_TON_QUYEN",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/toulouse-fc-vs-lyon-0200-11-05-2026/474804"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "lnk-1dedcb5dbf88",
-                                                    "name": "SONG_QUOC_TE",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/3433d530c49a3e8e715fe597847a9322/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/toulouse-fc-vs-lyon-0200-11-05-2026/474804"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1184,23 +850,23 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-7b3889604a7c",
+                            "id": "src-96e975b62ea3",
                             "name": "FC Barcelona - Real Madrid",
                             "contents": [
                                 {
-                                    "id": "ct-4f117350e40e",
+                                    "id": "ct-dd1775f10d03",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-52e6f16a14df",
+                                            "id": "st-506403e8d18d",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-010533bc3e98",
+                                                    "id": "lnk-c379f1b6b7f6",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00cdbc137e5_151/index.m3u8?expire=1779042364&sign=271881a655328e42a6edd50278351967",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1213,11 +879,11 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "lnk-0748e6057bdd",
-                                                    "name": "SONG_QUOC_TE",
+                                                    "id": "lnk-cd538de338bf",
+                                                    "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://dlqcalr.alilicloud.com/live/c9b07dc29becc27e82574076a04c8367/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00ccc551ddc_154/index.m3u8?expire=1779042117&sign=6e9b62e431327a0221bae87244f75013",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -1228,58 +894,34 @@
                                                             "value": "Mozilla/5.0"
                                                         }
                                                     ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-475179",
-                    "name": "Vietnam U17 Women vs Australia Women U17",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430210/thapcam/img-475179.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-2ad20a3d5cfc",
-                            "name": "Vietnam U17 Women - Australia Women U17",
-                            "contents": [
-                                {
-                                    "id": "ct-4792fd4b6f97",
-                                    "name": "AFC U17 Women's Asian Cup",
-                                    "streams": [
-                                        {
-                                            "id": "st-708cf0ba5ec6",
-                                            "name": "Stream",
-                                            "stream_links": [
+                                                },
                                                 {
-                                                    "id": "lnk-a3be15fbaab6",
-                                                    "name": "BLV_SIEU_BUONG",
+                                                    "id": "lnk-43dc542c17a1",
+                                                    "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00cfce51ddc_35/index.m3u8?expire=1779042894&sign=f91088749ccd2ae999aae31c8d55b200",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-women-vs-australia-women-u17-1400-11-05-2026/475179"
+                                                            "value": "https://thapcam24h.net/truc-tiep/fc-barcelona-vs-real-madrid-0200-11-05-2026/474807"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-1cc5afbae140",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/c9b07dc29becc27e82574076a04c8367/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/fc-barcelona-vs-real-madrid-0200-11-05-2026/474807"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1317,19 +959,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-ed4111e65ca7",
+                            "id": "src-a50181bd32e5",
                             "name": "Japan Women U17 - Korea Rep. Women U17",
                             "contents": [
                                 {
-                                    "id": "ct-7908edbf74f8",
+                                    "id": "ct-4b42c2ccf49f",
                                     "name": "AFC U17 Women's Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-c62050dd5ee3",
+                                            "id": "st-6cc42357aaaa",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-4d859d8cefff",
+                                                    "id": "lnk-4918590f91a7",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -1338,6 +980,64 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://thapcam24h.net/truc-tiep/japan-women-u17-vs-korea-rep-women-u17-1400-11-05-2026/475182"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-475179",
+                    "name": "Vietnam U17 Women vs Australia Women U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430210/thapcam/img-475179.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-cbb270b07987",
+                            "name": "Vietnam U17 Women - Australia Women U17",
+                            "contents": [
+                                {
+                                    "id": "ct-8b40c66acfb8",
+                                    "name": "AFC U17 Women's Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-0a3b291f7d79",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-fb17396753d5",
+                                                    "name": "BLV_SIEU_BUONG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-women-vs-australia-women-u17-1400-11-05-2026/475179"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1375,19 +1075,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-36c4e1e7e899",
+                            "id": "src-b2048a0b8e86",
                             "name": "Napoli - Bologna",
                             "contents": [
                                 {
-                                    "id": "ct-e75cc18876f4",
+                                    "id": "ct-5068ec89f976",
                                     "name": "Italian Serie A",
                                     "streams": [
                                         {
-                                            "id": "st-81ecd78582da",
+                                            "id": "st-c8398dfaca28",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-ac877dc6e77c",
+                                                    "id": "lnk-10080dcb87e1",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -1433,19 +1133,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-466ed9bc5f50",
+                            "id": "src-7125617c6482",
                             "name": "Tottenham Hotspur - Leeds United",
                             "contents": [
                                 {
-                                    "id": "ct-1ffb26ed08af",
+                                    "id": "ct-13a61148d1fe",
                                     "name": "English Premier League",
                                     "streams": [
                                         {
-                                            "id": "st-177cb0954ad7",
+                                            "id": "st-2debf57fc03f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-97d41edde5a3",
+                                                    "id": "lnk-12618eb42724",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -1491,19 +1191,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-be29daba6373",
+                            "id": "src-8ff99a303c23",
                             "name": "Rayo Vallecano - Girona FC",
                             "contents": [
                                 {
-                                    "id": "ct-99f655b278d8",
+                                    "id": "ct-fa544f5c5a98",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-975863daf3d9",
+                                            "id": "st-f31c23d04481",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-fc876fd0bbca",
+                                                    "id": "lnk-717614bfb183",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -1549,19 +1249,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-da28b74d015b",
+                            "id": "src-f1227194deeb",
                             "name": "Japan U17 - Indonesia U17",
                             "contents": [
                                 {
-                                    "id": "ct-ef2d338d63bc",
+                                    "id": "ct-497c0d0faefc",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-6305c28e2fa1",
+                                            "id": "st-f874f8866160",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-9d2e866f54f7",
+                                                    "id": "lnk-edd57841842e",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -1607,19 +1307,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-75a6726afd90",
+                            "id": "src-7d7f30c6c52e",
                             "name": "China U17 - Qatar U17",
                             "contents": [
                                 {
-                                    "id": "ct-c3bac8e36631",
+                                    "id": "ct-c6f1724a427f",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-4e0fc1d52356",
+                                            "id": "st-0605a00b6324",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-401b482cf7eb",
+                                                    "id": "lnk-8aa5d93a0bc2",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -1665,19 +1365,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-9a9bf8bb323e",
+                            "id": "src-4d65dd70c97d",
                             "name": "Al Kholood - Al Okhdood",
                             "contents": [
                                 {
-                                    "id": "ct-3ce82f63afaa",
+                                    "id": "ct-9b49ca96c88d",
                                     "name": "Saudi Professional League",
                                     "streams": [
                                         {
-                                            "id": "st-c3263b42b40c",
+                                            "id": "st-08750512b687",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-78b45cddd92c",
+                                                    "id": "lnk-cb63a6100fe7",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
