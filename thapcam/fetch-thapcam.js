@@ -319,7 +319,7 @@ async function main() {
         color: "#FF0000",
       },
       "SẮP LIVE": {
-        text: "Upcoming",
+        text: "● Upcoming",
         color: "#FF9800",
       },
       "Đã kết thúc": {
