@@ -49,7 +49,7 @@ jobs:
         if: steps.timecheck.outputs.skip != 'true'
         run: |
           node fetch-channel.js
-          node fetch-thapcam.js
+          node .\thapcam\fetch-thapcam.js
 
         env:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
