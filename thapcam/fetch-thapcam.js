@@ -123,11 +123,16 @@ async function scrapeThapcamHot() {
 
         // Extract status/time from the status div
         const statusText = card
-          .find(".grid-match__status span span")
+          .find(".time-loaded span:not([class])")
           .first()
           .text()
           .trim();
         const timeText = card.find(".grid-match__datef").text().trim();
+        const timeLoad = card
+          .find('.time-loaded span[class^="time-loaded-"]')
+          .first()
+          .text()
+          .trim();
         // console.log(`time text: ${timeText}, status: ${statusText}`);
         console.log(`🔗 Scraping stream for: ${homeName} vs ${awayName}`);
 
@@ -136,8 +141,8 @@ async function scrapeThapcamHot() {
 
         matches[myIdx] = {
           league,
-          status: statusText || "LIVE",
-          time: timeText || "",
+          status: statusText || "",
+          time: timeText || timeLoad || "",
           link: fullMatchLink,
           streams: streamLinks || {},
           teams: {
@@ -420,6 +425,7 @@ async function main() {
         text: "● Upcoming",
         color: "#FF9800",
       };
+      console.log(`status: ${item.status}, label: ${labelStatus.text}`);
 
       if (!channels.some((c) => c.id === channelId)) {
         channels.push({
