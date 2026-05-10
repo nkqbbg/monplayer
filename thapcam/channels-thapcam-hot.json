@@ -1,0 +1,1767 @@
+{
+    "id": "thamcam",
+    "url": "https://tt.8share.pro/buncha",
+    "name": "Thập Cẩm TV",
+    "color": "#e86281",
+    "grid_number": 3,
+    "image": {
+        "type": "cover",
+        "url": "https://thapcam24h.net/img/favicon.png"
+    },
+    "description": "Thập Cẩm TV - Trang web phát sóng bóng đá trực tuyến miễn phí hàng đầu tại Việt Nam, mang đến trải nghiệm chất lượng cao với bình luận tiếng Việt sống động.",
+    "share": {
+        "url": "https://tt.8share.pro/buncha"
+    },
+    "groups": [
+        {
+            "id": "live",
+            "name": "⚽ Bóng đá",
+            "display": "vertical",
+            "grid_number": 2,
+            "enable_detail": true,
+            "channels": [
+                {
+                    "id": "ch-470826",
+                    "name": "Athletic Club vs Valencia CF",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427613/thapcam/img-470826.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-26420f302374",
+                            "name": "Athletic Club - Valencia CF",
+                            "contents": [
+                                {
+                                    "id": "ct-ad3e131dd481",
+                                    "name": "Spanish La Liga",
+                                    "streams": [
+                                        {
+                                            "id": "st-66c61b7199b9",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-b1fdb8df41a7",
+                                                    "name": "BLV_NGUOI_DIEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a008a7d137e5_1984/index.m3u8?expire=1779025149&sign=9dde6571e42ce48193384fc7ce51a798",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/athletic-club-vs-valencia-cf-2115-10-05-2026/470826"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-61c29922ffee",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/a3b38d258f13b22e0264bb7dcec5c454/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/athletic-club-vs-valencia-cf-2115-10-05-2026/470826"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471243",
+                    "name": "West Ham United vs Arsenal",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427612/thapcam/img-471243.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-7544de6036f3",
+                            "name": "West Ham United - Arsenal",
+                            "contents": [
+                                {
+                                    "id": "ct-297674f48a80",
+                                    "name": "English Premier League",
+                                    "streams": [
+                                        {
+                                            "id": "st-5c55c4442d54",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-e3611027c62d",
+                                                    "name": "BLV_SIEU_BUONG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a09a51ddc_151/index.m3u8?expire=1779030810&sign=3d4c34886c7a82f1411d41b17303b666",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-4bc506a04afb",
+                                                    "name": "BLV_CA_MAP",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d7951ddc_154/index.m3u8?expire=1779030009&sign=7cca7497d56e526b1ba7aa8102a790b5",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-fa2918b73824",
+                                                    "name": "BLV_NGUOI_RUNG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009c5c137e5_148/index.m3u8?expire=1779029724&sign=cb50aac1ae87bb67bc4f67018d8f2c0e",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-18917eb52bf2",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/92ec2989379df543efbe9e37006d8908/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/west-ham-united-vs-arsenal-2230-10-05-2026/471243"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471246",
+                    "name": "FC Köln vs 1. FC Heidenheim 1846",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427614/thapcam/img-471246.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-aa8e61c48998",
+                            "name": "FC Köln - 1. FC Heidenheim 1846",
+                            "contents": [
+                                {
+                                    "id": "ct-1bb12c77ca9b",
+                                    "name": "Bundesliga",
+                                    "streams": [
+                                        {
+                                            "id": "st-87c6e682b68e",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-3710d0a7c1bd",
+                                                    "name": "BLV_NGUOI_CO",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d25137e5_14559/index.m3u8?expire=1779029925&sign=898fc2159a177711a8a2aa475706ae00",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/fc-kln-vs-1-fc-heidenheim-1846-2230-10-05-2026/471246"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-36365b4804fc",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/a3f29475b33a559a552d004088a336a2/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/fc-kln-vs-1-fc-heidenheim-1846-2230-10-05-2026/471246"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471306",
+                    "name": "Parma vs AS Roma",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427613/thapcam/img-471306.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-1b52c58da07c",
+                            "name": "Parma - AS Roma",
+                            "contents": [
+                                {
+                                    "id": "ct-23bbd9eb7b38",
+                                    "name": "Italian Serie A",
+                                    "streams": [
+                                        {
+                                            "id": "st-2504e97246a9",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-710ca5444e25",
+                                                    "name": "BLV_TON_QUYEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/parma-vs-as-roma-2300-10-05-2026/471306"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-3ffdd3e4354c",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/300227633bee73928fafefb0a8764665/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/parma-vs-as-roma-2300-10-05-2026/471306"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471456",
+                    "name": "Vietnam U17 vs South Korea U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427613/thapcam/img-471456.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-0fb4992e760d",
+                            "name": "Vietnam U17 - South Korea U17",
+                            "contents": [
+                                {
+                                    "id": "ct-698d300b52a3",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-f2388a64ad30",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-c48d16709d71",
+                                                    "name": "BLV_LENH",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d2d137e5_1549/index.m3u8?expire=1779029933&sign=eee55a3fc97d622ff61b41448071c2aa",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-880b39a2c3b1",
+                                                    "name": "BLV_NGUOI_LA",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a1a251ddc_11241/index.m3u8?expire=1779031074&sign=49b86727a48803681f8918114480e2c6",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b73c33803c52",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/e5b87721757512177d527e2c613834e0/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-south-korea-u17-2300-10-05-2026/471456"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471483",
+                    "name": "Real Oviedo vs Getafe",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427614/thapcam/img-471483.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-050449a901f2",
+                            "name": "Real Oviedo - Getafe",
+                            "contents": [
+                                {
+                                    "id": "ct-e4bbff322260",
+                                    "name": "Spanish La Liga",
+                                    "streams": [
+                                        {
+                                            "id": "st-fc1ccffc25b6",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-e61cb094a47d",
+                                                    "name": "BLV_MAX",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a009d17137e5_35/index.m3u8?expire=1779029911&sign=01ba5848358f924dad9e3524bee88993",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/real-oviedo-vs-getafe-2330-10-05-2026/471483"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-dc562df70a90",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/9134ef5a0e80d09250fa175679fcc3ac/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/real-oviedo-vs-getafe-2330-10-05-2026/471483"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-471537",
+                    "name": "United Arab Emirates U17 vs Yemen U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427615/thapcam/img-471537.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-c3b0f5b219dd",
+                            "name": "United Arab Emirates U17 - Yemen U17",
+                            "contents": [
+                                {
+                                    "id": "ct-b1b647d7e734",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-730a7382357a",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-702831e626c0",
+                                                    "name": "BLV_CHAN_DAT",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a00a417137e5_145/index.m3u8?expire=1779031703&sign=65e1c4d169cfd0f9a7e2dab38a1673f2",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/united-arab-emirates-u17-vs-yemen-u17-2330-10-05-2026/471537"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-d111be43f655",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/d06e6a5d0a25e51ff17b82b6891e9e6a/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/united-arab-emirates-u17-vs-yemen-u17-2330-10-05-2026/471537"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474576",
+                    "name": "India U17 vs Uzbekistan U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427615/thapcam/img-474576.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-da5afcf8d72a",
+                            "name": "India U17 - Uzbekistan U17",
+                            "contents": [
+                                {
+                                    "id": "ct-4e26dbc3f3cb",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-aebc3582b38b",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-f493b189198f",
+                                                    "name": "BLV_JAYCE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/india-u17-vs-uzbekistan-u17-0000-11-05-2026/474576"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474627",
+                    "name": "1. FSV Mainz 05 vs 1. FC Union Berlin",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427615/thapcam/img-474627.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-40752cd7679a",
+                            "name": "1. FSV Mainz 05 - 1. FC Union Berlin",
+                            "contents": [
+                                {
+                                    "id": "ct-01d6df50b707",
+                                    "name": "Bundesliga",
+                                    "streams": [
+                                        {
+                                            "id": "st-32ea57537e16",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-8845647e0191",
+                                                    "name": "BLV_NGUOI_DA",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/1-fsv-mainz-05-vs-1-fc-union-berlin-0030-11-05-2026/474627"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474774",
+                    "name": "AC Milan vs Atalanta",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427617/thapcam/img-474774.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-f7b2af9e8b57",
+                            "name": "AC Milan - Atalanta",
+                            "contents": [
+                                {
+                                    "id": "ct-c3fc75bd8582",
+                                    "name": "Italian Serie A",
+                                    "streams": [
+                                        {
+                                            "id": "st-3cb231b4120a",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-341871d70398",
+                                                    "name": "BLV_NGUOI_CO",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/ac-milan-vs-atalanta-0145-11-05-2026/474774"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474783",
+                    "name": "Angers SCO vs RC Strasbourg Alsace",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427616/thapcam/img-474783.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-69d1f576529c",
+                            "name": "Angers SCO - RC Strasbourg Alsace",
+                            "contents": [
+                                {
+                                    "id": "ct-507c5815cc3a",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-d770c147e645",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-4afd4e354409",
+                                                    "name": "BLV_NGUOI_RUNG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/angers-sco-vs-rc-strasbourg-alsace-0200-11-05-2026/474783"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474786",
+                    "name": "AJ Auxerre vs OGC Nice",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427616/thapcam/img-474786.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-8d1d4f652112",
+                            "name": "AJ Auxerre - OGC Nice",
+                            "contents": [
+                                {
+                                    "id": "ct-7bfa6fdfd66d",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-b8de35a2fa69",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-764f00368cc9",
+                                                    "name": "BLV_CHAN_DAT",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/aj-auxerre-vs-ogc-nice-0200-11-05-2026/474786"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474789",
+                    "name": "Havre Athletic Club vs Marseille",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427616/thapcam/img-474789.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-00098f7105fb",
+                            "name": "Havre Athletic Club - Marseille",
+                            "contents": [
+                                {
+                                    "id": "ct-e52ffb808312",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-ab829d580e7d",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-94abfccd151a",
+                                                    "name": "BLV_NGUOI_NHEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/havre-athletic-club-vs-marseille-0200-11-05-2026/474789"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474792",
+                    "name": "Metz vs Lorient",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427617/thapcam/img-474792.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-63fb2144f888",
+                            "name": "Metz - Lorient",
+                            "contents": [
+                                {
+                                    "id": "ct-f5338914ece5",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-b797ca839e5c",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-60fc8144a7cc",
+                                                    "name": "BLV_NGUOI_LA",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/metz-vs-lorient-0200-11-05-2026/474792"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474795",
+                    "name": "AS Monaco vs LOSC Lille",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427617/thapcam/img-474795.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-1f16fa840128",
+                            "name": "AS Monaco - LOSC Lille",
+                            "contents": [
+                                {
+                                    "id": "ct-a500636e53b6",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-4f348e5a32d9",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-2c234f5d0276",
+                                                    "name": "BLV_SIEU_QUAY",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/as-monaco-vs-losc-lille-0200-11-05-2026/474795"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474798",
+                    "name": "Paris Saint Germain vs Stade Brestois 29",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427617/thapcam/img-474798.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-f9d74e181dde",
+                            "name": "Paris Saint Germain - Stade Brestois 29",
+                            "contents": [
+                                {
+                                    "id": "ct-53100a46b4c8",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-ebd35e48d53c",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-b08b0885324c",
+                                                    "name": "BLV_MAX",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/paris-saint-germain-vs-stade-brestois-29-0200-11-05-2026/474798"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474801",
+                    "name": "Stade Rennais FC vs Paris FC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427618/thapcam/img-474801.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-6fa92c949ba3",
+                            "name": "Stade Rennais FC - Paris FC",
+                            "contents": [
+                                {
+                                    "id": "ct-ac38c772661e",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-a3c33510d07f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1c993d545949",
+                                                    "name": "BLV_NGUOI_DIEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/stade-rennais-fc-vs-paris-fc-0200-11-05-2026/474801"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474804",
+                    "name": "Toulouse FC vs Lyon",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427618/thapcam/img-474804.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-0a34fa3961aa",
+                            "name": "Toulouse FC - Lyon",
+                            "contents": [
+                                {
+                                    "id": "ct-ee879073e926",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-58cfaeaa4914",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-e1429f7e7a82",
+                                                    "name": "BLV_TON_QUYEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/toulouse-fc-vs-lyon-0200-11-05-2026/474804"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-474807",
+                    "name": "FC Barcelona vs Real Madrid",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427619/thapcam/img-474807.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-630717c0b472",
+                            "name": "FC Barcelona - Real Madrid",
+                            "contents": [
+                                {
+                                    "id": "ct-ed82c65b3f57",
+                                    "name": "Spanish La Liga",
+                                    "streams": [
+                                        {
+                                            "id": "st-f9ab8f7c3001",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-fce4b0d1b71a",
+                                                    "name": "BLV_SIEU_BUONG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/fc-barcelona-vs-real-madrid-0200-11-05-2026/474807"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-475179",
+                    "name": "Vietnam U17 Women vs Australia Women U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427618/thapcam/img-475179.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-20d46bc06798",
+                            "name": "Vietnam U17 Women - Australia Women U17",
+                            "contents": [
+                                {
+                                    "id": "ct-00e14129865a",
+                                    "name": "AFC U17 Women's Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-6f25595cb51f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-034b057ff860",
+                                                    "name": "BLV_SIEU_BUONG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-women-vs-australia-women-u17-1400-11-05-2026/475179"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-475182",
+                    "name": "Japan Women U17 vs Korea Rep. Women U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427619/thapcam/img-475182.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-4faa5e944734",
+                            "name": "Japan Women U17 - Korea Rep. Women U17",
+                            "contents": [
+                                {
+                                    "id": "ct-8473cb44ef6f",
+                                    "name": "AFC U17 Women's Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-36b4bdcb6f8b",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-431907cbfef5",
+                                                    "name": "BLV_CA_MAP",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/japan-women-u17-vs-korea-rep-women-u17-1400-11-05-2026/475182"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-464889",
+                    "name": "Napoli vs Bologna",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427619/thapcam/img-464889.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-867ace3159e2",
+                            "name": "Napoli - Bologna",
+                            "contents": [
+                                {
+                                    "id": "ct-0b7ba00632bf",
+                                    "name": "Italian Serie A",
+                                    "streams": [
+                                        {
+                                            "id": "st-9485063258b4",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-d835d459f1df",
+                                                    "name": "BLV_LENH",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/napoli-vs-bologna-0145-12-05-2026/464889"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-464892",
+                    "name": "Tottenham Hotspur vs Leeds United",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427619/thapcam/img-464892.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-2b1491eea9ea",
+                            "name": "Tottenham Hotspur - Leeds United",
+                            "contents": [
+                                {
+                                    "id": "ct-8d1f6e2c2033",
+                                    "name": "English Premier League",
+                                    "streams": [
+                                        {
+                                            "id": "st-e157c7a64771",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1c9a1e27d4aa",
+                                                    "name": "BLV_CA_MAP",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/tottenham-hotspur-vs-leeds-united-0200-12-05-2026/464892"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-464895",
+                    "name": "Rayo Vallecano vs Girona FC",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427620/thapcam/img-464895.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-a6a68ef05213",
+                            "name": "Rayo Vallecano - Girona FC",
+                            "contents": [
+                                {
+                                    "id": "ct-4ff036062ae7",
+                                    "name": "Spanish La Liga",
+                                    "streams": [
+                                        {
+                                            "id": "st-04f8d405ff4f",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-1a83d506a13d",
+                                                    "name": "BLV_NGUOI_NHEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/rayo-vallecano-vs-girona-fc-0200-12-05-2026/464895"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-465123",
+                    "name": "Japan U17 vs Indonesia U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427620/thapcam/img-465123.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-4c9d9d300e0d",
+                            "name": "Japan U17 - Indonesia U17",
+                            "contents": [
+                                {
+                                    "id": "ct-e80ea4291c8b",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-83738e15d128",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-d9de223f7138",
+                                                    "name": "BLV_MAX",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/japan-u17-vs-indonesia-u17-2300-12-05-2026/465123"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-465126",
+                    "name": "China U17 vs Qatar U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427621/thapcam/img-465126.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-78fe07207066",
+                            "name": "China U17 - Qatar U17",
+                            "contents": [
+                                {
+                                    "id": "ct-8e7e783f5989",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-1591b6ebf63e",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-a9a19c6a3302",
+                                                    "name": "BLV_LENH",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/china-u17-vs-qatar-u17-2300-12-05-2026/465126"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-465168",
+                    "name": "Al Kholood vs Al Okhdood",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Live",
+                            "color": "#FF0000",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778427620/thapcam/img-465168.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-76da87cf86ec",
+                            "name": "Al Kholood - Al Okhdood",
+                            "contents": [
+                                {
+                                    "id": "ct-b9cffe0349fc",
+                                    "name": "Saudi Professional League",
+                                    "streams": [
+                                        {
+                                            "id": "st-dc705b0b1b89",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-a7344734bc25",
+                                                    "name": "BLV_NGUOI_NHEN",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/al-kholood-vs-al-okhdood-2320-12-05-2026/465168"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "option": {
+        "save_history": false,
+        "save_search_history": false,
+        "save_wishlist": false
+    }
+}

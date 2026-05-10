@@ -1,10 +1,13 @@
-const { createMatchImage, clearFolder } = require("./logo.js");
+const { createMatchImage, clearFolder } = require("../logo.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const { uploadMultiThread, deleteOldImages } = require("./cloudinary.js");
+const {
+  uploadMultiThread,
+  deleteOldImages,
+} = require("./cloudinary-thapcam.js");
 
 const SOURCE_DOMAIN = "https://thapcam24h.net";
 
@@ -23,6 +26,23 @@ function absolutizeUrl(url, domain) {
  */
 function generateId(prefix = "id") {
   return `${prefix}-${crypto.randomBytes(6).toString("hex")}`;
+}
+
+function removeDiacritics(str) {
+  if (!str || typeof str !== "string") return "";
+  try {
+    return str
+      .normalize("NFD")
+      .replace(/\p{M}/gu, "")
+      .replace(/đ/g, "d")
+      .replace(/Đ/g, "D");
+  } catch {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/Đ/g, "D");
+  }
 }
 
 /**
@@ -164,66 +184,6 @@ async function scrapeThapcamHot() {
  * Scrapes stream links from a match page
  */
 async function scrapeMatchStreams(matchUrl) {
-  async function extractQualityStreamsFromM3u8(playlistUrl) {
-    try {
-      const res = await axios.get(playlistUrl, {
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        },
-        timeout: 12000,
-        responseType: "text",
-      });
-
-      const body = String(res.data || "");
-      if (!body.includes("#EXTM3U")) return {};
-
-      const lines = body.split(/\r?\n/);
-      const variants = [];
-
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line.startsWith("#EXT-X-STREAM-INF:")) continue;
-
-        const attrs = line.slice("#EXT-X-STREAM-INF:".length);
-        const nextLine = (lines[i + 1] || "").trim();
-        if (!nextLine || nextLine.startsWith("#")) continue;
-
-        const resMatch = attrs.match(/RESOLUTION=(\d+)x(\d+)/i);
-        const bwMatch = attrs.match(/BANDWIDTH=(\d+)/i);
-
-        const height = resMatch ? Number(resMatch[2]) : 0;
-        const bandwidth = bwMatch ? Number(bwMatch[1]) : 0;
-        const absoluteUrl = new URL(nextLine, playlistUrl).toString();
-
-        let quality = "sd";
-        if (height >= 1080) quality = "fullhd";
-        else if (height >= 720) quality = "hd";
-
-        variants.push({ quality, bandwidth, url: absoluteUrl });
-      }
-
-      if (variants.length === 0) return {};
-
-      // Keep best bandwidth per quality.
-      const byQuality = {};
-      for (const v of variants.sort((a, b) => b.bandwidth - a.bandwidth)) {
-        if (!byQuality[v.quality]) byQuality[v.quality] = v.url;
-      }
-      return byQuality;
-    } catch {
-      return {};
-    }
-  }
-
-  function inferQualityFromUrl(url) {
-    const u = String(url || "").toLowerCase();
-    if (/1080|fullhd|fhd/.test(u)) return "fullhd";
-    if (/720|\bhd\b/.test(u)) return "hd";
-    if (/480|360|\bsd\b/.test(u)) return "sd";
-    return "";
-  }
-
   try {
     const response = await axios.get(matchUrl, {
       headers: {
@@ -239,7 +199,6 @@ async function scrapeMatchStreams(matchUrl) {
     // Example: <div class="watch_userItem__nwzZM" data-fileurl="...m3u8">...
     const streams = {};
     const seen = new Set();
-    const sourceUrls = [];
 
     $("[data-fileurl]").each((i, el) => {
       const fileUrl = String($(el).attr("data-fileurl") || "").trim();
@@ -251,15 +210,18 @@ async function scrapeMatchStreams(matchUrl) {
         $(el).find(".watch_userName__41lYM").first().text().trim() ||
         `Stream ${Object.keys(streams).length + 1}`;
 
-      let key = rawName
+      const cleaned = removeDiacritics(rawName).trim();
+
+      let key = cleaned
         .toLowerCase()
         .replace(/\s+/g, "_")
-        .replace(/[^a-z0-9_]/g, "");
+        .replace(/[^a-z0-9_]/gi, "");
       if (!key) key = `stream_${Object.keys(streams).length + 1}`;
       if (streams[key]) key = `${key}_${Object.keys(streams).length + 1}`;
 
-      streams[key] = fileUrl;
-      sourceUrls.push(fileUrl);
+      const label = cleaned.replace(/\s+/g, "_").toUpperCase();
+
+      streams[key] = { url: fileUrl, label };
       seen.add(fileUrl);
     });
 
@@ -270,29 +232,8 @@ async function scrapeMatchStreams(matchUrl) {
     if (jwFileMatch && jwFileMatch[1]) {
       const jwUrl = jwFileMatch[1].trim();
       if (jwUrl && !seen.has(jwUrl)) {
-        streams.primary = jwUrl;
-        sourceUrls.push(jwUrl);
+        streams.primary = { url: jwUrl, label: "PRIMARY" };
       }
-    }
-
-    // Try to derive normalized quality buckets: fullhd/hd/sd.
-    const qualityBuckets = {};
-    for (const srcUrl of sourceUrls) {
-      const parsed = await extractQualityStreamsFromM3u8(srcUrl);
-      if (parsed.fullhd && !qualityBuckets.fullhd)
-        qualityBuckets.fullhd = parsed.fullhd;
-      if (parsed.hd && !qualityBuckets.hd) qualityBuckets.hd = parsed.hd;
-      if (parsed.sd && !qualityBuckets.sd) qualityBuckets.sd = parsed.sd;
-
-      // Fallback inference for single-bitrate playlists.
-      if (!parsed.fullhd && !parsed.hd && !parsed.sd) {
-        const q = inferQualityFromUrl(srcUrl);
-        if (q && !qualityBuckets[q]) qualityBuckets[q] = srcUrl;
-      }
-    }
-
-    if (Object.keys(qualityBuckets).length > 0) {
-      return qualityBuckets;
     }
 
     if (Object.keys(streams).length > 0) {
@@ -516,22 +457,33 @@ async function main() {
                       id: generateId("st"),
                       name: "Stream",
                       stream_links: Object.entries(item.streams).map(
-                        ([streamName, streamUrl]) => ({
-                          id: generateId("lnk"),
-                          name: streamName
-                            .normalize("NFD")
-                            .replace(/[\u0300-\u036f]/g, "")
-                            .replace(/đ/g, "d")
-                            .replace(/Đ/g, "D")
-                            .toUpperCase(),
-                          type: "hls",
-                          default: true,
-                          url: streamUrl,
-                          request_headers: [
-                            { key: "Referer", value: item.link },
-                            { key: "User-Agent", value: "Mozilla/5.0" },
-                          ],
-                        }),
+                        ([streamName, streamVal]) => {
+                          const url =
+                            typeof streamVal === "string"
+                              ? streamVal
+                              : streamVal.url;
+                          const label =
+                            typeof streamVal === "string"
+                              ? streamName
+                                  .normalize("NFD")
+                                  .replace(/[\u0300-\u036f]/g, "")
+                                  .replace(/đ/g, "d")
+                                  .replace(/Đ/g, "D")
+                                  .toUpperCase()
+                              : streamVal.label;
+
+                          return {
+                            id: generateId("lnk"),
+                            name: label,
+                            type: "hls",
+                            default: true,
+                            url,
+                            request_headers: [
+                              { key: "Referer", value: item.link },
+                              { key: "User-Agent", value: "Mozilla/5.0" },
+                            ],
+                          };
+                        },
                       ),
                     },
                   ],
