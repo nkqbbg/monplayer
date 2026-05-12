@@ -21,19 +21,19 @@
             "enable_detail": true,
             "channels": [
                 {
-                    "id": "ch-465126",
-                    "name": "China U17 vs Qatar U17",
+                    "id": "ch-465123",
+                    "name": "Japan U17 vs Indonesia U17",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
+                            "text": "● Live",
+                            "color": "#FF0000",
                             "text_color": "#FFFFFF",
                             "font_size": 6
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430213/thapcam/img-465126.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430212/thapcam/img-465123.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -42,27 +42,61 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-24591cca4eb8",
-                            "name": "China U17 - Qatar U17",
+                            "id": "src-af3aa14f1252",
+                            "name": "Japan U17 - Indonesia U17",
                             "contents": [
                                 {
-                                    "id": "ct-7a3dab959fd8",
+                                    "id": "ct-6842c599cda8",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-28d71d8c2c17",
+                                            "id": "st-d83fb9216e59",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-32e7084de84f",
-                                                    "name": "BLV_LENH",
+                                                    "id": "lnk-2c18ca72618e",
+                                                    "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a034a10137e5_35/index.m3u8?expire=1779205264&sign=8c33218aa520469a77b382f9f284e013",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/china-u17-vs-qatar-u17-2300-12-05-2026/465126"
+                                                            "value": "https://thapcam24h.net/truc-tiep/japan-u17-vs-indonesia-u17-2300-12-05-2026/465123"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-b4a4bce6f89f",
+                                                    "name": "BLV_SIEU_BUONG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a0346fc137e5_151/index.m3u8?expire=1779204476&sign=e4253335a0412f38c5fb68d5ca285d57",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/japan-u17-vs-indonesia-u17-2300-12-05-2026/465123"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-07f65afe00e8",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/4f7445a7a461c28d7c31e6d6c0babc83/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/japan-u17-vs-indonesia-u17-2300-12-05-2026/465123"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -79,19 +113,19 @@
                     ]
                 },
                 {
-                    "id": "ch-465123",
-                    "name": "Japan U17 vs Indonesia U17",
+                    "id": "ch-465126",
+                    "name": "China U17 vs Qatar U17",
                     "labels": [
                         {
                             "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
+                            "text": "● Live",
+                            "color": "#FF0000",
                             "text_color": "#FFFFFF",
                             "font_size": 6
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430212/thapcam/img-465123.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778430213/thapcam/img-465126.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -100,27 +134,61 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-4a1257963219",
-                            "name": "Japan U17 - Indonesia U17",
+                            "id": "src-a4d43f8c12fb",
+                            "name": "China U17 - Qatar U17",
                             "contents": [
                                 {
-                                    "id": "ct-f68441af618c",
+                                    "id": "ct-225d7c8a2ae2",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-3b4c9aa8efe3",
+                                            "id": "st-868e8e7021df",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-d4d5d1676582",
-                                                    "name": "BLV_MAX",
+                                                    "id": "lnk-4150e12e9a7b",
+                                                    "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a03469f137e5_1549/index.m3u8?expire=1779204383&sign=49f6cda8dc7cf364f77a84c1270808cf",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/japan-u17-vs-indonesia-u17-2300-12-05-2026/465123"
+                                                            "value": "https://thapcam24h.net/truc-tiep/china-u17-vs-qatar-u17-2300-12-05-2026/465126"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-9265197c8264",
+                                                    "name": "BLV_CA_MAP",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a033edb137e5_154/index.m3u8?expire=1779202395&sign=af6bbe0cb6440f5bdad896fc8c875fce",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/china-u17-vs-qatar-u17-2300-12-05-2026/465126"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "lnk-ec6dc972a7eb",
+                                                    "name": "SONG_QUOC_TE",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://dlqcalr.alilicloud.com/live/1874deb2914f0e83e147c2fc74812307/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/china-u17-vs-qatar-u17-2300-12-05-2026/465126"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -158,19 +226,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-c037e785d56a",
+                            "id": "src-e25b2f47c259",
                             "name": "Al Kholood - Al Okhdood",
                             "contents": [
                                 {
-                                    "id": "ct-53dc518e0aab",
+                                    "id": "ct-57f54f644f15",
                                     "name": "Saudi Professional League",
                                     "streams": [
                                         {
-                                            "id": "st-d80982b432ff",
+                                            "id": "st-bc7ca5028283",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8410fa4c3071",
+                                                    "id": "lnk-4a1a16c770f0",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -185,58 +253,17 @@
                                                             "value": "Mozilla/5.0"
                                                         }
                                                     ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-475665",
-                    "name": "Saudi Arabia U17 vs Tajikistan U17",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573674/thapcam/img-475665.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-5c5890956d7c",
-                            "name": "Saudi Arabia U17 - Tajikistan U17",
-                            "contents": [
-                                {
-                                    "id": "ct-96c785ca5338",
-                                    "name": "AFC U17 Asian Cup",
-                                    "streams": [
-                                        {
-                                            "id": "st-2d9fa63cfeb7",
-                                            "name": "Stream",
-                                            "stream_links": [
+                                                },
                                                 {
-                                                    "id": "lnk-c8caecf0e1ff",
-                                                    "name": "BLV_NGUOI_DIEN",
+                                                    "id": "lnk-90bba6b94da2",
+                                                    "name": "BLV_NGUOI_DA",
                                                     "type": "hls",
                                                     "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a034e5951ddd_19092/index.m3u8?expire=1779206361&sign=afe361c30636f3655711abbe3328c99b",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/saudi-arabia-u17-vs-tajikistan-u17-0000-13-05-2026/475665"
+                                                            "value": "https://thapcam24h.net/truc-tiep/al-kholood-vs-al-okhdood-2320-12-05-2026/465168"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -274,27 +301,85 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a50576fa6a96",
+                            "id": "src-6977b9439756",
                             "name": "RC Celta - Levante",
                             "contents": [
                                 {
-                                    "id": "ct-f235c52d91a1",
+                                    "id": "ct-3cc7de19cad9",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-cc53a9eb17c1",
+                                            "id": "st-0c0827598236",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-00325563392d",
+                                                    "id": "lnk-446e8be2635e",
                                                     "name": "BLV_NGUOI_RUNG",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-hls.phogatv8.com/live/6a0348a7137e5_148/index.m3u8?expire=1779204903&sign=bc9c9fd59bb41ea2468f932f5b9e02dc",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/rc-celta-vs-levante-0000-13-05-2026/475644"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-475665",
+                    "name": "Saudi Arabia U17 vs Tajikistan U17",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573674/thapcam/img-475665.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-6a3c73942dcb",
+                            "name": "Saudi Arabia U17 - Tajikistan U17",
+                            "contents": [
+                                {
+                                    "id": "ct-e6964b11632d",
+                                    "name": "AFC U17 Asian Cup",
+                                    "streams": [
+                                        {
+                                            "id": "st-a1805835315c",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-0cc8a5981170",
+                                                    "name": "BLV_NGUOI_DIEN",
                                                     "type": "hls",
                                                     "default": true,
                                                     "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/rc-celta-vs-levante-0000-13-05-2026/475644"
+                                                            "value": "https://thapcam24h.net/truc-tiep/saudi-arabia-u17-vs-tajikistan-u17-0000-13-05-2026/475665"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -332,19 +417,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b33b0efdb8c3",
+                            "id": "src-5e27b1348fab",
                             "name": "Thailand U17 - Myanmar U17",
                             "contents": [
                                 {
-                                    "id": "ct-19d155706387",
+                                    "id": "ct-e5ad05f6ee6d",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-4709968b1a45",
+                                            "id": "st-e8fe518bfcc7",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-056e1cc60474",
+                                                    "id": "lnk-dfec365c7397",
                                                     "name": "BLV_JAYCE",
                                                     "type": "hls",
                                                     "default": true,
@@ -390,19 +475,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-fa51ebbb36e5",
+                            "id": "src-02671e24b6de",
                             "name": "Real Betis - Elche",
                             "contents": [
                                 {
-                                    "id": "ct-2398cbd1d0b3",
+                                    "id": "ct-fdff126aee82",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-38d1642c31a7",
+                                            "id": "st-69b758b8345f",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-3dfd2f34f1e3",
+                                                    "id": "lnk-00d0fe6258ca",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -448,19 +533,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b0402895ae52",
+                            "id": "src-f88989de4d11",
                             "name": "CA Osasuna - Atletico Madrid",
                             "contents": [
                                 {
-                                    "id": "ct-5829c7f18812",
+                                    "id": "ct-7e5bb82677ac",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-e6aa9d734651",
+                                            "id": "st-827fa7b120a8",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-317a7f321844",
+                                                    "id": "lnk-4850ad0e6cd6",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
@@ -506,19 +591,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-a4f0a53a1bf9",
+                            "id": "src-4240a0445a4c",
                             "name": "Uzbekistan U17 - Australia U17",
                             "contents": [
                                 {
-                                    "id": "ct-586b447168d1",
+                                    "id": "ct-5236c8ba7696",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-e6d665e7b8c3",
+                                            "id": "st-5beab7e578a4",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-239241d32726",
+                                                    "id": "lnk-2b7dbb93174b",
                                                     "name": "BLV_NGUOI_CO",
                                                     "type": "hls",
                                                     "default": true,
@@ -564,19 +649,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-0dc95c8d1239",
+                            "id": "src-91bb389d4542",
                             "name": "Stade Brestois 29 - RC Strasbourg Alsace",
                             "contents": [
                                 {
-                                    "id": "ct-154c7940ce39",
+                                    "id": "ct-ebac80b431e9",
                                     "name": "French Ligue 1",
                                     "streams": [
                                         {
-                                            "id": "st-e61b4badf4f5",
+                                            "id": "st-8b97f786d2d7",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0ab4b1f8355b",
+                                                    "id": "lnk-0b9cea7b6f9d",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -585,64 +670,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://thapcam24h.net/truc-tiep/stade-brestois-29-vs-rc-strasbourg-alsace-0000-14-05-2026/476289"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-476370",
-                    "name": "Vietnam U17 vs United Arab Emirates U17",
-                    "labels": [
-                        {
-                            "position": "top-left",
-                            "text": "● Upcoming",
-                            "color": "#FF9800",
-                            "text_color": "#FFFFFF",
-                            "font_size": 6
-                        }
-                    ],
-                    "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573676/thapcam/img-476370.png",
-                        "height": 480,
-                        "width": 640,
-                        "display": "cover"
-                    },
-                    "type": "single",
-                    "display": "overlay",
-                    "sources": [
-                        {
-                            "id": "src-1f165f74c0c5",
-                            "name": "Vietnam U17 - United Arab Emirates U17",
-                            "contents": [
-                                {
-                                    "id": "ct-7c2247850afc",
-                                    "name": "AFC U17 Asian Cup",
-                                    "streams": [
-                                        {
-                                            "id": "st-ef3bbdbb51d3",
-                                            "name": "Stream",
-                                            "stream_links": [
-                                                {
-                                                    "id": "lnk-f89a6cd535d4",
-                                                    "name": "BLV_SIEU_BUONG",
-                                                    "type": "hls",
-                                                    "default": true,
-                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-united-arab-emirates-u17-0000-14-05-2026/476370"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -680,19 +707,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-24f1dc225f86",
+                            "id": "src-e7f0bbfd3273",
                             "name": "RCD Espanyol de Barcelona - Athletic Club",
                             "contents": [
                                 {
-                                    "id": "ct-8ed68341c66b",
+                                    "id": "ct-a4b297ab95fc",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-46aa25bd0e02",
+                                            "id": "st-947fb3eca5da",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8df3bb89f5fc",
+                                                    "id": "lnk-fd04e81bd523",
                                                     "name": "BLV_SIEU_QUAY",
                                                     "type": "hls",
                                                     "default": true,
@@ -738,19 +765,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-1b4941d33c4e",
+                            "id": "src-4198681dfdce",
                             "name": "Villarreal CF - Sevilla FC",
                             "contents": [
                                 {
-                                    "id": "ct-c8cc54500011",
+                                    "id": "ct-bb1b228ad14d",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-5d2efaa08f49",
+                                            "id": "st-1ed6754da51b",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-29d5455adc03",
+                                                    "id": "lnk-55c3589f7dfa",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -796,19 +823,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-7ae637a1bc8e",
+                            "id": "src-defd157639ff",
                             "name": "South Korea U17 - Yemen U17",
                             "contents": [
                                 {
-                                    "id": "ct-a1d729a8ddaa",
+                                    "id": "ct-c700178ece5d",
                                     "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-91c20332e724",
+                                            "id": "st-d7fadb41fb51",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-7ef101971bf4",
+                                                    "id": "lnk-c7bf6dd75b3e",
                                                     "name": "BLV_CHAN_DAT",
                                                     "type": "hls",
                                                     "default": true,
@@ -833,8 +860,8 @@
                     ]
                 },
                 {
-                    "id": "ch-476535",
-                    "name": "RC Lens vs Paris Saint Germain",
+                    "id": "ch-476370",
+                    "name": "Vietnam U17 vs United Arab Emirates U17",
                     "labels": [
                         {
                             "position": "top-left",
@@ -845,7 +872,7 @@
                         }
                     ],
                     "image": {
-                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573676/thapcam/img-476535.png",
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573676/thapcam/img-476370.png",
                         "height": 480,
                         "width": 640,
                         "display": "cover"
@@ -854,27 +881,27 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b4a83ea5c731",
-                            "name": "RC Lens - Paris Saint Germain",
+                            "id": "src-54a210e55af0",
+                            "name": "Vietnam U17 - United Arab Emirates U17",
                             "contents": [
                                 {
-                                    "id": "ct-ea71f659ed5a",
-                                    "name": "French Ligue 1",
+                                    "id": "ct-4f5f9eafda5d",
+                                    "name": "AFC U17 Asian Cup",
                                     "streams": [
                                         {
-                                            "id": "st-440b2f7c0807",
+                                            "id": "st-bd018f436017",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-30160d96536c",
-                                                    "name": "BLV_CA_MAP",
+                                                    "id": "lnk-c8a260b62d48",
+                                                    "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
                                                     "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://thapcam24h.net/truc-tiep/rc-lens-vs-paris-saint-germain-0200-14-05-2026/476535"
+                                                            "value": "https://thapcam24h.net/truc-tiep/vietnam-u17-vs-united-arab-emirates-u17-0000-14-05-2026/476370"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -912,19 +939,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-734874fa3115",
+                            "id": "src-2622b7b279dc",
                             "name": "Manchester City - Crystal Palace",
                             "contents": [
                                 {
-                                    "id": "ct-c44a98f52dcf",
+                                    "id": "ct-e62d0c598238",
                                     "name": "English Premier League",
                                     "streams": [
                                         {
-                                            "id": "st-7963819aca9e",
+                                            "id": "st-be31543008f2",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-5fd13703e0bc",
+                                                    "id": "lnk-2a5c22bf6aaa",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
@@ -933,6 +960,64 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://thapcam24h.net/truc-tiep/manchester-city-vs-crystal-palace-0200-14-05-2026/476532"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-476535",
+                    "name": "RC Lens vs Paris Saint Germain",
+                    "labels": [
+                        {
+                            "position": "top-left",
+                            "text": "● Upcoming",
+                            "color": "#FF9800",
+                            "text_color": "#FFFFFF",
+                            "font_size": 6
+                        }
+                    ],
+                    "image": {
+                        "url": "https://res.cloudinary.com/dxfplnfuo/image/upload/v1778573676/thapcam/img-476535.png",
+                        "height": 480,
+                        "width": 640,
+                        "display": "cover"
+                    },
+                    "type": "single",
+                    "display": "overlay",
+                    "sources": [
+                        {
+                            "id": "src-3ff7494c8938",
+                            "name": "RC Lens - Paris Saint Germain",
+                            "contents": [
+                                {
+                                    "id": "ct-093aa40899dc",
+                                    "name": "French Ligue 1",
+                                    "streams": [
+                                        {
+                                            "id": "st-719614068580",
+                                            "name": "Stream",
+                                            "stream_links": [
+                                                {
+                                                    "id": "lnk-8ab276535ec0",
+                                                    "name": "BLV_CA_MAP",
+                                                    "type": "hls",
+                                                    "default": true,
+                                                    "url": "https://cdn-tvc.taoxanh.biz/live-dev/live-dev/video/adaptive/2026/03/playlist.m3u8",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://thapcam24h.net/truc-tiep/rc-lens-vs-paris-saint-germain-0200-14-05-2026/476535"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -970,19 +1055,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-1c4d252df7eb",
+                            "id": "src-2187ad544d2e",
                             "name": "Deportivo Alavés - FC Barcelona",
                             "contents": [
                                 {
-                                    "id": "ct-1912e6783c10",
+                                    "id": "ct-ee31b2319526",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-8ac91721cf9c",
+                                            "id": "st-53a2d7ced109",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-b43560d535f1",
+                                                    "id": "lnk-4a4ae82151ae",
                                                     "name": "BLV_MAX",
                                                     "type": "hls",
                                                     "default": true,
@@ -1028,19 +1113,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-b9591a9a9742",
+                            "id": "src-e0b65993d960",
                             "name": "Getafe - RCD Mallorca",
                             "contents": [
                                 {
-                                    "id": "ct-47952ee9096a",
+                                    "id": "ct-69b7e60deb1a",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-693f8319c77c",
+                                            "id": "st-82f2188c12ec",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-b290b96620e7",
+                                                    "id": "lnk-5fc6e93c82f5",
                                                     "name": "BLV_NGUOI_NHEN",
                                                     "type": "hls",
                                                     "default": true,
@@ -1086,19 +1171,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-551b82efdbb2",
+                            "id": "src-15130e4112cb",
                             "name": "Valencia CF - Rayo Vallecano",
                             "contents": [
                                 {
-                                    "id": "ct-d87ff4d22aa0",
+                                    "id": "ct-ccaf2e412d10",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-9e5656ede615",
+                                            "id": "st-b98e5b16aba7",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-0ebb7af481ad",
+                                                    "id": "lnk-89168bc4274e",
                                                     "name": "BLV_CA_MAP",
                                                     "type": "hls",
                                                     "default": true,
@@ -1144,19 +1229,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-bf6b9dcfd6b8",
+                            "id": "src-ef94ffef8993",
                             "name": "Girona FC - Real Sociedad",
                             "contents": [
                                 {
-                                    "id": "ct-def2145938aa",
+                                    "id": "ct-980500e63c1b",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-113921111ecb",
+                                            "id": "st-73f7598fcb28",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-8d9e0c536768",
+                                                    "id": "lnk-d73627d793b2",
                                                     "name": "BLV_LENH",
                                                     "type": "hls",
                                                     "default": true,
@@ -1202,19 +1287,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-310c0adec809",
+                            "id": "src-03405d45553b",
                             "name": "Real Madrid - Real Oviedo",
                             "contents": [
                                 {
-                                    "id": "ct-9e26fac6147c",
+                                    "id": "ct-4e07a1a60942",
                                     "name": "Spanish La Liga",
                                     "streams": [
                                         {
-                                            "id": "st-87312943cab2",
+                                            "id": "st-3c6cb0da68b2",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-3a7ee17b968f",
+                                                    "id": "lnk-784c40a4ec31",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
@@ -1260,19 +1345,19 @@
                     "display": "overlay",
                     "sources": [
                         {
-                            "id": "src-10289d5a15d4",
+                            "id": "src-e4ada2a03f96",
                             "name": "Cong An Ho Chi Minh City - SHB Da Nang",
                             "contents": [
                                 {
-                                    "id": "ct-8290fb309c09",
+                                    "id": "ct-e0e5a2687f0a",
                                     "name": "Vietnam National Champion League",
                                     "streams": [
                                         {
-                                            "id": "st-64d741355339",
+                                            "id": "st-cb221dced394",
                                             "name": "Stream",
                                             "stream_links": [
                                                 {
-                                                    "id": "lnk-eae1efa7a9ea",
+                                                    "id": "lnk-86754a45e884",
                                                     "name": "BLV_SIEU_BUONG",
                                                     "type": "hls",
                                                     "default": true,
