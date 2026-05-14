@@ -48,7 +48,7 @@ jobs:
       - name: Run scraper
         if: steps.timecheck.outputs.skip != 'true'
         run: |
-          node fetch-channel.js
+          # node fetch-channel.js
           node ./thapcam/fetch-thapcam.js
 
         env:
