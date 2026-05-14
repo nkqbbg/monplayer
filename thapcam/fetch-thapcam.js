@@ -9,7 +9,7 @@ const {
   deleteOldImages,
 } = require("./cloudinary-thapcam.js");
 
-const SOURCE_DOMAIN = "https://thapcam24h.net";
+const SOURCE_DOMAIN = "https://thapcam.now";
 
 function absolutizeUrl(url, domain) {
   if (!url) return null;
