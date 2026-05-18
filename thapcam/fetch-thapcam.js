@@ -50,7 +50,7 @@ function removeDiacritics(str) {
  */
 async function scrapeThapcamHot() {
   const domain = SOURCE_DOMAIN;
-  const url = `${domain}/truc-tiep-bong-da-xoilac-tv`;
+  const url = domain;
   console.log(`🚀 Fetching data from ${url}...`);
 
   try {
