@@ -54,6 +54,7 @@ jobs:
         env:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          CLOUDINARY_FOLDER: tieulam
 
       - name: Commit changes
         if: steps.timecheck.outputs.skip != 'true'

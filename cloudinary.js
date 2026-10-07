@@ -21,6 +21,8 @@ function getErrorMessage(error) {
   return nested || JSON.stringify(error);
 }
 
+const CLOUDINARY_FOLDER = process.env.CLOUDINARY_FOLDER || "matches";
+
 // ===== UPLOAD CORE =====
 function uploadImage(buffer, publicId) {
   console.log(
@@ -29,7 +31,7 @@ function uploadImage(buffer, publicId) {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
-        folder: "matches",
+        folder: CLOUDINARY_FOLDER,
         public_id: publicId,
         overwrite: true,
       },
@@ -175,7 +177,9 @@ async function uploadMultiThread(tasks, options = {}) {
       const myIdx = idx++;
       const t = tasks[myIdx];
       try {
-        const res = await cloudinary.api.resource("matches/" + t.publicId);
+        const res = await cloudinary.api.resource(
+          `${CLOUDINARY_FOLDER}/` + t.publicId,
+        );
         existResults[myIdx] = {
           exists: true,
           url: res.secure_url,
